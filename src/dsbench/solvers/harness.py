@@ -9,6 +9,7 @@ import shutil
 import signal
 import subprocess
 import time
+import uuid
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -19,6 +20,14 @@ HOME_AGENT = "/home/agent"
 DEFAULT_PATH = "/opt/dsvenv/bin:/usr/local/bin:/usr/bin:/bin"
 DEFAULT_TIMEOUT_FACTOR = 3.0
 REPO_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_STATE_BASE = Path.home() / ".cache" / "dsbench" / "harness_state"
+
+PROVIDER_ERROR_PATTERN = re.compile(
+    r"\b(401|403|429|529)\b|unauthori[sz]ed|authentication|invalid api key|"
+    r"rate.?limit|overloaded|usage limit|not logged in|please run /login|"
+    r"credit balance|quota",
+    re.IGNORECASE,
+)
 
 AGENT_INSTRUCTIONS = (
     "\n\n---\nCareful instructions for the agent:\n"
@@ -94,16 +103,6 @@ def sandbox_cmd(
     return cmd
 
 
-def _copy_config_dir(src: Path, dst: Path) -> None:
-    if not src.is_dir():
-        return
-    ignore = shutil.ignore_patterns(
-        "projects", "shell-snapshots", "statsig", "cache",
-        "telemetry", "logs", "file-history", "todos", "ide",
-    )
-    shutil.copytree(src, dst, ignore=ignore, dirs_exist_ok=True)
-
-
 def _parse_pyvenv_home(venv: Path) -> Path | None:
     cfg = venv / "pyvenv.cfg"
     if not cfg.is_file():
@@ -115,6 +114,17 @@ def _parse_pyvenv_home(venv: Path) -> Path | None:
     return home.parent if home.name == "bin" else home
 
 
+def _detect_provider_error(stdout: str, stderr: str, returncode: int | None) -> str | None:
+    """Return a message when the run failed for a provider, auth or rate-limit reason."""
+    if returncode in (0, None):
+        return None
+    combined = f"{stdout}\n{stderr}"
+    if not stdout.strip() or PROVIDER_ERROR_PATTERN.search(combined):
+        detail = (stderr.strip() or stdout.strip())[:300]
+        return f"exit {returncode}: {detail}" if detail else f"exit {returncode} with no output"
+    return None
+
+
 class HarnessSolver(Solver):
     """Common machinery to run an agent binary inside bwrap."""
 
@@ -124,17 +134,21 @@ class HarnessSolver(Solver):
         self.model = model
         self.config = config or HarnessConfig()
         self.last_command: list[str] = []
+        self._state_root: Path | None = None
 
     def solve(self, task, workdir: Path) -> SolveResult:
         workdir = Path(workdir).resolve()
         workdir.mkdir(parents=True, exist_ok=True)
         prompt = task.prompt + AGENT_INSTRUCTIONS
         timeout_s = self._timeout(task)
-        command = self._sandbox_prefix(workdir) + ["--"] + self._agent_argv(prompt)
-        self.last_command = list(command)
-        started = time.monotonic()
-        returncode, stdout, stderr, timed_out = self._run(command, timeout_s)
-        duration = time.monotonic() - started
+        try:
+            command = self._sandbox_prefix(workdir) + ["--"] + self._agent_argv(prompt)
+            self.last_command = list(command)
+            started = time.monotonic()
+            returncode, stdout, stderr, timed_out = self._run(command, timeout_s)
+            duration = time.monotonic() - started
+        finally:
+            self._cleanup_state()
         result = self._parse(stdout, stderr, returncode, timed_out, duration)
         transcript_file = workdir / ".harness_transcript.txt"
         transcript_file.write_text(
@@ -146,6 +160,12 @@ class HarnessSolver(Solver):
         result.meta["timeout_s"] = timeout_s
         result.meta["command"] = command
         return result
+
+    def _cleanup_state(self) -> None:
+        """Delete the per-run state dir, which holds copied auth files."""
+        if self._state_root is not None:
+            shutil.rmtree(self._state_root, ignore_errors=True)
+            self._state_root = None
 
     def _timeout(self, task) -> float:
         return float(task.timeout_s) * self.config.timeout_factor
@@ -176,9 +196,10 @@ class HarnessSolver(Solver):
         return env
 
     def _prepare(self, workdir: Path) -> dict[str, MountSpec]:
-        state_root = self.config.state_root or (workdir.parent / ".harness_state")
-        if state_root.exists():
-            shutil.rmtree(state_root)
+        base = self.config.state_root or DEFAULT_STATE_BASE
+        state_root = base / uuid.uuid4().hex
+        state_root.mkdir(parents=True, mode=0o700)
+        self._state_root = state_root
         state_home = state_root / "home" / "agent"
         (state_home / ".local" / "bin").mkdir(parents=True, exist_ok=True)
         (state_home / ".local" / "share").mkdir(parents=True, exist_ok=True)
@@ -238,16 +259,18 @@ class ClaudeCodeSolver(HarnessSolver):
             link = state_home / ".local" / "bin" / "claude"
             link.symlink_to(f"{sandbox_versions}/{claude_bin.name}")
 
-        claude_dir = home / ".claude"
-        if claude_dir.is_dir():
-            _copy_config_dir(claude_dir, state_home / ".claude")
+        credentials = home / ".claude" / ".credentials.json"
+        if credentials.is_file():
+            state_claude = state_home / ".claude"
+            state_claude.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(credentials, state_claude / ".credentials.json")
         claude_json = home / ".claude.json"
         if claude_json.is_file():
             shutil.copy2(claude_json, state_home / ".claude.json")
 
     def _agent_argv(self, prompt: str) -> list[str]:
         return [
-            "claude",
+            f"{HOME_AGENT}/.local/bin/claude",
             "-p",
             prompt,
             "--output-format",
@@ -270,7 +293,16 @@ class ClaudeCodeSolver(HarnessSolver):
                 except json.JSONDecodeError:
                     data = {}
         usage = data.get("usage") or {}
+        provider_error = None
+        if not timed_out:
+            if data.get("is_error") and PROVIDER_ERROR_PATTERN.search(
+                f"{data.get('api_error_status')} {data.get('result')}"
+            ):
+                provider_error = str(data.get("result") or data.get("api_error_status"))
+            else:
+                provider_error = _detect_provider_error(stdout, stderr, returncode)
         return SolveResult(
+            provider_error=provider_error,
             answer_text=str(data.get("result") or stdout.strip()),
             returncode=returncode if returncode is not None else 1,
             timed_out=timed_out,
@@ -364,6 +396,7 @@ class OpenCodeSolver(HarnessSolver):
             if stderr.strip():
                 answer = stderr.strip()
         return SolveResult(
+            provider_error=None if timed_out else _detect_provider_error(stdout, stderr, returncode),
             answer_text=answer,
             returncode=returncode if returncode is not None else 1,
             timed_out=timed_out,

@@ -9,8 +9,8 @@ models:
 
   - label: claude-opus-5-5
     mode: agent
-    harness: opencode
-    model: opencode/claude-opus-5-5
+    harness: claude-code
+    model: claude-opus-5-5
 
   - label: glm-5.3
     mode: agent
@@ -18,7 +18,7 @@ models:
     model: opencode-go/glm-5.3
 
 judge:
-  adapter: claude
+  adapter: claude-code
   model: claude-opus-5-5
 
 runs_per_task: 3

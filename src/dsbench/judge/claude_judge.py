@@ -6,6 +6,20 @@ import os
 from anthropic import Anthropic
 
 
+def parse_verdict(text: str) -> dict:
+    """Parse judge output (plain or fenced JSON) into score and reasoning."""
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1]
+    if text.endswith("```"):
+        text = text.rsplit("\n", 1)[0]
+
+    data = json.loads(text)
+    score = float(data["score"])
+    score = max(0.0, min(1.0, score))
+    return {"score": score, "reasoning": data["reasoning"]}
+
+
 class ClaudeJudge:
     """Judge that asks a Claude model to score an answer."""
 
@@ -35,14 +49,4 @@ class ClaudeJudge:
             messages=[{"role": "user", "content": user_message}],
         )
 
-        text = response.content[0].text.strip()
-
-        if text.startswith("```"):
-            text = text.split("\n", 1)[1]
-        if text.endswith("```"):
-            text = text.rsplit("\n", 1)[0]
-
-        data = json.loads(text)
-        score = float(data["score"])
-        score = max(0.0, min(1.0, score))
-        return {"score": score, "reasoning": data["reasoning"]}
+        return parse_verdict(response.content[0].text)

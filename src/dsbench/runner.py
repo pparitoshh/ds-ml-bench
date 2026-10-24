@@ -3,6 +3,7 @@
 import json
 import math
 import shutil
+import sys
 import statistics
 from datetime import datetime, timezone
 from pathlib import Path
@@ -12,14 +13,46 @@ from dsbench.scorers.base import ScoreResult
 from dsbench.solvers.base import SolveResult, Solver
 
 
-def _make_judge(config: dict):
-    """Build a judge instance from the config, or return None."""
-    judge_cfg = config.get("judge")
-    if not judge_cfg:
-        return None
+class LazyJudge:
+    """Judge proxy that builds the real judge on the first score() call."""
+
+    def __init__(self, judge_cfg: dict):
+        self._cfg = judge_cfg
+        self._judge = None
+
+    def score(self, prompt: str, answer: str, rubric: str) -> dict:
+        if self._judge is None:
+            self._judge = _build_judge(self._cfg)
+        return self._judge.score(prompt, answer, rubric)
+
+
+def _build_judge(judge_cfg: dict):
+    adapter = judge_cfg.get("adapter", "claude")
+    if adapter == "claude-code":
+        from dsbench.judge.claude_code_judge import ClaudeCodeJudge
+
+        return ClaudeCodeJudge(model=judge_cfg.get("model"))
     from dsbench.judge.claude_judge import ClaudeJudge
 
     return ClaudeJudge(model=judge_cfg.get("model"))
+
+
+def _make_judge(config: dict):
+    """Return a lazy judge from the config, or None. Nothing is built until used."""
+    judge_cfg = config.get("judge")
+    if not judge_cfg:
+        return None
+    return LazyJudge(judge_cfg)
+
+
+def _exception_provider_error(exc: Exception) -> str | None:
+    """Return a message when an exception looks like a provider, auth or rate-limit error."""
+    from dsbench.solvers.harness import PROVIDER_ERROR_PATTERN
+
+    status = getattr(exc, "status_code", None)
+    if status in (401, 403, 429, 529) or PROVIDER_ERROR_PATTERN.search(str(exc)):
+        return f"{type(exc).__name__}: {exc}"
+    return None
 
 
 def _copy_task_inputs(task, workdir: Path) -> None:
@@ -38,6 +71,19 @@ def _copy_task_inputs(task, workdir: Path) -> None:
     prompt_dest = workdir / "prompt.md"
     if task.prompt is not None and not prompt_dest.exists():
         prompt_dest.write_text(task.prompt)
+
+
+def _solve_record(solve_result: SolveResult) -> dict:
+    return {
+        "answer_text": solve_result.answer_text,
+        "returncode": solve_result.returncode,
+        "timed_out": solve_result.timed_out,
+        "duration_s": solve_result.duration_s,
+        "cost_usd": solve_result.cost_usd,
+        "tokens_in": solve_result.tokens_in,
+        "tokens_out": solve_result.tokens_out,
+        "meta": _jsonable(solve_result.meta),
+    }
 
 
 def _mean(scores: list[float]) -> float:
@@ -135,8 +181,32 @@ def _run_one_model(
                     answer_text="",
                     returncode=-1,
                     meta={"error": f"solver failed: {exc}"},
+                    provider_error=_exception_provider_error(exc),
                 )
                 scoring_error = exc
+
+            if solve_result.provider_error:
+                warning = (
+                    f"WARNING: {label} / {task.id} run {run_index}: provider error, "
+                    f"run not scored: {solve_result.provider_error[:200]}"
+                )
+                print(warning, file=sys.stderr)  # noqa: T201
+                (run_dir / "transcript.md").write_text(solve_result.transcript or "")
+                record = {
+                    "task_id": task.id,
+                    "run": run_index,
+                    "status": "error",
+                    "score": None,
+                    "passed": False,
+                    "error": solve_result.provider_error,
+                    "details": {},
+                    "solve": _solve_record(solve_result),
+                    "transcript_file": "transcript.md",
+                }
+                (run_dir / "result.json").write_text(json.dumps(record, indent=2))
+                run_records.append(record)
+                total_duration += solve_result.duration_s
+                continue
 
             try:
                 scorer = get_scorer(task.scorer)
@@ -162,19 +232,11 @@ def _run_one_model(
             record = {
                 "task_id": task.id,
                 "run": run_index,
+                "status": "ok",
                 "score": score_result.score,
                 "passed": score_result.passed,
                 "details": _jsonable(score_result.details),
-                "solve": {
-                    "answer_text": solve_result.answer_text,
-                    "returncode": solve_result.returncode,
-                    "timed_out": solve_result.timed_out,
-                    "duration_s": solve_result.duration_s,
-                    "cost_usd": solve_result.cost_usd,
-                    "tokens_in": solve_result.tokens_in,
-                    "tokens_out": solve_result.tokens_out,
-                    "meta": _jsonable(solve_result.meta),
-                },
+                "solve": _solve_record(solve_result),
                 "transcript_file": transcript_file.name,
             }
             (run_dir / "result.json").write_text(json.dumps(record, indent=2))
@@ -184,14 +246,16 @@ def _run_one_model(
                 total_cost += solve_result.cost_usd
             total_duration += solve_result.duration_s
 
-        scores = [record["score"] for record in run_records]
+        scores = [r["score"] for r in run_records if r["status"] == "ok"]
         task_meta[task.id] = {
+            "n_ok": len(scores),
+            "n_runs": len(run_records),
             "category": task.category,
             "difficulty": task.difficulty,
             "weight": task.weight,
             "scorer": task.scorer,
-            "mean": _mean(scores),
-            "std": _std(scores),
+            "mean": _mean(scores) if scores else None,
+            "std": _std(scores) if scores else None,
             "runs": run_records,
         }
 
@@ -221,18 +285,19 @@ def _build_summary(
     judge_model: str | None = None,
 ) -> dict:
     """Build the summary results dict for one model."""
+    scored = {tid: m for tid, m in task_meta.items() if m["mean"] is not None}
     category_scores: dict[str, list[float]] = {}
-    for meta in task_meta.values():
+    for meta in scored.values():
         category_scores.setdefault(meta["category"], []).append(meta["mean"])
 
     per_category = {
         category: _mean(scores) for category, scores in sorted(category_scores.items())
     }
 
-    total_weight = sum(meta["weight"] for meta in task_meta.values())
+    total_weight = sum(meta["weight"] for meta in scored.values())
     if total_weight > 0:
         weighted = sum(
-            meta["mean"] * meta["weight"] for meta in task_meta.values()
+            meta["mean"] * meta["weight"] for meta in scored.values()
         ) / total_weight
     else:
         weighted = 0.0
@@ -253,12 +318,15 @@ def _build_summary(
                 "scorer": meta["scorer"],
                 "mean": meta["mean"],
                 "std": meta["std"],
+                "n_ok": meta["n_ok"],
+                "n_runs": meta["n_runs"],
             }
             for task_id, meta in task_meta.items()
         },
         "per_category": per_category,
         "rating": weighted * 100.0,
         "total_cost_usd": total_cost,
+        "cost_kind": "notional" if model_entry.get("harness") == "claude-code" else "measured",
         "total_duration_s": total_duration,
     }
 
