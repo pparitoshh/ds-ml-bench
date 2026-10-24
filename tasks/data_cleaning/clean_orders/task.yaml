@@ -1,7 +1,7 @@
 id: clean_orders
 category: data_cleaning
-difficulty: easy
+difficulty: hard
 scorer: pytest
 weight: 1.0
-timeout_s: 60
+timeout_s: 600
 answer_type: code

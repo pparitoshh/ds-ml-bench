@@ -1,201 +1,1901 @@
-order_id,order_date,amount,currency,country
-1000,2023-02-02,78.12,  USD  , FRANCE
-1001,10/10/2023,466.12,USD,Germany
-1002,2023-08-27,363.66,USD,  USA  
-1003,2023-06-10,52.42,USD,usa
-1004,2023-06-08,46159.0,cents , FRANCE
-1005,11/10/2023,389.67,USD, FRANCE
-1006,2023-02-01,36796.0,cents,usa
-1007,2023-09-12,173.9,  USD  ,Germany
-1008,2023-03-15,410.27,  USD  ,Germany
-1009,02/04/2023,383.36,  USD  ,Germany
-1010,07/12/2023,27077.0,cents ,france 
-1011,12/23/2023,16407.0,cents,USA
-1012,2023-09-26,16337.0,cents ,  USA  
-1013,10/05/2023,8722.0,cents,USA
-1014,09/19/2023,48103.0,cents ,USA
-1015,10/14/2023,82.94,  USD  ,france 
-1016,2023-07-07,281.38,  USD  ,france 
-1017,2023-02-16,22457.0,cents ,usa
-1018,2023-11-03,7268.0,cents ,GERMANY
-1019,06/14/2023,36754.0,cents ,USA
-1020,2023-07-02,96.94,  USD  ,USA
-1021,2023-05-16,280.78,USD,  USA  
-1022,2023-03-08,31021.0,cents,USA
-1023,12/05/2023,244.38,USD,Germany
-1024,2023-10-13,32943.0,cents ,france 
-1025,08/24/2023,493.72,USD,germany
-1026,05/27/2023,424.12,USD,GERMANY
-1027,10/28/2023,476.85,USD,Germany
-1028,2023-07-19,440.12,  USD  ,usa
-1029,06/11/2023,322.59,  USD  ,usa
-1030,06/14/2023,2586.0,cents ,  USA  
-1031,03/24/2023,34618.0,cents,USA
-1032,2023-02-03,27680.0,cents, FRANCE
-1033,2023-07-22,16.45,USD, FRANCE
-1034,2023-11-21,364.3,USD, FRANCE
-1035,2023-01-24,41444.0,cents,GERMANY
-1036,2023-11-10,48447.0,cents ,germany
-1037,2023-10-30,234.44,  USD  ,GERMANY
-1038,2023-04-12,1592.0,cents ,Germany
-1039,08/19/2023,157.92,USD,GERMANY
-1040,2023-03-02,371.11,USD, FRANCE
-1041,10/04/2023,39283.0,cents , FRANCE
-1042,09/13/2023,201.88,USD,germany
-1043,2023-05-10,498.28,USD,usa
-1044,01/25/2023,39121.0,cents,GERMANY
-1045,2023-12-21,42007.0,cents ,  USA  
-1046,06/12/2023,32.0,  USD  ,GERMANY
-1047,2023-11-22,62.67,USD,germany
-1048,09/05/2023,7689.0,cents ,france 
-1049,2023-10-12,32856.0,cents ,  USA  
-1050,2023-10-05,31542.0,cents ,france 
-1051,2023-03-13,5431.0,cents , FRANCE
-1052,05/13/2023,343.03,USD,  USA  
-1053,06/20/2023,44954.0,cents ,Germany
-1054,2023-07-01,13049.0,cents,germany
-1055,2023-01-16,12800.0,cents , FRANCE
-1056,2023-07-19,232.78,  USD  ,GERMANY
-1057,02/26/2023,8008.0,cents , FRANCE
-1058,2023-09-29,406.91,  USD  ,  USA  
-1059,2023-09-07,107.66,  USD  ,germany
-1060,12/03/2023,455.01,  USD  ,Germany
-1061,09/29/2023,2771.0,cents ,france 
-1062,2023-05-14,86.61,  USD  ,  USA  
-1063,12/20/2023,35.8,USD,germany
-1064,2023-05-30,48196.0,cents ,usa
-1065,04/29/2023,126.85,  USD  , FRANCE
-1066,2023-11-27,12999.0,cents,Germany
-1067,05/16/2023,38.8,  USD  ,  USA  
-1068,01/28/2023,48441.0,cents ,germany
-1069,06/21/2023,46461.0,cents ,Germany
-1070,2023-10-18,6891.0,cents , FRANCE
-1071,03/11/2023,38833.0,cents,germany
-1072,2023-06-18,42460.0,cents ,germany
-1073,2023-02-17,35207.0,cents,usa
-1074,09/08/2023,411.04,  USD  ,usa
-1075,2023-06-23,420.2,  USD  ,Germany
-1076,05/01/2023,65.5,USD,france 
-1077,03/24/2023,7121.0,cents,france 
-1078,2023-07-26,274.63,USD,GERMANY
-1079,09/02/2023,375.85,USD,GERMANY
-1080,2023-12-10,22990.0,cents,Germany
-1081,06/09/2023,8605.0,cents,USA
-1082,2023-02-28,408.19,USD,usa
-1083,10/31/2023,36996.0,cents,  USA  
-1084,2023-08-18,17.71,  USD  ,  USA  
-1085,2023-09-13,142.98,USD,USA
-1086,2023-02-05,37721.0,cents,  USA  
-1087,04/25/2023,30965.0,cents,usa
-1088,10/08/2023,259.62,  USD  ,germany
-1089,10/31/2023,3670.0,cents,france 
-1090,06/08/2023,12.88,  USD  ,GERMANY
-1091,10/21/2023,3075.0,cents,Germany
-1092,11/04/2023,23487.0,cents,Germany
-1093,2023-05-22,35769.0,cents,  USA  
-1094,11/24/2023,211.09,USD,USA
-1095,04/16/2023,94.18,  USD  ,germany
-1096,2023-03-29,194.46,USD,germany
-1097,2023-09-07,49021.0,cents,usa
-1098,08/21/2023,27607.0,cents ,Germany
-1099,2023-02-21,39419.0,cents ,  USA  
-1100,10/31/2023,134.57,  USD  ,USA
-1101,2023-03-14,32184.0,cents ,GERMANY
-1102,2023-10-21,22880.0,cents ,germany
-1103,01/03/2023,8111.0,cents,GERMANY
-1104,2023-10-18,13166.0,cents ,GERMANY
-1105,2023-10-15,47355.0,cents,france 
-1106,10/12/2023,27521.0,cents, FRANCE
-1107,08/31/2023,157.58,  USD  ,germany
-1108,2023-06-22,27339.0,cents ,france 
-1109,2023-09-15,35289.0,cents ,Germany
-1110,04/12/2023,13617.0,cents,france 
-1111,10/12/2023,328.94,  USD  , FRANCE
-1112,07/22/2023,87.51,USD,GERMANY
-1113,2023-06-17,8273.0,cents ,france 
-1114,2023-07-04,348.47,  USD  ,germany
-1115,2023-07-27,207.12,  USD  ,GERMANY
-1116,2023-01-14,48696.0,cents ,  USA  
-1117,02/21/2023,75.28,  USD  ,france 
-1118,2023-03-31,55.43,USD,germany
-1119,02/11/2023,15930.0,cents, FRANCE
-1120,06/10/2023,394.63,USD,Germany
-1121,09/01/2023,309.41,  USD  , FRANCE
-1122,2023-08-27,85.22,USD,usa
-1123,06/21/2023,210.59,USD,usa
-1124,11/09/2023,304.04,  USD  ,germany
-1125,07/26/2023,165.42,  USD  ,GERMANY
-1126,2023-01-29,243.23,  USD  , FRANCE
-1127,2023-10-07,24232.0,cents ,Germany
-1128,07/29/2023,5666.0,cents ,GERMANY
-1129,2023-08-20,290.57,USD,germany
-1130,2023-07-26,29896.0,cents ,france 
-1131,2023-07-22,353.65,  USD  ,GERMANY
-1132,02/03/2023,297.32,  USD  ,Germany
-1133,07/24/2023,329.79,USD,france 
-1134,2023-10-18,177.43,  USD  ,usa
-1135,04/21/2023,279.63,  USD  ,france 
-1136,2023-08-09,267.51,  USD  ,USA
-1137,01/12/2023,186.74,USD,  USA  
-1138,05/07/2023,283.92,  USD  , FRANCE
-1139,2023-06-09,44433.0,cents ,GERMANY
-1140,2023-12-25,426.52,  USD  ,france 
-1141,2023-03-20,256.8,USD,GERMANY
-1142,04/11/2023,13050.0,cents ,GERMANY
-1143,05/30/2023,16408.0,cents ,  USA  
-1144,12/29/2023,264.49,USD,usa
-1145,11/08/2023,42031.0,cents ,usa
-1146,2023-01-13,3041.0,cents,  USA  
-1147,03/27/2023,66.07,  USD  ,usa
-1148,2023-10-27,43557.0,cents,germany
-1149,2023-01-22,42257.0,cents , FRANCE
-1150,11/09/2023,41272.0,cents ,france 
-1151,04/13/2023,3722.0,cents ,Germany
-1152,2023-12-01,4804.0,cents ,france 
-1153,04/18/2023,14749.0,cents ,france 
-1154,06/08/2023,286.17,USD, FRANCE
-1155,08/30/2023,17372.0,cents,Germany
-1156,02/16/2023,368.74,  USD  ,  USA  
-1157,2023-07-23,163.01,  USD  ,france 
-1158,2023-07-04,223.86,USD,USA
-1159,2023-10-14,415.37,USD,Germany
-1160,12/30/2023,357.6,  USD  ,usa
-1161,08/31/2023,85.12,  USD  , FRANCE
-1162,2023-05-30,259.96,USD,GERMANY
-1163,2023-05-29,189.0,USD,usa
-1164,2023-06-02,230.31,USD,USA
-1165,10/25/2023,388.69,  USD  ,germany
-1166,04/28/2023,80.39,USD,germany
-1167,2023-03-02,355.64,  USD  , FRANCE
-1168,2023-05-03,17347.0,cents,  USA  
-1169,01/09/2023,1525.0,cents,france 
-1170,2023-02-08,340.53,  USD  ,Germany
-1171,02/02/2023,112.16,  USD  , FRANCE
-1172,2023-10-09,358.84,  USD  ,USA
-1173,2023-09-21,9129.0,cents ,usa
-1174,09/12/2023,46097.0,cents ,usa
-1175,2023-06-18,49467.0,cents ,  USA  
-1176,2023-09-19,479.84,  USD  ,france 
-1177,2023-02-28,28242.0,cents,usa
-1178,2023-11-25,402.14,USD,  USA  
-1179,2023-07-02,495.45,  USD  ,usa
-1167,2023-03-02,355.64,  USD  , FRANCE
-1121,09/01/2023,309.41,  USD  , FRANCE
-1137,01/12/2023,186.74,USD,  USA  
-1128,07/29/2023,5666.0,cents ,GERMANY
-1118,2023-03-31,55.43,USD,germany
-1139,2023-06-09,44433.0,cents ,GERMANY
-1001,10/10/2023,466.12,USD,Germany
-1155,08/30/2023,17372.0,cents,Germany
-1133,07/24/2023,329.79,USD,france 
-1133,07/24/2023,329.79,USD,france 
-1070,2023-10-18,6891.0,cents , FRANCE
-1144,12/29/2023,264.49,USD,usa
-1068,01/28/2023,48441.0,cents ,germany
-1008,2023-03-15,410.27,  USD  ,Germany
-1163,2023-05-29,189.0,USD,usa
-1042,09/13/2023,201.88,USD,germany
-1018,2023-11-03,7268.0,cents ,GERMANY
-1111,10/12/2023,328.94,  USD  , FRANCE
-1042,09/13/2023,201.88,USD,germany
-1154,06/08/2023,286.17,USD, FRANCE
+order_id,order_date,amount,currency,country,source,customer_email,status,refund_of,updated_at
+10374,01/03/2023,2926,cents,united states,us_shop,user22876@outlook.com,Completed,,2023-01-03 22:50:00
+10778,2023-05-03,"€15,70",EUR, france,eu_shop,user81526@web.de, COMPLETED,,2023-05-03 14:59:00
+50152,2023-03-28,"€74,20",EUR, fr ,eu_shop,user54492@mail.de,refunded,11428,2023-03-28 14:00:00
+11516,01/02/2023,$14.33,usd,CANADA,us_shop,user25394@gmail.com,Completed,,2023-01-02 10:33:00
+11031,2023-10-17,USD 25.80,USD,  United States ,us_shop,user41746@outlook.com, COMPLETED,,2023-10-17 21:27:00
+10890,2023-12-14,100.27,USD,united states,us_shop,user43882@web.de,completed,,2023-12-14 06:24:00
+50038,04.07.2023,-£24.11,GBP,  United Kingdom ,eu_shop,user96623@outlook.com,completed,10346,2023-07-04 14:00:00
+10675,2023-09-10,USD 52.80,USD,United States ,us_shop,user16817@gmail.com,completed,,2023-09-10 19:43:00
+10856,04.08.2023,"€22,60",EUR,germany,eu_shop,user64158@outlook.com,Completed,,2023-08-04 06:56:00
+11186,2023-07-15,USD 45.41,USD,  US ,us_shop,user510@outlook.com,Completed,,2023-07-05 19:56:00
+10022,09/25/2023,79.71,USD,  United States Of America,us_shop,user28442@gmail.com,completed,,2023-09-25 16:00:00
+11111,05/16/2023,24.84,USD, United States Of America ,us_shop,user27233@mail.de,Completed,,2023-05-16 23:28:00
+11333,2023-06-12,"USD 2,925.00",USD, united states,us_shop,user52035@gmail.com,Completed,,2023-06-12 02:29:00
+10903,12.06.2023,"65,67 €",EUR,Germany,eu_shop,user37883@gmail.com,completed,,2023-06-12 11:04:00
+10181,17.11.2023,£34.98,GBP,  uk ,eu_shop,user73797@mail.de,Completed,,2023-11-17 02:08:00
+50159,08/29/2023,USD 65.74,USD,  Us ,us_shop,user85335@web.de,refunded,11513,2023-08-29 17:00:00
+10932,2023-12-03,3796,cents,  USA,us_shop,user62183@web.de,Completed,,2023-12-03 03:21:00
+11345,10/08/2023,USD 62.32,USD, united states of america ,us_shop,user13061@yahoo.com,completed,,2023-10-08 18:36:00
+10610,10.05.2023,"€1.159,70",EUR,  spain ,eu_shop,user27160@yahoo.com,Completed,,2023-05-10 07:09:00
+10083,17.09.2023,"44,80 EUR",EUR,DE ,eu_shop,user23683@outlook.com,completed,,2023-09-17 11:36:00
+11420,06/05/2023,USD 28.60,  Usd,Us,us_shop, user96025@gmail.com,  completed,,2023-06-05 15:03:00
+10284,2023-11-07,"€1.233,16",EUR,Fr,eu_shop,user32227@mail.de,completed,,2023-11-07 18:51:00
+50150,08/08/2023,$13.45,USD,gb,us_shop,user53179@mail.de,refunded,11403,2023-08-08 05:00:00
+10166,2023-10-16,£20.20,GBP,  UK,eu_shop,user64008@yahoo.com, COMPLETED,,2023-10-16 17:20:00
+11407,2023-06-09,$37.12,USD, U.S. ,us_shop,user66419@yahoo.com,completed,,2023-06-09 11:54:00
+10393,2023-03-18,19.67,USD, U.S.,us_shop,user44774@yahoo.com, COMPLETED,,2023-03-18 21:26:00
+11314,12.03.2023,"€68,44",EUR, de,eu_shop,user76718@web.de,completed,,2023-03-12 00:51:00
+11351,18.04.2023,"€39,28",EUR,  Spain,eu_shop,user48144@yahoo.com,completed,,2023-04-18 06:18:00
+11466,01.05.2023,"40,86 €",EUR,  FR ,eu_shop,user24812@yahoo.com,completed,,2023-05-01 06:31:00
+11076,26.08.2023,"43,78 €",EUR,  France,eu_shop,user45905@outlook.com,completed,,2023-08-26 06:19:00
+10335,22.06.2023,"29,76",EUR,  france ,eu_shop,user21117@yahoo.com,completed,,2023-06-22 16:03:00
+10379,06.12.2023,"2.673,82 €",EUR,Es,eu_shop,user28283@gmail.com, COMPLETED,,2023-12-06 20:29:00
+10539,08/06/2023,17.30,USD,  GREAT BRITAIN,us_shop,user73631@outlook.com, COMPLETED,,2023-08-02 02:42:00
+10973,2023-09-22,"17,85 EUR",EUR,  germany ,eu_shop,user56563@gmail.com,completed,,2023-09-22 09:47:00
+10471,05/01/2023,47.25,USD,  US ,us_shop,user34167@gmail.com,Completed,,2023-05-01 03:51:00
+11292,2023-10-30,USD 21.03,USD,  US,us_shop,user55788@gmail.com,Completed,,2023-10-30 03:36:00
+10147,2023-07-26,"46,08 EUR",EUR,  France,eu_shop,user16094@web.de,completed,,2023-07-26 02:34:00
+11194,13.12.2023,£32.35,GBP,U.K.,eu_shop,user38527@mail.de,completed,,2023-12-13 01:27:00
+11198,07/25/2023,$133.74,USD,,us_shop,user86853@yahoo.com, COMPLETED,,2023-07-25 19:52:00
+10091,12/13/2023,$74.57, USD ,  CANADA ,us_shop,user57839@gmail.com, COMPLETED,,2023-12-13 15:20:00
+10744,2023-02-04,USD 67.16,USD,  UNITED STATES ,us_shop,user7783@outlook.com,Completed,,2023-02-04 20:19:00
+10049,04/23/2023,38.18,USD,  united states of america ,us_shop,user9030@yahoo.com, COMPLETED,,2023-04-23 15:41:00
+10110,05.07.2023,"32,14",EUR, Deutschland ,eu_shop,user57092@web.de, COMPLETED,,2023-07-05 10:52:00
+11045,2023-10-29,$44.36,USD, united states,us_shop,user74816@mail.de, COMPLETED,,2023-10-29 22:16:00
+10892,2023-09-23,"€90,47",EUR,DE ,eu_shop,user55203@web.de,Completed,,2023-09-23 03:12:00
+10928,06.10.2023,42.01 GBP,GBP,  GB ,eu_shop,user85292@mail.de,Completed,,2023-10-06 03:09:00
+10238,03/07/2023,2733,Cents,  UNITED STATES OF AMERICA ,us_shop,user80984@outlook.com,completed,,2023-03-07 01:45:00
+10728,2023-10-07,USD 32.79,USD,  US,us_shop,user4256@web.de,Completed,,2023-10-07 07:04:00
+10043,08/03/2023,2571,cents,United States,us_shop,user93406@yahoo.com,Completed,,2023-08-03 08:54:00
+10473,2023-10-17,"42,03 €",EUR, España ,eu_shop,user95347@outlook.com,completed,,2023-10-17 04:23:00
+10230,2023-12-04,52.35,USD,United Kingdom ,us_shop,user82431@web.de,completed,,2023-12-04 21:14:00
+10228,15.08.2023,"43,06 EUR",EUR,es ,eu_shop,user122@mail.de,completed,,2023-08-15 23:41:00
+10195,2023-07-05,41.02,usd, UK,us_shop,user45931@web.de,completed,,2023-07-05 22:25:00
+11190,2023-08-29,USD 32.59,USD, u.s. ,us_shop,user43665@yahoo.com, COMPLETED,,2023-08-29 05:32:00
+10605,26.06.2023,"€15,14",EUR, Deutschland ,eu_shop,user26085@web.de,Completed,,2023-06-26 16:07:00
+50103,09/03/2023,-$61.40, USD , Canada ,us_shop,user99304@gmail.com,completed,10972,2023-09-03 05:00:00
+11231,25.04.2023,41.02 GBP,GBP, U.K. ,eu_shop,user54777@web.de,completed,,2023-04-25 11:05:00
+10569,05/05/2023,USD 64.71, USD ,Canada,us_shop,user40142@gmail.com,completed,,2023-05-05 09:20:00
+10151,2023-06-29,"USD 5,910.00",USD, US ,us_shop,user52497@outlook.com,completed,,2023-06-29 20:06:00
+10995,05.05.2023,"56,87",EUR,  ES,eu_shop,user36976@outlook.com,Completed,,2023-05-05 19:33:00
+11167,06.08.2023,"€19,29",EUR,  FRANCE,eu_shop,USER85769@OUTLOOK.COM,COMPLETED,,2023-08-06 07:44:00
+11349,05/12/2023,USD 121.83,USD,UNITED STATES,us_shop,user87761@mail.de,completed,,2023-05-12 12:56:00
+10034,2023-02-14,USD 31.90,USD,  U.S.,us_shop,user48752@yahoo.com, COMPLETED,,2023-02-14 09:16:00
+10603,06/28/2023,2519,Cents, Usa,us_shop,user69238@yahoo.com, COMPLETED,,2023-06-28 20:06:00
+10103,09/24/2023,2015,Cents, Usa,us_shop,user32076@outlook.com, COMPLETED,,2023-09-24 22:55:00
+10020,2023-10-03,USD 64.13,USD,  Ca ,us_shop,user97223@mail.de,Completed,,2023-10-03 05:14:00
+11214,2023-10-20,USD 77.21,USD, U.K. ,us_shop,user8223@gmail.com, COMPLETED,,2023-10-20 16:28:00
+11298,2023-10-22,$35.11,usd, u.s.,us_shop,user32736@mail.de,completed,,2023-10-22 15:26:00
+10183,02/14/2023,USD 106.08,USD, US,us_shop,user73788@gmail.com,completed,,2023-02-14 23:55:00
+50157,21.05.2023,"-44,41",EUR,deutschland,eu_shop,user68109@gmail.com,completed,11494,2023-05-21 20:00:00
+11048,2023-01-13,34.17,USD, US ,us_shop,user29247@web.de,Completed,,2023-01-13 20:59:00
+10748,2023-02-28,59.30,USD,  CANADA ,us_shop,user97180@outlook.com,Completed,,2023-02-28 09:53:00
+50114,20.03.2023,"€36,12",EUR, Deutschland ,eu_shop,user37773@web.de,refunded,11085,2023-03-20 11:00:00
+10403,04/27/2023,$24.96,USD,U.S.,us_shop,user47615@gmail.com,completed,,2023-04-27 20:58:00
+11403,2023-07-17,13.45,USD,  Great Britain,us_shop,user53179@mail.de,completed,,2023-07-17 00:55:00
+10684,19.11.2023,"36,72 €",EUR, españa,eu_shop,user69737@mail.de, COMPLETED,,2023-11-19 00:18:00
+10756,2023-03-11,£52.85,GBP, uk ,eu_shop,user82453@web.de,completed,,2023-03-11 05:55:00
+10846,2023-07-21,"19,31 EUR",EUR,  Deutschland,eu_shop,user52317@web.de, COMPLETED,,2023-07-21 18:48:00
+10987,10/08/2023,USD 78.52,USD, UNITED STATES OF AMERICA ,us_shop,user32185@outlook.com,completed,,2023-10-08 17:25:00
+50155,03/14/2023,USD 47.65,USD, U.S. ,us_shop,user84295@yahoo.com,refunded,11455,2023-03-14 19:00:00
+11234,06/19/2023,2556.00,USD,  CA,us_shop,user55746@web.de,completed,,2023-06-19 09:04:00
+10785,2023-08-29,"26,25",EUR,Fr,eu_shop,user1555@yahoo.com,completed,,2023-08-29 11:18:00
+11353,2023-08-11,USD 45.90,usd,u.k. ,us_shop,user19956@web.de,completed,,2023-08-11 07:38:00
+11359,2023-11-12,USD 24.93,USD, united states,us_shop,user45529@yahoo.com, COMPLETED,,2023-11-12 19:29:00
+11197,02/23/2023,2581,Cents, Canada,us_shop,user25466@web.de,completed,,2023-02-23 08:45:00
+10359,07/11/2023,5762,Cents, United States Of America ,us_shop,user20@yahoo.com,completed,,2023-07-11 19:51:00
+10999,2023-04-29,USD 74.39,USD, USA,us_shop,user49607@gmail.com, COMPLETED,,2023-04-29 22:55:00
+10033,2023-02-11,12.99,USD,  US,us_shop,user73564@gmail.com,completed,,2023-02-11 20:20:00
+50004,27.04.2023,"€85,93",EUR,  germany,eu_shop,user41562@outlook.com,refunded,10063,2023-04-27 21:00:00
+11067,2023-12-04,USD 37.28,USD,  U.S.,us_shop,user29528@yahoo.com,Completed,,2023-12-04 14:30:00
+11237,2023-01-27,"€36,21",EUR,  GERMANY ,eu_shop,user38098@yahoo.com,completed,,2023-01-27 06:07:00
+10160,2023-11-22,3191,cents,USA,us_shop,user92664@mail.de,completed,,2023-11-22 21:30:00
+10215,2023-10-19,"70,93 €",EUR,  De ,eu_shop,user35032@yahoo.com,completed,,2023-10-19 09:18:00
+10483,02/27/2023,USD 83.82,USD,CA ,us_shop,user52098@web.de,completed,,2023-02-27 08:01:00
+10708,2023-08-13,$36.61,USD, UNITED STATES OF AMERICA,us_shop,user65547@outlook.com, COMPLETED,,2023-08-13 16:21:00
+10981,14.08.2023,"92,67 €",EUR,Germany ,eu_shop,user28950@gmail.com,Completed,,2023-08-14 03:37:00
+10801,2023-05-11,1082,Cents,  TEST,us_shop,qa36@example.com,completed,,2023-05-11 14:25:00
+10649,12/31/2023,5585,cents,  UNITED STATES,us_shop,user46673@web.de,completed,,2023-12-31 17:37:00
+50032,2023-10-04,"-2.742,77",EUR,  It,eu_shop,user85045@mail.de,completed,10302,2023-10-04 03:00:00
+11257,2023-03-31,N/A,GBP, gb ,eu_shop,user4905@outlook.com, COMPLETED,,2023-03-31 05:07:00
+10583,28.01.2023,"31,92 EUR",EUR, GERMANY ,eu_shop,user65322@outlook.com,completed,,2023-01-28 14:57:00
+11035,2023-02-14,43.54,USD,u.s.,us_shop,user99065@web.de, COMPLETED,,2023-02-14 14:18:00
+50115,12/05/2023,27.47,USD,  usa ,us_shop,user75137@mail.de,refunded,11091,2023-12-05 19:00:00
+10934,02.09.2023,"17,78 €",EUR,  DEUTSCHLAND ,eu_shop,user43794@mail.de, COMPLETED,,2023-09-02 01:37:00
+10129,2023-04-28,2068,Cents,UNITED STATES ,us_shop,user52545@web.de, COMPLETED,,2023-04-28 18:09:00
+10532,2023-08-14,28.57,USD, united states,us_shop,user6148@web.de, COMPLETED,,2023-08-14 23:06:00
+11244,01/13/2023,USD 29.55,USD,United States ,us_shop,user93545@gmail.com,completed,,2023-01-13 07:32:00
+10394,06/26/2023,"USD 11,896.00",USD,Us ,us_shop,user42868@yahoo.com,completed,,2023-06-26 10:52:00
+10827,2023-04-18,USD 29.98,usd,us ,us_shop,user91277@mail.de,Completed,,2023-04-18 04:00:00
+11419,08/25/2023,34.11,USD, Great Britain ,us_shop,user2977@gmail.com,completed,,2023-08-25 11:49:00
+10581,2023-07-31,58.85,USD,USA,us_shop,user82935@yahoo.com,completed,,2023-07-31 07:40:00
+10416,08/14/2023,78.79,  USD,  TEST,us_shop,USER62005@OUTLOOK.COM,  completed,,2023-08-14 15:33:00
+10259,02/07/2023,$28.75,USD,  USA ,us_shop,user98352@mail.de,completed,,2023-02-07 02:12:00
+11192,08/08/2023,USD 24.56,USD,  united states of america,us_shop,user50177@outlook.com,Completed,,2023-08-08 07:00:00
+11217,12/30/2023,$31.44,USD,u.s.,us_shop,user15697@yahoo.com,Completed,,2023-12-30 16:40:00
+10997,11/21/2023,33.72,USD,  USA,us_shop,user38657@outlook.com, COMPLETED,,2023-11-21 22:37:00
+10993,2023-06-25,"€41,97",EUR,  FR,eu_shop,user82204@web.de,completed,,2023-06-25 00:47:00
+11558,14.10.2023,"68,42",EUR,DE,eu_shop,user64787@outlook.com,Completed,,2023-10-14 22:29:00
+10243,2023-12-15,29.15, USD, U.S.,us_shop,USER50789@MAIL.DE,completed,,2023-12-15 03:05:00
+10263,24.03.2023,"1.875,39 EUR",EUR,  GERMANY ,eu_shop,user12743@mail.de,completed,,2023-03-24 20:44:00
+10630,26.12.2023,"20,11 EUR",EUR,  Germany,eu_shop,user25213@mail.de,completed,,2023-12-26 04:56:00
+10155,2023-10-27,44.92 GBP,GBP,Uk ,eu_shop,user14573@gmail.com,Completed,,2023-10-27 10:13:00
+11044,2023-10-21,142.58,USD,United States Of America ,us_shop,user32609@gmail.com, COMPLETED,,2023-10-21 01:10:00
+10057,12/10/2023,96.95,USD,  United States Of America,us_shop,user34667@mail.de,Completed,,2023-12-10 07:52:00
+11104,2023-02-12,"41,55",EUR,  FR ,eu_shop,user15797@yahoo.com, COMPLETED,,2023-02-12 04:13:00
+11272,20.01.2023,"45,36",EUR, Es,eu_shop,user38550@mail.de,completed,,2023-01-20 21:17:00
+10754,12/02/2023,$47.16,USD,Canada,us_shop,user24696@outlook.com, COMPLETED,,2023-12-02 16:30:00
+11336,2023-09-28,USD 46.12,usd,usa,us_shop,user25083@mail.de,Completed,,2023-09-28 21:18:00
+10760,2023-12-27,"24,44 EUR",EUR,Deutschland,eu_shop,user99013@mail.de,completed,,2023-12-27 13:45:00
+11059,12/16/2023,65.55,USD,Usa ,us_shop,user97137@yahoo.com, COMPLETED,,2023-12-13 14:38:00
+11034,2023-09-20,$45.14,USD,  CA ,us_shop,user91181@yahoo.com, COMPLETED,,2023-09-20 04:05:00
+10327,29.12.2023,"48,60 EUR",EUR,  de ,eu_shop,user14470@web.de,completed,,2023-12-29 02:34:00
+10863,2023-01-13,"23,37 EUR",EUR,ITALY ,eu_shop,user82338@mail.de, COMPLETED,,2023-01-07 01:33:00
+11405,20.12.2023,N/A,EUR,DEUTSCHLAND,eu_shop,user57442@web.de,Completed,,2023-12-20 23:25:00
+10884,13.03.2023,31.58 GBP,GBP,united kingdom,eu_shop,user42206@outlook.com,completed,,2023-03-13 00:18:00
+11337,2023-09-06,$52.02,USD,  us ,us_shop,user49726@outlook.com, COMPLETED,,2023-09-06 01:40:00
+10119,2023-10-13,31.28,USD, Canada,us_shop,user28330@outlook.com,completed,,2023-10-13 01:49:00
+11241,05/10/2023,61.78,USD, U.S. ,us_shop,user22198@outlook.com,completed,,2023-05-10 06:06:00
+10063,2023-04-15,"85,93 EUR",EUR, Germany ,eu_shop,user41562@outlook.com,completed,,2023-04-15 04:37:00
+10821,18.03.2023,"21,76 €",EUR, ITALY,eu_shop,user75941@gmail.com, COMPLETED,,2023-03-18 14:57:00
+10275,2023-10-26,$80.45,USD,  united states of america ,us_shop,user17687@outlook.com, COMPLETED,,2023-10-26 22:59:00
+11520,15.06.2023,"32,80",EUR, France ,eu_shop,user94937@gmail.com,completed,,2023-06-15 05:11:00
+10012,2023-09-22,"19,81 €",EUR,  Deutschland,eu_shop,user76791@outlook.com, COMPLETED,,2023-09-22 23:00:00
+10416,08/14/2023,78.79,USD, Test ,us_shop,user62005@outlook.com,completed,,2023-08-14 15:33:00
+10338,26.05.2023,"56,58 EUR",EUR,  spain,eu_shop,user3627@gmail.com,Completed,,2023-05-26 22:55:00
+10758,19.11.2023,"96,57",EUR,  France,eu_shop,user72475@outlook.com, COMPLETED,,2023-11-19 20:33:00
+10872,05.02.2023,£31.76,GBP,U.K. ,eu_shop,user30280@yahoo.com,Completed,,2023-02-05 21:50:00
+11137,2023-12-22,USD 25.72,USD,USA,us_shop,user18132@web.de,completed,,2023-12-22 17:34:00
+10517,2023-04-16,"22,56 EUR",EUR,DE ,eu_shop,user64140@yahoo.com,completed,,2023-04-16 08:00:00
+10768,18.09.2023,"25,98 €",EUR, GERMANY ,eu_shop,user59746@yahoo.com,Completed,,2023-09-18 13:01:00
+10678,20.07.2023,40.29 GBP,GBP,  U.K. ,eu_shop,user18751@yahoo.com,completed,,2023-07-20 07:22:00
+10098,10.08.2023,"2,481.27 GBP",GBP,  GB ,eu_shop,user69020@outlook.com, COMPLETED,,2023-08-10 05:23:00
+10571,2023-01-04,USD 22.64,USD, US ,us_shop,user86978@gmail.com, COMPLETED,,2023-01-04 13:40:00
+50084,04/09/2023,-18.48,USD,  United States,us_shop,user37073@mail.de,completed,10789,2023-04-09 05:00:00
+10836,04/21/2023,12626,cents,  U.S. ,us_shop,user50756@mail.de,completed,,2023-04-21 05:58:00
+10127,2023-01-14,£13.71,GBP,uk ,eu_shop,user70312@outlook.com,completed,,2023-01-14 17:39:00
+10329,2023-04-09,10.98,USD,TEST ,us_shop,user78481@yahoo.com,completed,,2023-04-09 16:24:00
+10752,2023-07-06,USD 153.58,USD, Great Britain,us_shop,user78778@yahoo.com,completed,,2023-07-06 02:43:00
+11280,02.12.2023,"45,22 EUR",EUR, Italy ,eu_shop,user35810@mail.de,Completed,,2023-12-02 15:37:00
+11478,2023-07-20,47.64,USD, United States ,us_shop,user85093@yahoo.com,Completed,,2023-07-20 01:12:00
+10792,04/10/2023,2190,cents,u.s. ,us_shop,user11066@web.de,completed,,2023-04-10 15:08:00
+10343,2023-04-17,"103,09 EUR",EUR, DEUTSCHLAND,eu_shop,user1285@yahoo.com,Completed,,2023-04-17 02:57:00
+10109,26.03.2023,"€62,98",EUR,ES,eu_shop,user79008@web.de, COMPLETED,,2023-03-26 01:25:00
+10133,2023-06-30,"48,62 EUR",EUR, ES ,eu_shop,user90667@mail.de, COMPLETED,,2023-06-30 00:50:00
+10268,2023-12-26,5050,cents, us ,us_shop,user30049@gmail.com,Completed,,2023-12-26 05:09:00
+11092,26.04.2023,"9,37",EUR, Deutschland ,eu_shop,user18399@outlook.com,Completed,,2023-04-26 00:09:00
+10898,2023-04-23,USD 54.56,USD,  Canada ,us_shop,user69498@web.de,completed,,2023-04-23 14:46:00
+10306,2023-04-25,"€110,84",EUR, DE ,eu_shop,user72954@yahoo.com,completed,,2023-04-25 09:53:00
+10273,2023-06-19,"$5,035.00",usd,USA ,us_shop,user373@mail.de,completed,,2023-06-19 01:31:00
+11513,08/16/2023,65.74,USD, United States,us_shop,user85335@web.de, COMPLETED,,2023-08-16 17:51:00
+10044,07/29/2023,42.28,USD,Test,us_shop,user23994@outlook.com,Completed,,2023-07-29 00:24:00
+10996,05.05.2023,"41,31",EUR,  DEUTSCHLAND ,eu_shop,user72678@yahoo.com,completed,,2023-05-05 23:32:00
+10428,2023-01-29,"€22,40",EUR,Deutschland,eu_shop,user60734@yahoo.com,completed,,2023-01-29 03:11:00
+10645,18.02.2023,"72,03",EUR, fr ,eu_shop,user75041@gmail.com,completed,,2023-02-18 18:16:00
+11073,01/21/2023,USD 23.73,USD, US,us_shop,user60249@gmail.com,completed,,2023-01-21 04:34:00
+10240,04/09/2023,USD 43.69,USD,  UNITED STATES OF AMERICA ,us_shop,user26624@outlook.com, COMPLETED,,2023-04-09 02:05:00
+10868,2023-02-01,$70.28,USD, United States,us_shop,user93234@yahoo.com,completed,,2023-02-01 06:00:00
+11012,25.08.2023,"€15,59",EUR, FR ,eu_shop,qa73@example.com,completed,,2023-08-25 18:41:00
+10804,04.01.2023,"73,60 €",EUR,  España,eu_shop,user45883@mail.de,completed,,2023-01-04 01:04:00
+11492,03/14/2023,USD 46.13,USD,  usa,us_shop,user47756@mail.de, COMPLETED,,2023-03-14 01:59:00
+10544,2023-07-14,37.60,USD,  USA,us_shop,user82748@mail.de,completed,,2023-07-14 00:06:00
+11396,2023-02-11,, USD ,  united states ,us_shop,user77944@yahoo.com,completed,,2023-02-11 14:24:00
+11072,2023-11-12,$50.42,USD, U.K. ,us_shop,user50131@outlook.com,Completed,,2023-11-12 12:29:00
+10799,11/20/2023,128.94,USD,  Canada ,us_shop,user64896@mail.de,Completed,,2023-11-20 21:48:00
+11264,03.09.2023,"43,64 €",EUR, DE ,eu_shop,user29726@mail.de,completed,,2023-09-03 18:17:00
+10528,2023-03-20,"45,48",EUR,  DEUTSCHLAND,eu_shop,user35756@yahoo.com, COMPLETED,,2023-03-20 03:35:00
+11040,11/12/2023,$64.62,USD, U.S.,us_shop,user77505@web.de,completed,,2023-11-12 00:18:00
+10794,2023-04-23,USD 56.28,USD, US,us_shop,user3175@outlook.com,completed,,2023-04-23 02:49:00
+11000,2023-04-22,"113,64 €",EUR,  es ,eu_shop,user14016@yahoo.com,completed,,2023-04-22 16:22:00
+10788,2023-08-17,18.55,usd,,us_shop,user80718@yahoo.com,completed,,2023-08-17 19:33:00
+50130,2023-01-26,-29.55,USD, U.S. ,us_shop,user93545@gmail.com,completed,11244,2023-01-26 19:00:00
+11365,12.10.2023,"54,22 EUR",EUR,France ,eu_shop,user51483@mail.de,Completed,,2023-10-12 09:46:00
+10102,2023-12-07,29.76,USD,Canada ,us_shop,user48116@gmail.com,completed,,2023-12-07 05:44:00
+10953,2023-07-18,"€38,70",EUR, DE,eu_shop,user92398@yahoo.com, COMPLETED,,2023-07-18 02:17:00
+10737,14.02.2023,"33,46 EUR",EUR, Italy,eu_shop,user13353@web.de, COMPLETED,,2023-02-14 16:02:00
+11050,11/27/2023,$27.06,USD,  UNITED STATES OF AMERICA ,us_shop,user18887@gmail.com, COMPLETED,,2023-11-27 20:07:00
+10598,25.05.2023,"€29,71",EUR,ES ,eu_shop,user48132@outlook.com,completed,,2023-05-25 03:32:00
+10224,07/05/2023,USD 28.04,USD,  us,us_shop,user5427@mail.de,completed,,2023-07-05 17:18:00
+10661,2023-10-21,"€79,08",EUR, ITALY ,eu_shop,user60800@outlook.com,Completed,,2023-10-21 12:02:00
+11354,27.02.2023,£8.04,GBP,  U.K. ,eu_shop,user88377@gmail.com,completed,,2023-02-27 02:29:00
+10642,03/15/2023,$25.05,USD,  US,us_shop,user90322@gmail.com,Completed,,2023-03-15 16:43:00
+11523,04/19/2023,3681,Cents,United States ,us_shop,user76706@gmail.com, COMPLETED,,2023-04-19 12:59:00
+50146,04/22/2023,-$69.60,USD, united states of america ,us_shop,user92540@yahoo.com,completed,11383,2023-04-22 17:00:00
+11110,2023-11-27,"56,42",EUR, ES ,eu_shop,user11846@web.de,Completed,,2023-11-27 12:02:00
+10089,2023-12-09,"40,33",EUR,  ES,eu_shop,user48616@yahoo.com,Completed,,2023-12-09 23:14:00
+10138,10/26/2023,45.56,USD,  U.S. ,us_shop,user28842@mail.de,completed,,2023-10-26 18:48:00
+10666,2023-02-07,"133,64 EUR",EUR, Spain,eu_shop,user75454@outlook.com,Completed,,2023-02-07 00:22:00
+10559,11/05/2023,USD 47.86, USD ,  United States,us_shop,user71175@yahoo.com,completed,,2023-11-05 18:25:00
+10187,12/18/2023,USD 116.10,USD,  usa ,us_shop,user77111@outlook.com, COMPLETED,,2023-12-18 17:44:00
+50089,29.01.2023,"-38,38 €",EUR,  deutschland,eu_shop,user21464@web.de,completed,10833,2023-01-29 21:00:00
+10081,30.01.2023,"56,31",EUR,germany,eu_shop,user33388@web.de,Completed,,2023-01-30 00:50:00
+11499,10/26/2023,42.29,USD,  Ca ,us_shop,user59512@mail.de,completed,,2023-10-26 14:12:00
+11308,2023-04-14,47.38,USD,united states of america,us_shop,user6789@yahoo.com,Completed,,2023-04-14 15:06:00
+11153,2023-03-15,"26,42 €",EUR,  Italia,eu_shop,user54742@web.de,completed,,2023-03-15 12:52:00
+10028,2023-11-27,2561,Cents,u.s.,us_shop,user55543@outlook.com,Completed,,2023-11-27 00:22:00
+10641,10/11/2023,88.97,USD, UNITED STATES OF AMERICA,us_shop,user76051@mail.de,completed,,2023-10-11 05:02:00
+10725,2023-01-03,54.13,usd, usa,us_shop,user90475@gmail.com, COMPLETED,,2023-01-03 00:04:00
+10129,2023-04-28,2470,cents,usa ,us_shop,user52545@web.de, COMPLETED,,2023-04-24 05:09:00
+11392,11/30/2023,28.04,usd,US,us_shop,user46467@gmail.com,completed,,2023-11-30 00:23:00
+11454,07/16/2023,USD 56.76,USD, CANADA,us_shop,user99815@gmail.com,Completed,,2023-07-16 11:36:00
+10007,2023-02-03,,GBP,United Kingdom,eu_shop,user42446@web.de,completed,,2023-02-03 08:57:00
+10241,27.09.2023,"€10,20",EUR,  France ,eu_shop,user3354@gmail.com,completed,,2023-09-27 18:36:00
+10595,17.03.2023,"11,41",EUR,  de ,eu_shop,user98463@web.de,completed,,2023-03-17 04:06:00
+10900,2023-07-04,"48,08 €",EUR, España ,eu_shop,user10002@web.de,completed,,2023-07-04 22:37:00
+10555,12/24/2023,$39.55,usd,U.S.,us_shop,user12934@web.de, COMPLETED,,2023-12-24 12:37:00
+11070,04.10.2023,"57,72 €",EUR,FRANCE ,eu_shop,user94600@mail.de,Completed,,2023-10-04 15:39:00
+11495,13.09.2023,"€13,33",EUR,IT,eu_shop,user65926@mail.de,Completed,,2023-09-13 13:26:00
+10060,01/24/2023,4086,Cents,U.S.,us_shop,user18938@gmail.com,completed,,2023-01-24 06:45:00
+11519,2023-07-05,$20.05, USD, united states ,us_shop, user40685@web.de, COMPLETED ,,2023-07-05 15:53:00
+11281,2023-04-13,$19.59,USD,United States Of America ,us_shop,user98772@gmail.com,completed,,2023-04-13 11:10:00
+10017,01.11.2023,52.37 GBP,GBP,  test ,eu_shop,user96144@mail.de,completed,,2023-11-01 07:10:00
+11064,2023-09-21,£38.39,GBP,united kingdom ,eu_shop,user11688@outlook.com,completed,,2023-09-21 03:41:00
+10590,2023-11-21,USD 20.99,USD, USA ,us_shop,user75107@outlook.com, COMPLETED,,2023-11-21 22:58:00
+50002,2023-12-31,"-42,94",EUR,España ,eu_shop,user836@gmail.com,completed,10024,2023-12-31 01:00:00
+11262,2023-08-10,"€20,40",EUR, Germany ,eu_shop,user56976@yahoo.com,Completed,,2023-08-10 22:03:00
+11530,09/22/2023,USD 19.98,USD,  UNITED STATES,us_shop,user26466@web.de,completed,,2023-09-22 08:56:00
+10418,12/20/2023,$107.43,USD, U.S. ,us_shop,qa935@example.com,completed,,2023-12-20 17:00:00
+10640,09/19/2023,24.29,USD,United States Of America ,us_shop,user14528@web.de,Completed,,2023-09-19 05:01:00
+10323,2023-04-23,$45.88,USD,usa,us_shop,user54229@outlook.com,completed,,2023-04-23 01:09:00
+10289,20.07.2023,"17,64 €",EUR,France ,eu_shop,user82220@yahoo.com, COMPLETED,,2023-07-20 09:49:00
+11475,04/04/2023,21.43,USD,,us_shop,user57848@yahoo.com, COMPLETED,,2023-04-04 10:44:00
+10866,2023-05-21,"61,76",EUR, Deutschland ,eu_shop,user29151@yahoo.com,completed,,2023-05-21 02:36:00
+10395,04.06.2023,32.77 GBP,GBP, United Kingdom ,eu_shop,user14449@yahoo.com,completed,,2023-06-04 00:58:00
+10245,21.06.2023,"41,67 €",EUR,  Germany ,eu_shop,user54778@web.de,completed,,2023-06-20 03:26:00
+10375,28.02.2023,"22,27 €",EUR,  germany ,eu_shop,user45735@outlook.com,Completed,,2023-02-28 09:26:00
+10780,10/30/2023,2885,cents,Ca ,us_shop,user98795@mail.de,Completed,,2023-10-30 19:01:00
+10739,2023-11-27,30.29,USD, United States ,us_shop,user23908@web.de,Completed,,2023-11-27 22:22:00
+10398,2023-06-13,"$6,292.00",  usd ,  ca,us_shop, user97550@web.de,  COMPLETED,,2023-06-13 20:58:00
+50112,03/21/2023,17.14,USD, united states,us_shop,user57815@gmail.com,refunded,11079,2023-03-21 09:00:00
+50058,26.06.2023,33.92 GBP,GBP, Great Britain,eu_shop,user65709@mail.de,refunded,10525,2023-06-26 04:00:00
+11147,2023-04-26,"38,45 €",EUR, Deutschland ,eu_shop,user58566@outlook.com,completed,,2023-04-26 05:35:00
+10527,26.02.2023,"51,62",EUR, Deutschland,eu_shop,user26611@yahoo.com,completed,,2023-02-26 14:24:00
+10962,2023-02-21,81.44,USD, USA,us_shop,user8813@mail.de,completed,,2023-02-21 12:56:00
+10348,07.07.2023,"20,63",EUR,ITALY ,eu_shop,user36941@gmail.com,completed,,2023-07-07 15:28:00
+11282,2023-11-17,USD 80.13,USD,u.s.,us_shop,user96586@gmail.com,Completed,,2023-11-17 16:45:00
+10946,11.10.2023,"60,67 EUR",EUR, it ,eu_shop,user49487@outlook.com,completed,,2023-10-11 21:31:00
+11089,2023-02-14,1563,cents, Test,us_shop,qa680@example.com,Completed,,2023-02-14 05:43:00
+11483,2023-10-21,$244.94,USD,US ,us_shop,user66370@gmail.com,Completed,,2023-10-21 21:25:00
+11341,2023-10-30,USD 69.91,USD,  U.S. ,us_shop,user9160@web.de,completed,,2023-10-30 21:32:00
+10274,2023-11-05,4766,Cents,UNITED STATES,us_shop,user81940@gmail.com,Completed,,2023-11-05 11:50:00
+10790,28.09.2023,"21,95 EUR",EUR,  GERMANY ,eu_shop,user62160@gmail.com,completed,,2023-09-28 16:45:00
+11531,09/15/2023,79.01,usd, u.k. ,us_shop,user92875@gmail.com, COMPLETED,,2023-09-15 03:41:00
+11367,02/02/2023,USD 117.92,USD, Usa ,us_shop,user51168@web.de, COMPLETED,,2023-02-02 19:55:00
+11225,2023-09-25,"1.144,36 €",EUR,DE,eu_shop,user26469@outlook.com,completed,,2023-09-25 21:22:00
+10206,2023-07-05,"33,70",EUR, deutschland,eu_shop,user72744@yahoo.com,completed,,2023-07-05 21:38:00
+10465,2023-08-21,$35.11,USD, Us,us_shop,user11509@web.de,completed,,2023-08-21 21:18:00
+10776,01/22/2023,82.97,USD,  ca,us_shop,user60795@yahoo.com,Completed,,2023-01-22 01:44:00
+11342,2023-04-03,USD 84.98,USD, united states of america,us_shop,user82460@web.de,completed,,2023-04-03 21:43:00
+50090,2023-03-25,27.57,USD,  US,us_shop,user4565@yahoo.com,refunded,10848,2023-03-25 18:00:00
+10008,2023-09-15,"€100,30",EUR,de,eu_shop,user80722@web.de,completed,,2023-09-15 07:20:00
+11007,08/10/2023,46.70,USD,Usa ,us_shop,user20198@outlook.com,Completed,,2023-08-10 07:15:00
+10425,03/17/2023,USD 31.18,USD,  u.s.,us_shop,user57229@outlook.com, COMPLETED,,2023-03-17 03:46:00
+10040,02/24/2023,USD 38.52,USD,united states,us_shop,user57216@yahoo.com,completed,,2023-02-24 16:40:00
+11030,2023-04-26,"109,31 EUR",EUR,deutschland,eu_shop,user27822@web.de,completed,,2023-04-26 08:20:00
+11555,05/04/2023,USD 53.44, USD ,  Usa,us_shop,user36940@gmail.com,completed,,2023-05-04 16:07:00
+10192,2023-01-11,"54,16",EUR, Germany,eu_shop,user18828@outlook.com,completed,,2023-01-11 12:17:00
+50104,2023-01-23,-USD 50.49,usd,united kingdom ,us_shop,user58625@web.de,completed,10992,2023-01-23 06:00:00
+11162,06/08/2023,USD 33.08,USD, UNITED STATES,us_shop,user80532@outlook.com, COMPLETED,,2023-06-08 12:34:00
+10294,2023-02-27,USD 29.21,USD,  Canada,us_shop,user83507@yahoo.com,completed,,2023-02-27 10:02:00
+50017,03/12/2023,11.78,USD,  United States ,us_shop,user29000@outlook.com,refunded,10178,2023-03-12 08:00:00
+50064,09/04/2023,-49.65,USD,Us,us_shop,user14081@yahoo.com,completed,10580,2023-09-04 15:00:00
+11378,04/24/2023,2648,Cents,  United States,us_shop,user20512@yahoo.com,Completed,,2023-04-24 22:00:00
+50009,10/30/2023,USD 43.93,USD, Canada ,us_shop,user36677@mail.de,refunded,10086,2023-10-30 06:00:00
+10753,19.07.2023,"82,68 €",EUR,ES,eu_shop,user47825@web.de,completed,,2023-07-19 10:13:00
+10461,2023-09-15,"69,04 €",EUR,Deutschland,eu_shop,user43468@gmail.com,completed,,2023-09-15 10:41:00
+10931,02/27/2023,USD 34.17,USD,CANADA,us_shop,user55790@gmail.com,Completed,,2023-02-27 16:23:00
+10513,2023-05-23,"25,70 EUR",EUR,fr,eu_shop,user24897@yahoo.com, COMPLETED,,2023-05-23 15:37:00
+11063,2023-06-10,"87,65 €",EUR,DE,eu_shop,user32688@yahoo.com,Completed,,2023-06-10 21:56:00
+10317,12.03.2023,"2.929,70 EUR",EUR,France,eu_shop,user11278@mail.de,completed,,2023-03-03 15:13:00
+11362,2023-02-04,"€78,21",EUR,  Fr,eu_shop,user97104@web.de,completed,,2023-02-04 09:15:00
+10356,2023-01-19,USD 66.08,USD,  Us ,us_shop,user41159@web.de,completed,,2023-01-19 06:04:00
+10820,05/23/2023,8.95,USD,  Canada,us_shop,user59998@gmail.com,completed,,2023-05-23 12:33:00
+11413,09/28/2023,USD 15.44,  Usd,  united states of america,us_shop, user70873@yahoo.com, completed ,,2023-09-28 03:28:00
+50106,12/14/2023,-$33.72,USD,  UNITED STATES OF AMERICA ,us_shop,user38657@outlook.com,completed,10997,2023-12-14 04:00:00
+10973,2023-09-22,"17,85 EUR",EUR,  germany ,eu_shop,user56563@gmail.com,completed,,2023-09-22 09:47:00
+11113,2023-04-24,5382,Cents,  US,us_shop,user36051@mail.de,completed,,2023-04-24 00:55:00
+10752,2023-07-06,USD 153.58, Usd ,  Great Britain ,us_shop, user78778@yahoo.com, Completed,,2023-07-06 02:43:00
+10926,2023-12-26,"48,33 €",EUR,deutschland,eu_shop,user84059@gmail.com,completed,,2023-12-26 09:57:00
+11311,06/14/2023,11436,Cents,  Canada,us_shop,user31741@outlook.com,completed,,2023-06-14 05:54:00
+10162,2023-05-04,"15,81",EUR,  Fr ,eu_shop,user99682@yahoo.com, COMPLETED,,2023-05-04 21:42:00
+10392,03/08/2023,37.31,USD, United States ,us_shop,user67245@outlook.com,Completed,,2023-03-08 07:01:00
+11101,2023-05-10,"€33,05",EUR, ES ,eu_shop,user36050@web.de,completed,,2023-05-10 15:04:00
+11243,2023-04-25,15.18,USD,  usa,us_shop,user96917@web.de,Completed,,2023-04-25 04:23:00
+10889,2023-02-16,"€23,74",EUR,  deutschland ,eu_shop,user98888@web.de, COMPLETED,,2023-02-09 21:51:00
+10002,18.11.2023,"€90,42",EUR, fr,eu_shop,user32670@mail.de, COMPLETED,,2023-11-18 12:42:00
+10880,25.08.2023,"1.413,90 €",EUR,De ,eu_shop,user81298@outlook.com,completed,,2023-08-25 15:18:00
+10377,2023-10-14,$141.42,USD, Us,us_shop,user90784@mail.de,completed,,2023-10-14 12:18:00
+10301,2023-10-23,"36,62",EUR,test,eu_shop,user89068@yahoo.com, COMPLETED,,2023-10-23 04:14:00
+10935,01/02/2023,USD 128.08,USD, Usa,us_shop,user59647@outlook.com,completed,,2023-01-02 12:28:00
+10597,07.01.2023,£27.60,GBP,UNITED KINGDOM,eu_shop,user56395@outlook.com, COMPLETED,,2023-01-07 10:01:00
+10539,2023-08-06,$15.63,USD,U.K.,us_shop,user73631@outlook.com, COMPLETED,,2023-08-06 12:42:00
+11252,02/11/2023,USD 22.89,USD,U.S.,us_shop,user95186@outlook.com,Completed,,2023-02-11 16:34:00
+10795,07/04/2023,82.66,usd,u.k.,us_shop,user82854@yahoo.com, COMPLETED,,2023-07-04 22:25:00
+10295,10/14/2023,73.55,USD, CA ,us_shop,user10022@outlook.com,Completed,,2023-10-14 12:23:00
+11462,2023-03-22,"€1.925,19",EUR, Germany ,eu_shop,user12048@outlook.com,completed,,2023-03-22 07:38:00
+10464,2023-02-22,$43.57,USD,  US ,us_shop,user25068@web.de,completed,,2023-02-22 12:10:00
+11271,2023-12-31,"32,55",EUR, germany,eu_shop,user33080@outlook.com,completed,,2023-12-31 20:34:00
+50067,21.01.2023,-27.60 GBP,GBP,  United Kingdom,eu_shop,user56395@outlook.com,completed,10597,2023-01-21 22:00:00
+50040,2023-11-13,18.97,USD,united states of america ,us_shop,user21987@yahoo.com,refunded,10361,2023-11-13 18:00:00
+10272,2023-07-28,$19.06,usd,UNITED STATES ,us_shop,user21906@yahoo.com, COMPLETED,,2023-07-28 11:49:00
+11152,2023-02-15,£32.08,GBP, united kingdom,eu_shop,user11025@mail.de,completed,,2023-02-15 07:26:00
+11443,01.09.2023,"€46,29",EUR,,eu_shop,user33431@mail.de, COMPLETED,,2023-09-01 13:50:00
+10236,2023-12-05,$26.04,USD, U.S. ,us_shop,user44576@mail.de,Completed,,2023-12-05 08:01:00
+10914,2023-12-03,USD 23.93,USD,CA,us_shop,user71238@web.de,completed,,2023-12-03 00:14:00
+11117,2023-02-23,"142,92 €",EUR,GERMANY,eu_shop,user72423@yahoo.com, COMPLETED,,2023-02-23 16:21:00
+10840,2023-12-09,USD 109.24,USD,  GB,us_shop,user15315@web.de,completed,,2023-12-09 10:33:00
+10111,03/17/2023,$25.59,USD,united states of america ,us_shop,user82927@gmail.com,completed,,2023-03-17 11:06:00
+10631,06/06/2023,$33.12,USD,  U.S.,us_shop,user51961@yahoo.com,completed,,2023-06-06 11:57:00
+10529,12/06/2023,$73.88,USD,  United States ,us_shop,user76824@mail.de,completed,,2023-12-06 22:48:00
+11163,03/22/2023,2014,Cents,  USA,us_shop,user54145@outlook.com,completed,,2023-03-22 12:06:00
+11306,05/10/2023,$17.08,USD,united states of america ,us_shop,user94555@gmail.com,completed,,2023-05-10 19:32:00
+10651,2023-10-11,"€67,54",EUR, France ,eu_shop,user70577@gmail.com,completed,,2023-10-11 04:58:00
+11329,2023-03-02,6985,Cents, UNITED STATES OF AMERICA,us_shop,user61835@yahoo.com, COMPLETED,,2023-03-02 09:26:00
+11138,2023-06-27,"20,79 €",EUR,france ,eu_shop,user33280@outlook.com, COMPLETED,,2023-06-27 15:32:00
+11335,07/13/2023,$22.09,USD,  USA ,us_shop,user78676@mail.de,Completed,,2023-07-13 19:09:00
+10817,2023-01-24,2165,Cents,  CA,us_shop,user16590@gmail.com,completed,,2023-01-24 18:06:00
+10470,28.06.2023,"22,92",EUR,  españa ,eu_shop,user57380@mail.de,completed,,2023-06-28 05:00:00
+10920,02/20/2023,2953,cents,,us_shop,user30093@gmail.com, COMPLETED,,2023-02-20 13:33:00
+11185,2023-02-05,45.72,USD,  great britain,us_shop,user62429@yahoo.com,completed,,2023-02-05 22:27:00
+10851,2023-09-02,USD 12.81,USD, united states of america,us_shop,user73802@mail.de,Completed,,2023-09-02 15:15:00
+10491,02/16/2023,3376,cents,UNITED STATES OF AMERICA ,us_shop,user92009@outlook.com, COMPLETED,,2023-02-16 16:23:00
+11037,2023-08-18,2369,cents, Us ,us_shop,user50607@gmail.com,Completed,,2023-08-18 13:19:00
+11401,05/06/2023,$15.73,USD,  CA,us_shop,user29190@yahoo.com,completed,,2023-05-06 05:03:00
+10432,17.03.2023,N/A,EUR, france,eu_shop,user50241@yahoo.com, COMPLETED,,2023-03-17 22:41:00
+11549,2023-08-02,"82,90 EUR",EUR, It,eu_shop,user41823@mail.de,completed,,2023-08-02 19:32:00
+10124,2023-11-07,52.85 GBP,GBP,  UK ,eu_shop,user46262@mail.de,Completed,,2023-11-07 16:35:00
+11286,2023-09-26,"18,23",EUR,,eu_shop,user25173@yahoo.com,completed,,2023-09-26 19:06:00
+10850,06/20/2023,3599.00,USD,u.s.,us_shop,user61284@web.de, COMPLETED,,2023-06-20 03:14:00
+10847,2023-01-30,5252,Cents,  u.s.,us_shop,user80878@yahoo.com,completed,,2023-01-30 00:36:00
+10243,2023-12-15,29.15,USD, U.S.,us_shop,user50789@mail.de,completed,,2023-12-15 03:05:00
+50047,2023-03-03,-111.41 GBP,GBP,United Kingdom,eu_shop,user11742@yahoo.com,completed,10426,2023-03-03 12:00:00
+10095,04/03/2023,USD 65.46,USD,  Usa ,us_shop,user18967@mail.de,Completed,,2023-04-03 04:17:00
+50100,2023-02-13,-$16.77,USD,U.S. ,us_shop,user29241@gmail.com,completed,10961,2023-02-13 16:00:00
+10504,2023-01-03,"132,01 EUR",  EUR ,  GERMANY,eu_shop, user11991@web.de,  COMPLETED ,,2023-01-03 15:39:00
+11088,2023-02-15,"21,16 €",EUR,  ESPAÑA,eu_shop,user93542@yahoo.com, COMPLETED,,2023-02-15 05:26:00
+50079,26.04.2023,"€26,05",EUR, Italy ,eu_shop,user10094@web.de,refunded,10749,2023-04-26 08:00:00
+10977,2023-09-16,32.19,USD,  CA ,us_shop,user56176@outlook.com,completed,,2023-09-16 04:01:00
+50073,2023-05-19,"32,10",EUR,IT ,eu_shop,user90857@gmail.com,refunded,10647,2023-05-19 15:00:00
+10212,2023-07-19,37.64 GBP,GBP,  United Kingdom ,eu_shop,user14130@gmail.com,completed,,2023-07-19 02:51:00
+10052,2023-09-04,"29,68 EUR",EUR,  ES,eu_shop,user62855@mail.de, COMPLETED,,2023-09-04 13:39:00
+10836,04/21/2023,12626,cents,  U.S. ,us_shop,user50756@mail.de,completed,,2023-04-21 05:58:00
+11348,27.08.2023,"€62,11",EUR,deutschland,eu_shop,user56276@web.de,completed,,2023-08-27 22:17:00
+10618,04/18/2023,USD 37.34,USD,  UNITED STATES,us_shop,user98001@outlook.com,completed,,2023-04-18 20:33:00
+10879,29.11.2023,"50,48 EUR",EUR,  DE,eu_shop,user77018@mail.de, COMPLETED,,2023-11-29 23:31:00
+11207,10.02.2023,"21,22 EUR",EUR,  De,eu_shop,user41210@outlook.com,Completed,,2023-02-10 06:21:00
+11380,2023-02-11,$42.24,USD,  U.S. ,us_shop,user26009@gmail.com,completed,,2023-02-11 16:07:00
+11165,07/05/2023,$33.01,USD,usa,us_shop,user10962@yahoo.com,Completed,,2023-07-05 05:38:00
+10075,08/13/2023,$38.54,USD,  UNITED STATES ,us_shop,user15296@outlook.com, COMPLETED,,2023-08-13 20:10:00
+10849,2023-01-07,4249,cents,us,us_shop,user90094@mail.de,Completed,,2023-01-07 05:36:00
+10495,01/02/2023,$14.27, USD ,  ca ,us_shop,user87135@web.de, COMPLETED,,2023-01-02 14:23:00
+10069,2023-08-04,"103,72 EUR",EUR,Italy ,eu_shop,user1852@mail.de,Completed,,2023-08-04 19:37:00
+11418,01/15/2023,$25.37,usd,u.s. ,us_shop,user32580@gmail.com,Completed,,2023-01-15 21:48:00
+10807,2023-04-09,"98,80 €",EUR, Es ,eu_shop,user9951@gmail.com,completed,,2023-04-09 02:37:00
+11377,06/30/2023,"$4,163.00",USD,  united states ,us_shop,user50224@web.de,completed,,2023-06-30 00:01:00
+11534,06/26/2023,"USD 8,761.00",USD, UK,us_shop,user42625@gmail.com,completed,,2023-06-26 05:51:00
+10854,2023-10-29,$38.24,USD,  united states ,us_shop,user23676@mail.de,completed,,2023-10-29 22:08:00
+11062,2023-06-19,"USD 3,538.00", USD ,United States ,us_shop,user6925@web.de,completed,,2023-06-19 15:59:00
+10363,2023-01-09,$54.88,USD,  US ,us_shop,user18136@mail.de,Completed,,2023-01-09 02:33:00
+10783,2023-08-28,"73,47 €",EUR,  France ,eu_shop,user24472@yahoo.com,Completed,,2023-08-28 10:39:00
+10574,2023-09-04,USD 23.42,USD,  United States,us_shop,user11742@gmail.com,completed,,2023-09-04 14:04:00
+50013,06/12/2023,3558.00,USD, United States ,us_shop,user2023@gmail.com,refunded,10134,2023-06-12 06:00:00
+11105,19.08.2023,"€30,21",EUR,italia,eu_shop,user45462@gmail.com,completed,,2023-08-19 02:45:00
+10663,04.01.2023,"107,95 €",EUR, deutschland ,eu_shop,user98508@gmail.com, COMPLETED,,2023-01-04 10:21:00
+11546,02/10/2023,USD 14.29,USD,  USA,us_shop,user4511@yahoo.com,completed,,2023-02-10 14:28:00
+10942,2023-10-16,"€2.293,95",EUR, SPAIN,eu_shop,user19661@outlook.com, COMPLETED,,2023-10-16 23:57:00
+11093,2023-05-30,20.39, USD , United Kingdom,us_shop,user32211@yahoo.com, COMPLETED,,2023-05-30 07:44:00
+11321,01/21/2023,USD 30.54, USD ,  great britain,us_shop,user34869@gmail.com,Completed,,2023-01-21 20:55:00
+11404,05/21/2023,1402,cents,  usa ,us_shop,user90603@web.de, COMPLETED,,2023-05-21 18:05:00
+10897,2023-02-10,78.87,USD, us,us_shop,user84178@web.de,completed,,2023-02-10 09:48:00
+10353,2023-12-27,10461,cents, Ca,us_shop,user23589@web.de,completed,,2023-12-27 00:40:00
+10463,08.08.2023,"116,36 €",EUR, ES,eu_shop,user96327@yahoo.com,completed,,2023-08-08 20:50:00
+11017,2023-04-30,"40,31 €",EUR,france ,eu_shop,user89492@yahoo.com,completed,,2023-04-30 18:20:00
+10180,2023-07-28,"€100,91",EUR,FRANCE ,eu_shop,user65946@web.de, COMPLETED,,2023-07-28 16:45:00
+10339,11/26/2023,,usd,  united states of america,us_shop,user9097@web.de, COMPLETED,,2023-11-26 02:44:00
+11114,2023-09-23,"€68,49",EUR,deutschland ,eu_shop,user93892@gmail.com,completed,,2023-09-23 19:56:00
+10629,2023-03-18,"93,67 €",EUR,  FR ,eu_shop,user76794@outlook.com,completed,,2023-03-18 14:50:00
+11208,08/24/2023,26.66,USD,UNITED STATES OF AMERICA ,us_shop,user97676@outlook.com,completed,,2023-08-24 06:30:00
+50123,10/21/2023,-$45.78,USD,  UNITED STATES OF AMERICA,us_shop,user31104@mail.de,completed,11168,2023-10-21 11:00:00
+11180,16.11.2023,"€74,88",EUR,  Germany ,eu_shop,user27455@gmail.com,completed,,2023-11-16 17:21:00
+11468,10/27/2023,USD 44.88,usd,Us ,us_shop,user37155@outlook.com,Completed,,2023-10-27 09:39:00
+10859,27.03.2023,"242,35",EUR,fr,eu_shop,user35797@mail.de,completed,,2023-03-27 11:11:00
+10543,2023-10-10,$12.49,USD, UNITED STATES,us_shop,user39665@gmail.com, COMPLETED,,2023-10-10 08:13:00
+10962,2023-02-21,81.44,USD, USA,us_shop,user8813@mail.de,completed,,2023-02-21 12:56:00
+11560,2023-09-20,"€111,49",EUR,  fr,eu_shop,user50102@web.de,Completed,,2023-09-20 11:19:00
+10685,02/07/2023,1666,cents,  united states,us_shop,user14626@mail.de,completed,,2023-02-07 02:50:00
+10185,10/09/2023,2556,Cents,USA ,us_shop,user4475@yahoo.com,completed,,2023-10-09 08:22:00
+11227,12/22/2023,$43.14,usd, U.S. ,us_shop,user9903@gmail.com,completed,,2023-12-22 21:51:00
+10078,2023-07-12,USD 33.22,USD,united states of america ,us_shop,user30717@mail.de,completed,,2023-07-12 09:44:00
+11036,2023-06-06,"49,36 EUR",EUR,  Fr,eu_shop,user34698@yahoo.com,completed,,2023-06-06 23:24:00
+10452,04.08.2023,"€21,63",EUR,  FRANCE ,eu_shop,user31097@gmail.com,completed,,2023-08-04 21:18:00
+10964,02/27/2023,16.30,usd,canada,us_shop,user42685@outlook.com, COMPLETED,,2023-02-27 01:33:00
+10813,2023-12-17,$70.00,USD,,us_shop,user36023@yahoo.com,completed,,2023-12-17 20:07:00
+11001,2023-08-15,24.76,USD,  USA,us_shop,user95967@gmail.com, COMPLETED,,2023-08-15 13:39:00
+11414,24.11.2023,"57,07 EUR",EUR,France ,eu_shop,user86305@yahoo.com,Completed,,2023-11-24 08:29:00
+11276,12/11/2023,$29.84,USD,  us,us_shop,user52585@web.de,Completed,,2023-12-11 18:31:00
+11282,2023-11-17,USD 80.13,usd,U.S. ,us_shop, user96586@gmail.com, COMPLETED,,2023-11-17 16:45:00
+10012,2023-09-22,"19,81 €",EUR,  Deutschland,eu_shop,user76791@outlook.com, COMPLETED,,2023-09-22 23:00:00
+10861,2023-12-12,"55,02",EUR,GERMANY ,eu_shop,user6630@mail.de,Completed,,2023-12-12 13:13:00
+10633,2023-08-24,41.33 GBP,GBP,  U.K.,eu_shop,user84411@outlook.com, COMPLETED,,2023-08-24 21:49:00
+11347,2023-06-07,2734,cents,united states of america ,us_shop,user4366@outlook.com,completed,,2023-06-07 09:30:00
+50142,2023-03-22,72.62,USD, Us ,us_shop,user48481@outlook.com,refunded,11355,2023-03-22 06:00:00
+10215,2023-10-19,"70,93 €",EUR,  De ,eu_shop,user35032@yahoo.com,completed,,2023-10-19 09:18:00
+10058,2023-08-28,2927,Cents, united states of america ,us_shop,user78590@gmail.com,completed,,2023-08-28 05:53:00
+10687,23.09.2023,"27,29 €",EUR,  es,eu_shop,user76153@yahoo.com, COMPLETED,,2023-09-23 16:49:00
+10093,22.03.2023,"70,36 EUR",EUR, It,eu_shop,user48902@yahoo.com,completed,,2023-03-22 14:06:00
+11279,06.06.2023,"21,33 €",EUR,  España ,eu_shop,user33338@web.de,Completed,,2023-06-06 04:34:00
+11127,23.03.2023,£24.28,GBP,  UNITED KINGDOM,eu_shop,user43576@gmail.com, COMPLETED,,2023-03-23 10:47:00
+10320,29.08.2023,"15,03",EUR, DEUTSCHLAND ,eu_shop,user31429@mail.de,Completed,,2023-08-29 22:56:00
+50085,11/25/2023,-$128.94,USD, CANADA,us_shop,user64896@mail.de,completed,10799,2023-11-25 09:00:00
+10096,2023-10-20,6763,cents, u.s. ,us_shop,user21993@outlook.com,Completed,,2023-10-20 15:06:00
+10812,2023-07-02,"48,37",EUR,  ITALIA,eu_shop,user35229@web.de,completed,,2023-07-02 19:25:00
+10894,2023-04-01,66.23 GBP,GBP,  united kingdom ,eu_shop,user42831@outlook.com,completed,,2023-04-01 19:43:00
+10773,2023-09-16,"43,59 EUR",EUR,Test,eu_shop,qa417@example.com,Completed,,2023-09-16 09:11:00
+11079,03/17/2023,$17.14,USD,  u.s.,us_shop,user57815@gmail.com,completed,,2023-03-17 20:28:00
+11522,21.07.2023,"33,15 EUR",EUR,,eu_shop,user69673@mail.de, COMPLETED,,2023-07-21 17:14:00
+10149,05.07.2023,"146,84 EUR",EUR,  De,eu_shop,user94203@outlook.com, COMPLETED,,2023-07-05 02:14:00
+11005,2023-03-13,47.46,USD, U.S. ,us_shop,user86211@yahoo.com,completed,,2023-03-13 17:27:00
+10204,30.01.2023,"€13,35",EUR,Deutschland,eu_shop,user78360@mail.de,completed,,2023-01-30 08:29:00
+10285,13.12.2023,"12,90",EUR, ES,eu_shop,user67353@mail.de,completed,,2023-12-11 23:59:00
+11136,2023-01-20,USD 16.85,USD, united states of america ,us_shop,user43046@outlook.com,Completed,,2023-01-20 01:31:00
+10774,2023-07-13,"58,16 €",EUR,España,eu_shop,user21324@web.de,completed,,2023-07-13 16:01:00
+11491,06/15/2023,"$13,409.00",USD,  USA ,us_shop,user14487@web.de,completed,,2023-06-15 05:24:00
+10349,09/09/2023,38.99, USD ,Usa ,us_shop,user30244@mail.de, COMPLETED,,2023-09-09 14:03:00
+11381,04/26/2023,27.04, USD ,  U.S. ,us_shop,user34370@gmail.com, COMPLETED,,2023-04-26 09:39:00
+10441,14.12.2023,"€23,55",EUR,  de ,eu_shop,user96593@yahoo.com, COMPLETED,,2023-12-14 11:40:00
+10634,08/10/2023,26.34,USD, Us,us_shop,user78411@yahoo.com,completed,,2023-08-10 09:52:00
+10941,2023-11-03,35.07 GBP,GBP,  United Kingdom ,eu_shop,user60884@mail.de,Completed,,2023-11-03 04:48:00
+10889,2023-02-16,"17,62 €",EUR,de ,eu_shop,user98888@web.de, COMPLETED,,2023-02-16 05:51:00
+10959,2023-10-01,40.49,USD,  U.S.,us_shop,user40160@mail.de, COMPLETED,,2023-10-01 18:34:00
+11315,2023-11-18,$43.29,USD, UNITED STATES ,us_shop,user49108@outlook.com, COMPLETED,,2023-11-18 20:20:00
+10547,2023-10-04,"37,73 EUR",EUR,de,eu_shop,user11794@web.de, COMPLETED,,2023-10-04 21:40:00
+11134,2023-01-14,4558, cents ,usa,us_shop, user99026@gmail.com,  completed,,2023-01-14 01:01:00
+11202,2023-01-24,USD 64.29,usd,  United States,us_shop,user76713@mail.de,completed,,2023-01-24 18:15:00
+10120,2023-06-28,3745.00,USD, U.S. ,us_shop,user50841@mail.de,completed,,2023-06-28 11:47:00
+10599,08/17/2023,39.92,USD, United States Of America ,us_shop,user67805@gmail.com, COMPLETED,,2023-08-17 10:26:00
+50120,2023-03-31,-£24.28,GBP,Great Britain,eu_shop,user43576@gmail.com,completed,11127,2023-03-31 03:00:00
+50074,2023-02-22,"-133,64 EUR",EUR,  ES,eu_shop,user75454@outlook.com,completed,10666,2023-02-22 11:00:00
+10919,17.03.2023,"50,39 EUR",EUR,  France ,eu_shop,user43344@mail.de,completed,,2023-03-17 01:32:00
+10961,2023-02-11,16.77,USD,united states of america ,us_shop,user29241@gmail.com,completed,,2023-02-11 09:00:00
+11129,17.02.2023,"€1.569,22",EUR, ESPAÑA,eu_shop,user78761@outlook.com,completed,,2023-02-17 21:50:00
+10874,2023-06-25,"€51,45",EUR, Deutschland ,eu_shop,user39324@gmail.com, COMPLETED,,2023-06-25 11:10:00
+10493,2023-10-14,USD 43.81,USD,  Canada,us_shop,user11069@web.de, COMPLETED,,2023-10-14 22:23:00
+11318,2023-04-10,"€52,35",EUR,  de,eu_shop,user74898@yahoo.com,Completed,,2023-04-10 07:27:00
+10101,07/28/2023,USD 41.18,USD, Us ,us_shop,user36930@mail.de,completed,,2023-07-28 02:00:00
+10749,2023-04-25,"26,05 EUR",EUR,  Italia ,eu_shop,user10094@web.de, COMPLETED,,2023-04-25 21:17:00
+10691,12/22/2023,4648,cents,  Canada ,us_shop,user94635@yahoo.com,Completed,,2023-12-22 19:33:00
+10718,05/03/2023,USD 58.93,usd,Canada,us_shop,user76358@mail.de,completed,,2023-05-03 04:30:00
+11159,26.01.2023,"€46,54",EUR,FR ,eu_shop,user51759@outlook.com,Completed,,2023-01-26 07:15:00
+11391,2023-01-01,$18.57,USD,usa,us_shop,user54946@gmail.com,completed,,2023-01-01 08:23:00
+11142,06/28/2023,"$1,387.00",USD,USA,us_shop,user16110@gmail.com, COMPLETED,,2023-06-28 05:49:00
+10930,02/10/2023,$52.91,USD,United States Of America,us_shop,user96271@gmail.com, COMPLETED,,2023-02-10 22:42:00
+10707,2023-01-23,"1.793,27 EUR",EUR,  es ,eu_shop,user69790@outlook.com,completed,,2023-01-23 09:06:00
+11332,14.09.2023,"25,81",EUR, FR,eu_shop,user62056@gmail.com,Completed,,2023-09-14 04:01:00
+10504,2023-01-03,"132,01 EUR",EUR,  Germany ,eu_shop,user11991@web.de,completed,,2023-01-03 15:39:00
+11297,12/21/2023,36.14,USD,  United States,us_shop,user55033@gmail.com, COMPLETED,,2023-12-21 18:10:00
+11472,09.12.2023,"16,59 EUR",EUR,  FRANCE ,eu_shop,user28343@outlook.com, COMPLETED,,2023-11-29 21:52:00
+11238,23.11.2023,"62,82 €",EUR, FR,eu_shop,user86591@outlook.com,completed,,2023-11-23 20:33:00
+10366,07.02.2023,"49,82",EUR,,eu_shop,user27831@outlook.com, COMPLETED,,2023-02-07 00:28:00
+11502,13.02.2023,"13,28",EUR,deutschland ,eu_shop,user99319@gmail.com, COMPLETED,,2023-02-13 06:46:00
+50028,2023-09-23,USD 30.41,USD,Ca ,us_shop,user13963@yahoo.com,refunded,10265,2023-09-23 15:00:00
+10648,2023-08-24,$47.14,USD,united states ,us_shop,user39857@outlook.com,completed,,2023-08-24 22:32:00
+10211,2023-03-24,41.85 GBP,GBP, Uk ,eu_shop,user57875@mail.de,completed,,2023-03-24 06:40:00
+10905,2023-03-21,5053,cents,U.S. ,us_shop,user53676@gmail.com, COMPLETED,,2023-03-21 02:55:00
+11061,05/27/2023,USD 58.91, USD , Canada ,us_shop,user51767@yahoo.com, COMPLETED,,2023-05-27 00:47:00
+10205,12.06.2023,"€56,42",EUR,  De,eu_shop,user20472@yahoo.com,completed,,2023-06-12 04:33:00
+10723,2023-06-17,"$2,148.00",USD, UNITED STATES OF AMERICA,us_shop,user11268@gmail.com,completed,,2023-06-17 12:06:00
+10705,23.11.2023,"30,84 €",EUR,  Fr,eu_shop,user52202@mail.de,completed,,2023-11-23 07:27:00
+10786,2023-03-26,"27,96",EUR, GERMANY ,eu_shop,user67796@yahoo.com, COMPLETED,,2023-03-26 01:42:00
+10949,16.08.2023,"32,56 €",EUR,test ,eu_shop,user11394@gmail.com, COMPLETED,,2023-08-16 10:19:00
+10474,2023-11-14,USD 25.23,USD, USA,us_shop,user66045@gmail.com, COMPLETED,,2023-11-14 13:27:00
+10436,21.05.2023,"€1.713,37",EUR,france ,eu_shop,user10828@web.de,Completed,,2023-05-21 13:58:00
+10287,2023-09-25,"70,55 €",EUR,  España,eu_shop,user2358@gmail.com, COMPLETED,,2023-09-22 15:07:00
+11291,30.10.2023,51.97 GBP,GBP,Great Britain,eu_shop,user27114@web.de, COMPLETED,,2023-10-30 07:11:00
+11432,2023-07-22,"59,50 €",EUR, FR,eu_shop,user52781@gmail.com,completed,,2023-07-22 12:22:00
+10951,05/12/2023,USD 38.41, USD ,  Us ,us_shop,user77217@yahoo.com,Completed,,2023-05-12 09:41:00
+10665,05/13/2023,$75.11,USD, united states ,us_shop,user3348@gmail.com, COMPLETED,,2023-05-13 17:16:00
+11167,06.08.2023,"€19,29",EUR,  france ,eu_shop,user85769@outlook.com,Completed,,2023-08-06 07:44:00
+50007,09/19/2023,USD 55.48,USD,united states of america,us_shop,user65646@web.de,refunded,10065,2023-09-19 10:00:00
+11238,23.11.2023,"59,57",EUR,FRANCE,eu_shop,user86591@outlook.com,completed,,2023-11-20 21:33:00
+10750,02/05/2023,$120.73, USD ,  UNITED STATES,us_shop,user87850@gmail.com,completed,,2023-02-05 10:01:00
+10936,07/23/2023,$55.80,USD,  UNITED STATES OF AMERICA ,us_shop,user41615@yahoo.com, COMPLETED,,2023-07-23 02:16:00
+10882,01/10/2023,USD 22.43,USD, GREAT BRITAIN ,us_shop,user17542@yahoo.com, COMPLETED,,2023-01-10 13:14:00
+10161,08/16/2023,13.97,USD,  United States ,us_shop,user91494@outlook.com, COMPLETED,,2023-08-16 04:56:00
+10802,2023-06-15,"53,16 EUR",EUR,IT ,eu_shop,user52459@web.de,completed,,2023-06-15 15:33:00
+10179,2023-04-27,$42.98,USD,  us,us_shop,user75065@gmail.com,Completed,,2023-04-27 23:32:00
+11089,2023-02-14,1563,  cents , TEST,us_shop,QA680@EXAMPLE.COM, Completed ,,2023-02-14 05:43:00
+10004,31.08.2023,"35,83 €",EUR,  italia,eu_shop,user47884@gmail.com, COMPLETED,,2023-08-31 14:32:00
+10015,15.04.2023,"€17,92",EUR, FR,eu_shop,user1849@yahoo.com,Completed,,2023-04-15 22:09:00
+10613,09/20/2023,USD 18.00,USD, US,us_shop,user66004@mail.de, COMPLETED,,2023-09-20 08:17:00
+10769,2023-07-11,"108,88 €",EUR, DEUTSCHLAND,eu_shop,user57189@yahoo.com,completed,,2023-07-11 13:37:00
+10760,2023-12-27,"24,44 EUR",EUR,Deutschland,eu_shop,user99013@mail.de,completed,,2023-12-27 13:45:00
+11220,13.10.2023,"33,86 EUR",EUR, España,eu_shop,user57384@outlook.com,completed,,2023-10-13 09:12:00
+11196,01/08/2023,28.07,usd, USA,us_shop,qa806@example.com,completed,,2023-01-08 20:19:00
+10307,16.01.2023,"28,33 EUR",EUR,  Fr,eu_shop,user35134@mail.de,completed,,2023-01-16 11:04:00
+11526,02/19/2023,70.85,USD,  UNITED STATES OF AMERICA ,us_shop,user91522@mail.de,completed,,2023-02-19 13:23:00
+10516,2023-03-20,10.28,USD, UNITED STATES ,us_shop,user13251@gmail.com, COMPLETED,,2023-03-20 18:55:00
+50154,03/14/2023,-$47.65,USD, United States ,us_shop,user84295@yahoo.com,completed,11455,2023-03-14 19:00:00
+10118,2023-04-24,USD 25.89,USD,  us ,us_shop,user76766@mail.de,completed,,2023-04-19 01:59:00
+50078,13.12.2023,"30,84 €",EUR,  FRANCE,eu_shop,user52202@mail.de,refunded,10705,2023-12-13 01:00:00
+10669,2023-12-09,USD 58.79,USD, Great Britain ,us_shop,user81171@web.de,completed,,2023-12-09 18:54:00
+10169,11/12/2023,USD 32.14,USD,  US ,us_shop,user46693@outlook.com,completed,,2023-11-12 07:23:00
+10471,05/01/2023,47.25, USD,Us ,us_shop,USER34167@GMAIL.COM, Completed ,,2023-05-01 03:51:00
+11043,2023-04-29,43.33,USD,  united states of america,us_shop,user23407@mail.de, COMPLETED,,2023-04-29 13:11:00
+10545,2023-05-10,"20,73 EUR",eur,Deutschland ,eu_shop, user54986@web.de, COMPLETED ,,2023-05-10 21:32:00
+11339,06/13/2023,"USD 1,544.00",  USD,U.S.,us_shop, user59000@web.de,  COMPLETED ,,2023-06-13 08:37:00
+10309,2023-07-10,81.21 GBP,GBP,  Great Britain ,eu_shop,user9356@mail.de, COMPLETED,,2023-07-10 18:08:00
+10781,17.09.2023,20.12 GBP,GBP, Uk,eu_shop,user24109@gmail.com,completed,,2023-09-17 22:28:00
+11554,11/20/2023,$64.27,USD,USA,us_shop,user81365@web.de, COMPLETED,,2023-11-20 14:24:00
+10635,01/28/2023,USD 47.83,USD,  united states,us_shop,user5834@gmail.com,completed,,2023-01-28 05:36:00
+10094,2023-01-12,"€50,91",EUR, fr ,eu_shop,user30655@mail.de,Completed,,2023-01-12 03:40:00
+11047,2023-05-15,"€35,61",EUR,  france ,eu_shop,user69678@yahoo.com, COMPLETED,,2023-05-15 02:25:00
+10297,05.11.2023,"74,10 €",EUR, DEUTSCHLAND ,eu_shop,user9157@web.de, COMPLETED,,2023-11-05 03:48:00
+11399,18.08.2023,"€20,83",EUR,  DEUTSCHLAND,eu_shop,user93722@web.de,Completed,,2023-08-18 10:44:00
+10229,31.10.2023,"43,19 EUR",EUR,FRANCE ,eu_shop,user97426@mail.de, COMPLETED,,2023-10-31 11:45:00
+10853,2023-09-27,68.98 GBP,GBP,UNITED KINGDOM ,eu_shop,user63628@outlook.com,completed,,2023-09-27 13:39:00
+10262,02/26/2023,USD 61.00, USD ,USA,us_shop,user9099@web.de,Completed,,2023-02-26 14:06:00
+10126,06/19/2023,1257.00,USD,  u.s. ,us_shop,user31804@outlook.com,Completed,,2023-06-19 06:27:00
+10702,05.04.2023,"11,66 EUR",EUR, GERMANY ,eu_shop,user11497@yahoo.com,Completed,,2023-03-30 04:37:00
+10268,12/26/2023,5998,cents,united states of america ,us_shop,user30049@gmail.com,Completed,,2023-12-19 23:09:00
+10709,10/14/2023,2041,cents,  Us,us_shop,user19698@outlook.com,Completed,,2023-10-14 10:20:00
+10292,24.09.2023,"1.465,50", EUR ,  GERMANY ,eu_shop,USER50196@OUTLOOK.COM, completed,,2023-09-24 22:11:00
+10415,2023-03-24,$67.15, USD ,US,us_shop,user18684@yahoo.com, COMPLETED,,2023-03-20 03:20:00
+10657,2023-01-24,"89,54 €",EUR,  Spain ,eu_shop,user52458@outlook.com,completed,,2023-01-24 07:16:00
+11428,06.03.2023,"74,20 €",EUR, france,eu_shop,user54492@mail.de,Completed,,2023-03-06 02:23:00
+10409,2023-04-21,$47.17,USD,  ca,us_shop,user73395@yahoo.com,Completed,,2023-04-21 04:09:00
+11176,09/08/2023,USD 44.63,USD,united states of america ,us_shop,user49337@yahoo.com,completed,,2023-09-08 08:02:00
+10535,28.04.2023,"32,82 EUR",EUR,france,eu_shop,user38176@outlook.com, COMPLETED,,2023-04-28 11:15:00
+11219,2023-11-25,58.64,USD, Us ,us_shop,user29789@web.de,completed,,2023-11-25 20:44:00
+10990,2023-06-21,"$2,224.00",USD,US ,us_shop,user43770@web.de,completed,,2023-06-21 12:46:00
+11080,2023-05-06,"28,34 EUR",EUR,Germany ,eu_shop,user36176@yahoo.com,completed,,2023-05-06 09:18:00
+10440,22.08.2023,"49,64 €",EUR, Italia,eu_shop,user91405@mail.de,completed,,2023-08-22 03:02:00
+11517,2023-11-27,38.23,USD,  UNITED STATES OF AMERICA ,us_shop,user33828@gmail.com,completed,,2023-11-27 22:42:00
+10084,22.09.2023,"65,13",EUR,FR ,eu_shop,user64653@outlook.com, COMPLETED,,2023-09-22 03:23:00
+11320,30.04.2023,"112,82 EUR",EUR, Es,eu_shop,user30514@yahoo.com, COMPLETED,,2023-04-30 12:16:00
+11250,01/27/2023,28.63,USD, U.S. ,us_shop,user78215@gmail.com,completed,,2023-01-27 07:53:00
+10037,2023-10-24,$26.39,USD,u.s.,us_shop,user84240@yahoo.com,Completed,,2023-10-24 16:12:00
+11467,10.10.2023,"€39,93",EUR,GERMANY,eu_shop,user57750@gmail.com,completed,,2023-10-10 07:44:00
+11326,2023-09-30,180.29 GBP,GBP,  GREAT BRITAIN,eu_shop, user85180@yahoo.com,  COMPLETED ,,2023-09-30 01:20:00
+10668,2023-02-20,$32.54,USD, USA,us_shop,user23413@web.de, COMPLETED,,2023-02-20 08:59:00
+10047,17.12.2023,"20,48",EUR, FRANCE ,eu_shop,user95565@web.de,completed,,2023-12-17 11:40:00
+11516,01/02/2023,$14.33,usd,CANADA,us_shop,user25394@gmail.com,Completed,,2023-01-02 10:33:00
+10460,2023-02-17,"92,52 €",EUR, Deutschland,eu_shop,user62438@gmail.com, COMPLETED,,2023-02-17 07:42:00
+50014,2023-07-25,"-81,38",EUR, Spain ,eu_shop,user30351@outlook.com,completed,10148,2023-07-25 03:00:00
+11388,29.03.2023,"73,95 €",EUR, france,eu_shop,user55987@yahoo.com,completed,,2023-03-29 02:38:00
+11198,07/25/2023,$133.74,USD,,us_shop,user86853@yahoo.com, COMPLETED,,2023-07-25 19:52:00
+10469,2023-10-24,"165,73",EUR,ES,eu_shop,user42210@yahoo.com, COMPLETED,,2023-10-24 01:14:00
+10074,02/10/2023,33.87,USD,usa,us_shop,user78658@yahoo.com,completed,,2023-02-10 15:38:00
+10732,2023-07-10,USD 30.25,USD,CANADA ,us_shop,user82784@web.de,completed,,2023-07-10 00:01:00
+11440,2023-06-21,9231.00, USD ,  US ,us_shop,USER61735@MAIL.DE, COMPLETED ,,2023-06-21 09:21:00
+10066,23.12.2023,"193,04",EUR,  Es ,eu_shop,user5173@mail.de,Completed,,2023-12-23 20:48:00
+50025,10.11.2023,"-43,19 €",EUR,France,eu_shop,user97426@mail.de,completed,10229,2023-11-10 21:00:00
+10160,2023-11-22,3191,cents,USA,us_shop,user92664@mail.de,completed,,2023-11-22 21:30:00
+11548,2023-06-09,49.75,usd, U.S.,us_shop,user23587@outlook.com, COMPLETED,,2023-06-09 13:13:00
+10981,14.08.2023,"92,67 €", EUR,germany ,eu_shop,USER28950@GMAIL.COM,  completed ,,2023-08-14 03:37:00
+10382,12/27/2023,62.04, USD ,  USA,us_shop,user41347@web.de, COMPLETED,,2023-12-27 23:19:00
+10430,2023-12-28,£65.53,GBP,UNITED KINGDOM ,eu_shop,user46008@gmail.com,completed,,2023-12-28 14:33:00
+10233,2023-11-24,230.23,USD,CANADA ,us_shop,user42200@mail.de,Completed,,2023-11-24 11:53:00
+11242,2023-07-08,$93.31,USD,,us_shop,user35182@mail.de, COMPLETED,,2023-07-08 13:29:00
+11168,2023-10-05,45.78,USD,  u.s.,us_shop,user31104@mail.de,completed,,2023-10-05 08:50:00
+11118,2023-01-22,34.57 GBP,GBP, United Kingdom,eu_shop,user23853@mail.de, COMPLETED,,2023-01-22 12:12:00
+10716,11/05/2023,20.03,USD ,canada ,us_shop, user61418@gmail.com,  completed,,2023-11-05 03:25:00
+11459,2023-10-16,USD 43.72,USD, United States Of America,us_shop,user46763@gmail.com,Completed,,2023-10-16 18:41:00
+11287,2023-01-29,24.87,USD, United States Of America ,us_shop,qa319@example.com,completed,,2023-01-29 14:09:00
+50060,2023-11-25,USD 73.93,usd, CA ,us_shop,user80204@yahoo.com,refunded,10536,2023-11-25 12:00:00
+11119,22.06.2023,"15,91",EUR, Italia,eu_shop,user99079@mail.de,completed,,2023-06-22 02:14:00
+11551,11/30/2023,$49.24,USD, Us,us_shop,user62792@outlook.com,Completed,,2023-11-30 18:45:00
+11307,2023-01-13,$132.75,USD,U.K. ,us_shop,user71222@web.de,Completed,,2023-01-03 03:29:00
+10899,2023-01-02,"97,87",EUR,  GERMANY,eu_shop,user6299@web.de,completed,,2023-01-02 01:20:00
+10156,2023-02-14,"28,68",EUR,DE ,eu_shop,user80652@yahoo.com,Completed,,2023-02-14 08:33:00
+50137,2023-03-21,-$36.13,USD,  united states of america,us_shop,user58779@mail.de,completed,11300,2023-03-21 06:00:00
+10369,2023-11-24,USD 26.82,usd, United States,us_shop,user4675@web.de,completed,,2023-11-24 04:56:00
+50065,03/24/2023,-$46.88,USD,United States Of America,us_shop,user29410@gmail.com,completed,10585,2023-03-24 04:00:00
+50045,14.05.2023,"-29,71 €",EUR,Germany ,eu_shop,user34157@gmail.com,completed,10423,2023-05-14 00:00:00
+10046,15.04.2023,"52,30",EUR, FR,eu_shop,user48485@web.de, COMPLETED,,2023-04-10 01:26:00
+11293,2023-04-07,USD 203.13, usd,CANADA,us_shop, user75170@web.de, Completed,,2023-04-07 14:23:00
+10053,05.07.2023,"€23,95",EUR,  Spain ,eu_shop,user11177@web.de,completed,,2023-07-05 10:50:00
+11371,2023-08-02,"24,24 €",EUR, France,eu_shop,user39344@gmail.com,completed,,2023-08-02 01:33:00
+11344,08/13/2023,USD 23.78,USD,CANADA ,us_shop,user85450@gmail.com, COMPLETED,,2023-08-13 20:42:00
+10108,2023-07-27,USD 94.83,USD,,us_shop,user29810@yahoo.com,completed,,2023-07-27 04:42:00
+11140,2023-12-25,USD 70.15,USD,  U.K. ,us_shop,user68327@yahoo.com,Completed,,2023-12-25 07:42:00
+11434,2023-12-06,17.29, USD ,  united states of america ,us_shop,user16079@mail.de,completed,,2023-12-06 17:22:00
+11519,2023-07-05,$20.05,USD,united states ,us_shop,user40685@web.de,completed,,2023-07-05 15:53:00
+10867,2023-03-05,"37,03 €",EUR,Fr ,eu_shop,user88215@web.de,completed,,2023-03-05 13:16:00
+10520,08/14/2023,62.01,USD, Usa ,us_shop,user69580@mail.de,completed,,2023-08-14 08:11:00
+10635,01/28/2023,USD 47.83,USD,  united states,us_shop,user5834@gmail.com,completed,,2023-01-28 05:36:00
+10436,2023-05-21,"€1.693,01",EUR,France ,eu_shop,user10828@web.de,Completed,,2023-05-19 23:58:00
+11429,2023-07-31,"84,97 EUR",EUR, Deutschland,eu_shop,user96052@mail.de,Completed,,2023-07-31 09:46:00
+10742,06/14/2023,5157.00,USD,  USA,us_shop,user70678@yahoo.com, COMPLETED,,2023-06-14 15:34:00
+11017,2023-04-30,"40,31 €",EUR,france ,eu_shop,user89492@yahoo.com,completed,,2023-04-30 18:20:00
+11433,2023-01-01,"€33,05",EUR,,eu_shop,user24283@mail.de, COMPLETED,,2023-01-01 11:48:00
+10380,2023-09-30,$33.29,USD, UNITED STATES OF AMERICA,us_shop,user29987@gmail.com,completed,,2023-09-30 07:32:00
+10615,09.01.2023,"23,17",EUR, DEUTSCHLAND ,eu_shop,user6170@mail.de,Completed,,2023-01-09 05:02:00
+10615,09.01.2023,"€20,46",EUR,de ,eu_shop,user6170@mail.de,Completed,,2023-01-05 23:02:00
+10870,2023-12-03,"€43,82",EUR, ESPAÑA ,eu_shop,user7880@web.de,Completed,,2023-11-25 02:58:00
+11505,04/06/2023,$34.50,USD,  United Kingdom ,us_shop,user24049@outlook.com, COMPLETED,,2023-04-06 11:50:00
+11525,2023-04-10,7716,cents,  ca ,us_shop,user24264@mail.de,completed,,2023-04-10 21:41:00
+11322,01.09.2023,,GBP,Gb ,eu_shop,user9991@mail.de,Completed,,2023-09-01 01:25:00
+10311,2023-09-22,127.95,USD, US ,us_shop,user34813@yahoo.com,Completed,,2023-09-22 17:48:00
+11126,04/10/2023,4804,Cents,  Canada,us_shop,user18060@web.de,completed,,2023-04-10 14:03:00
+11221,2023-05-31,"22,06 EUR",EUR,france,eu_shop,user64692@yahoo.com, COMPLETED,,2023-05-31 16:18:00
+11554,11/20/2023,$64.27,USD,USA,us_shop,user81365@web.de, COMPLETED,,2023-11-20 14:24:00
+10585,03/14/2023,$46.88,USD,  united states,us_shop,user29410@gmail.com, COMPLETED,,2023-03-14 01:05:00
+10865,2023-01-13,"114,95",EUR,Germany,eu_shop,user75973@web.de,completed,,2023-01-13 15:51:00
+50003,2023-12-31,-96.95, USD ,UNITED STATES OF AMERICA,us_shop,user34667@mail.de,completed,10057,2023-12-31 03:00:00
+50101,2023-02-13,USD 16.77,USD, United States ,us_shop,user29241@gmail.com,refunded,10961,2023-02-13 16:00:00
+10443,06/25/2023,"$9,782.00",USD,U.S.,us_shop,user17907@gmail.com,completed,,2023-06-25 20:11:00
+11527,2023-08-02,2569,cents, Usa,us_shop,user27249@web.de,Completed,,2023-08-02 17:20:00
+10237,13.05.2023,"€54,51",EUR,  Germany,eu_shop,user31697@outlook.com,completed,,2023-05-13 14:05:00
+10563,2023-02-21,23.36,USD,  united states ,us_shop,user50553@outlook.com,Completed,,2023-02-21 04:51:00
+10584,02/03/2023,2616,cents,  Us,us_shop,user12111@mail.de,completed,,2023-02-03 04:58:00
+11456,06.11.2023,"79,21",EUR,,eu_shop,user69975@outlook.com,completed,,2023-11-06 04:56:00
+11364,25.12.2023,"27,88",EUR,Italy,eu_shop,user45621@gmail.com, COMPLETED,,2023-12-25 00:11:00
+10696,2023-01-10,$28.10,USD,  united states of america ,us_shop,user77931@mail.de,completed,,2023-01-07 08:00:00
+10337,05/14/2023,$36.92,USD,  CANADA,us_shop,user23105@web.de,Completed,,2023-05-14 14:39:00
+10486,2023-06-14,"16,10 €",EUR, france ,eu_shop,user78899@gmail.com,completed,,2023-06-14 16:29:00
+11310,2023-01-01,2060,cents,  USA ,us_shop,user15230@mail.de,completed,,2023-01-01 16:54:00
+10424,10/03/2023,USD 25.96, USD , united states of america,us_shop,user90434@mail.de,completed,,2023-10-03 00:04:00
+10366,07.02.2023,"49,82",EUR,,eu_shop,user27831@outlook.com, COMPLETED,,2023-02-07 00:28:00
+10659,2023-04-22,£22.13,GBP, Gb ,eu_shop,user55381@yahoo.com,completed,,2023-04-22 07:14:00
+11115,15.04.2023,"64,06",EUR,  de ,eu_shop,user37519@mail.de, COMPLETED,,2023-04-15 12:32:00
+10560,2023-12-04,"16,30",EUR,Fr,eu_shop,user95264@web.de,Completed,,2023-12-04 04:39:00
+10667,2023-07-08,44.79,USD,Great Britain ,us_shop,user60112@gmail.com,Completed,,2023-07-08 19:58:00
+11166,22.01.2023,"64,09 EUR",EUR,FR,eu_shop,user31033@gmail.com,Completed,,2023-01-22 19:50:00
+11295,2023-11-12,"32,20 EUR",EUR,  Germany,eu_shop,user41532@web.de,completed,,2023-11-12 03:57:00
+11503,2023-07-03,77.27 GBP,GBP,UK ,eu_shop,user42435@yahoo.com, COMPLETED,,2023-07-03 06:30:00
+10881,2023-03-22,28.43,USD,united states of america,us_shop,user58293@outlook.com, COMPLETED,,2023-03-22 18:43:00
+10287,2023-09-25,"€54,76",EUR,  spain,eu_shop,user2358@gmail.com, COMPLETED,,2023-09-25 21:07:00
+10601,01/18/2023,20.79,USD,United Kingdom,us_shop,user17136@web.de,completed,,2023-01-18 21:53:00
+11494,2023-05-19,"44,41 EUR",EUR,DE,eu_shop,user68109@gmail.com,Completed,,2023-05-19 07:16:00
+10413,02/05/2023,$101.27,USD,  U.S. ,us_shop,user54400@yahoo.com,Completed,,2023-02-05 10:29:00
+50148,01/28/2023,-$57.49,USD,united states of america ,us_shop,user29680@outlook.com,completed,11395,2023-01-28 07:00:00
+10552,01/30/2023,USD 38.06,USD,Canada,us_shop,user63012@mail.de,completed,,2023-01-30 16:05:00
+10965,07/08/2023,USD 29.08,USD,  usa ,us_shop,user47913@web.de, COMPLETED,,2023-07-08 23:23:00
+10950,2023-04-26,$61.11,USD,CANADA ,us_shop,user28283@web.de, COMPLETED,,2023-04-26 01:09:00
+50069,27.08.2023,-41.33 GBP,GBP,Great Britain,eu_shop,user84411@outlook.com,completed,10633,2023-08-27 09:00:00
+10027,10/01/2023,$28.44,USD, USA,us_shop,user4512@gmail.com,completed,,2023-10-01 20:40:00
+10173,19.09.2023,35.94 GBP,GBP,gb ,eu_shop,user67452@mail.de,Completed,,2023-09-19 10:04:00
+11387,2023-07-09,$33.31,USD,  UNITED STATES OF AMERICA,us_shop,user83141@web.de,completed,,2023-07-09 22:49:00
+10324,2023-12-30,USD 43.24,USD,united states of america,us_shop,user42372@gmail.com, COMPLETED,,2023-12-30 16:50:00
+11199,2023-01-25,59.86,usd,u.s.,us_shop,user88821@web.de, COMPLETED,,2023-01-25 17:10:00
+10767,02.02.2023,"72,74 €",EUR, germany,eu_shop,user67227@outlook.com,completed,,2023-02-02 00:13:00
+10170,05/10/2023,48.14, USD , U.K.,us_shop,user92480@mail.de,completed,,2023-05-10 01:13:00
+10933,24.02.2023,"€18,57",EUR,GERMANY ,eu_shop,user99939@web.de, COMPLETED,,2023-02-24 17:25:00
+10056,16.02.2023,"205,07 EUR",EUR,ES ,eu_shop,user38934@yahoo.com,completed,,2023-02-16 15:44:00
+10983,07.12.2023,"€90,65",EUR,,eu_shop,user45172@mail.de, COMPLETED,,2023-12-07 01:08:00
+50068,21.01.2023,27.60 GBP,GBP,Great Britain ,eu_shop,user56395@outlook.com,refunded,10597,2023-01-21 22:00:00
+50160,2023-12-31,"-32,40",EUR,  Deutschland ,eu_shop,user63192@outlook.com,completed,11544,2023-12-31 03:00:00
+10296,2023-05-28,"€60,37",EUR,  FR,eu_shop,user1539@gmail.com,completed,,2023-05-28 17:52:00
+10367,2023-11-28,USD 84.73,USD,united states of america,us_shop,user42502@yahoo.com,completed,,2023-11-28 13:05:00
+10025,07/20/2023,$45.87,USD,Canada,us_shop,user22484@yahoo.com,Completed,,2023-07-20 01:01:00
+10158,11.12.2023,"47,42 €",EUR, DE,eu_shop,user99866@yahoo.com,completed,,2023-12-11 01:44:00
+10614,07/06/2023,76.92,USD,USA ,us_shop,user67038@web.de, COMPLETED,,2023-07-06 16:11:00
+10534,2023-08-22,"45,36 EUR",EUR,  DE,eu_shop,user84211@web.de,completed,,2023-08-22 02:06:00
+11482,02/07/2023,17.73,USD, USA,us_shop,user3261@yahoo.com,Completed,,2023-02-07 01:45:00
+11439,2023-12-25,USD 21.46,USD,  Us,us_shop,user39671@yahoo.com,completed,,2023-12-25 15:06:00
+11184,12/31/2023,$55.52,USD,  U.S.,us_shop,user39469@yahoo.com,Completed,,2023-12-31 05:12:00
+10733,22.06.2023,"47,11",EUR, ESPAÑA ,eu_shop,user49550@outlook.com, COMPLETED,,2023-06-22 07:50:00
+10588,2023-09-30,USD 9.65,USD, GB ,us_shop,user72733@outlook.com,completed,,2023-09-30 12:14:00
+50061,22.02.2023,"-€12,99",EUR, de,eu_shop,user40957@web.de,completed,10541,2023-02-22 14:00:00
+11408,08/08/2023,$35.38, USD ,U.S.,us_shop,user11932@mail.de,Completed,,2023-08-08 06:49:00
+10507,19.09.2023,"29,52 €",EUR, Fr,eu_shop,user97667@outlook.com,completed,,2023-09-19 12:13:00
+11171,06/04/2023,N/A, USD , U.S.,us_shop,user90681@mail.de,completed,,2023-06-04 14:32:00
+10453,2023-12-14,£51.34,GBP,  UK,eu_shop,user55908@gmail.com,Completed,,2023-12-14 08:20:00
+10298,2023-12-31,"€22,46",EUR, Italia,eu_shop,user94754@gmail.com,Completed,,2023-12-31 12:25:00
+10858,2023-11-03,$84.38,USD,  US,us_shop,user65012@gmail.com, COMPLETED,,2023-11-03 03:44:00
+11511,31.07.2023,"45,44",EUR,  Test ,eu_shop,user41022@web.de, COMPLETED,,2023-07-31 06:44:00
+11281,2023-04-13,$19.59,USD,United States Of America ,us_shop,user98772@gmail.com,completed,,2023-04-13 11:10:00
+11450,2023-11-29,34.64, USD ,Canada,us_shop,user56371@web.de,completed,,2023-11-29 01:23:00
+10995,05.05.2023,"56,87",  EUR, es,eu_shop, user36976@outlook.com,  Completed,,2023-05-05 19:33:00
+10026,03/14/2023,14.08,USD,TEST ,us_shop,qa693@example.com,Completed,,2023-03-14 23:02:00
+10291,2023-01-25,,USD,  united states of america ,us_shop,user18334@yahoo.com, COMPLETED,,2023-01-25 16:51:00
+50129,2023-12-31,"-51,08",EUR,  Fr,eu_shop,user92464@web.de,completed,11236,2023-12-31 11:00:00
+50124,2023-08-04,£26.80,GBP,Gb,eu_shop,user17847@mail.de,refunded,11195,2023-08-04 12:00:00
+50075,2023-02-22,"133,64 €",EUR,ES,eu_shop,user75454@outlook.com,refunded,10666,2023-02-22 11:00:00
+10609,12/09/2023,USD 72.47,USD,  gb,us_shop,user2070@web.de,Completed,,2023-12-09 15:28:00
+10991,2023-07-19,"25,20 EUR",EUR,fr,eu_shop,user92741@gmail.com,completed,,2023-07-19 14:49:00
+11489,2023-07-19,55.77,USD, usa,us_shop,user12339@mail.de,Completed,,2023-07-19 21:39:00
+11288,09.10.2023,95.91 GBP,GBP, united kingdom ,eu_shop,user56581@web.de,completed,,2023-10-09 12:25:00
+11312,2023-02-03,$105.35,USD,USA ,us_shop,user40998@mail.de, COMPLETED,,2023-02-03 07:19:00
+10112,2023-09-16,$50.08,USD,  TEST,us_shop,user55145@mail.de,Completed,,2023-09-16 14:40:00
+11500,10/24/2023,USD 50.10,USD,US ,us_shop,user50052@mail.de, COMPLETED,,2023-10-24 21:23:00
+10848,2023-03-02,USD 27.57,USD,united states ,us_shop,user4565@yahoo.com,completed,,2023-03-02 20:41:00
+10400,2023-01-14,$28.26,USD, UNITED STATES,us_shop,user65256@gmail.com,Completed,,2023-01-14 06:55:00
+11471,05/18/2023,51.37,USD,Usa ,us_shop,user81633@mail.de,completed,,2023-05-18 10:12:00
+10726,16.05.2023,"21,31 EUR",EUR,  de,eu_shop,user79756@gmail.com,completed,,2023-05-16 05:38:00
+50128,2023-04-09,"-30,51 €",EUR,  FR,eu_shop,user10098@web.de,completed,11235,2023-04-09 14:00:00
+50036,07.06.2023,"56,58 EUR",EUR,  ESPAÑA ,eu_shop,user3627@gmail.com,refunded,10338,2023-06-07 21:00:00
+10201,2023-09-14,USD 48.36,USD,  canada,us_shop,user96192@gmail.com,completed,,2023-09-14 04:38:00
+11463,24.10.2023,"84,28 €",EUR,germany ,eu_shop,user99763@yahoo.com,Completed,,2023-10-24 15:59:00
+11289,07.10.2023,"68,64 EUR",EUR,  Deutschland,eu_shop,user92463@yahoo.com,completed,,2023-10-07 00:24:00
+10800,2023-02-07,20.35, USD , U.K.,us_shop,user17129@outlook.com,completed,,2023-02-07 08:45:00
+10073,2023-08-24,195.48,USD,  USA ,us_shop,user6902@gmail.com,Completed,,2023-08-24 00:03:00
+50138,2023-03-21,$36.13,USD,u.s. ,us_shop,user58779@mail.de,refunded,11300,2023-03-21 06:00:00
+10032,2023-09-11,41.50,USD, CANADA ,us_shop,user20826@outlook.com,completed,,2023-09-11 06:44:00
+10105,04/25/2023,46.35,USD,united states of america ,us_shop,user40883@outlook.com,completed,,2023-04-25 17:52:00
+10316,2023-04-09,96.26,USD,  United States,us_shop,user95998@mail.de,completed,,2023-04-09 05:51:00
+10577,2023-06-16,"$3,603.00", USD ,UNITED STATES OF AMERICA,us_shop,user77268@mail.de,completed,,2023-06-16 19:39:00
+10994,2023-10-25,N/A,USD,  US,us_shop,user74452@web.de,completed,,2023-10-25 16:06:00
+10368,29.07.2023,"35,56",EUR,DE ,eu_shop,user48602@outlook.com,completed,,2023-07-29 12:42:00
+10587,2023-06-27,"$5,443.00",USD,  Ca ,us_shop,user93688@mail.de, COMPLETED,,2023-06-27 17:04:00
+10217,2023-07-04,$35.80, USD , CA,us_shop,user18323@outlook.com,completed,,2023-07-04 21:01:00
+50019,02/21/2023,-USD 106.08,USD,  USA,us_shop,user73788@gmail.com,completed,10183,2023-02-21 03:00:00
+10064,21.01.2023,"31,67",EUR,  Deutschland,eu_shop,user75241@gmail.com,completed,,2023-01-21 12:19:00
+50037,2023-04-20,"-103,09",EUR,  Germany ,eu_shop,user1285@yahoo.com,completed,10343,2023-04-20 10:00:00
+11304,2023-04-20,$28.38,USD,  ca,us_shop,user98923@gmail.com, COMPLETED,,2023-04-20 08:53:00
+11328,07/12/2023,USD 12.76,USD, USA ,us_shop,user4268@mail.de,Completed,,2023-07-12 10:35:00
+10130,07.09.2023,£25.89,GBP,TEST ,eu_shop,qa52@example.com,completed,,2023-09-07 22:33:00
+10045,2023-02-24,14.12 GBP,GBP, GREAT BRITAIN ,eu_shop,user26189@web.de,Completed,,2023-02-24 11:06:00
+10423,11.05.2023,"€29,71",EUR, DE ,eu_shop,user34157@gmail.com, COMPLETED,,2023-05-11 11:51:00
+10929,18.07.2023,"17,37 EUR",EUR, De ,eu_shop,user10137@mail.de,completed,,2023-07-18 16:34:00
+10307,16.01.2023,"28,33 EUR", EUR ,fr,eu_shop, user35134@mail.de,completed ,,2023-01-16 11:04:00
+11535,2023-05-20,56.25, USD ,  u.s. ,us_shop,user63327@yahoo.com, COMPLETED,,2023-05-20 17:39:00
+10317,2023-03-12,"2.477,59",EUR, France ,eu_shop,user11278@mail.de,completed,,2023-03-12 01:13:00
+11532,07/05/2023,73.08,USD,USA ,us_shop,user14623@outlook.com, COMPLETED,,2023-07-05 16:58:00
+10227,2023-04-12,48.09 GBP,GBP,UK ,eu_shop,user4410@gmail.com,completed,,2023-04-12 12:44:00
+11109,2023-07-25,USD 25.24,USD,  US ,us_shop,user81133@gmail.com,completed,,2023-07-25 22:01:00
+11383,2023-04-03,69.60,USD,  US,us_shop,user92540@yahoo.com,Completed,,2023-04-03 12:00:00
+10251,11/09/2023,19.53,USD, Usa,us_shop,user58311@yahoo.com,Completed,,2023-11-09 06:03:00
+10330,11/29/2023,11.66,USD,us,us_shop,user98567@gmail.com,completed,,2023-11-29 00:53:00
+10540,07.04.2023,"35,08 €",EUR,  Fr ,eu_shop,user44255@web.de,completed,,2023-04-07 14:02:00
+50046,14.05.2023,"29,71 €",EUR,  De,eu_shop,user34157@gmail.com,refunded,10423,2023-05-14 00:00:00
+10164,04/11/2023,USD 22.40,USD,  us,us_shop,user14809@yahoo.com,Completed,,2023-04-11 10:28:00
+50024,29.08.2023,"€43,06",EUR,españa ,eu_shop,user122@mail.de,refunded,10228,2023-08-29 19:00:00
+10541,08.02.2023,"€12,99",EUR,  Germany,eu_shop,user40957@web.de,completed,,2023-02-08 11:51:00
+10250,04.02.2023,"€32,25",EUR,  DE ,eu_shop,user35855@yahoo.com,completed,,2023-02-04 14:18:00
+10013,29.05.2023,"49,37 EUR",EUR, Germany ,eu_shop,user6262@yahoo.com,Completed,,2023-05-29 15:14:00
+10013,29.05.2023,"49,37 EUR",EUR, Germany ,eu_shop,user6262@yahoo.com,Completed,,2023-05-29 15:14:00
+50076,2023-01-27,"-€2.416,19",EUR, Deutschland ,eu_shop,user57588@outlook.com,completed,10670,2023-01-27 17:00:00
+10451,07.12.2023,"52,58 €",EUR, FR,eu_shop,user39358@outlook.com,Completed,,2023-12-07 22:15:00
+10031,2023-05-28,"11,01 EUR",EUR,Deutschland,eu_shop,user571@outlook.com,completed,,2023-05-28 15:06:00
+10732,2023-07-10,USD 30.25,USD,CANADA ,us_shop,user82784@web.de,completed,,2023-07-10 00:01:00
+11411,30.01.2023,"55,94 €",EUR, fr,eu_shop,user57329@mail.de,Completed,,2023-01-30 10:18:00
+10654,23.07.2023,"26,73",  eur,Spain ,eu_shop,USER63800@GMAIL.COM, Completed,,2023-07-23 11:27:00
+10340,10/02/2023,$18.29,USD, united states of america,us_shop,user18642@web.de,completed,,2023-10-02 03:46:00
+50077,2023-01-27,"2.416,19 €",EUR,De ,eu_shop,user57588@outlook.com,refunded,10670,2023-01-27 17:00:00
+11490,2023-10-09,"€45,83",EUR, DE ,eu_shop,user66726@outlook.com,completed,,2023-10-09 03:42:00
+10782,2023-10-06,"€38,98",EUR,  Italy ,eu_shop,user69081@web.de,Completed,,2023-10-06 22:55:00
+10448,2023-02-20,"€50,52",EUR, FR,eu_shop,user21250@outlook.com,completed,,2023-02-20 03:23:00
+11543,2023-09-07,$122.70,USD, US ,us_shop,user45756@mail.de,Completed,,2023-09-07 01:11:00
+10390,2023-03-30,"€21,89",EUR,  De,eu_shop,user47504@gmail.com,completed,,2023-03-30 07:29:00
+11430,29.01.2023,"20,39",EUR,Italy,eu_shop,user66870@outlook.com,completed,,2023-01-29 08:06:00
+10738,2023-11-05,USD 22.96,USD,  US,us_shop,user88946@gmail.com,completed,,2023-11-05 17:49:00
+10468,2023-08-18,"73,98 EUR",eur,  Fr,eu_shop, user63396@mail.de,COMPLETED,,2023-08-18 04:42:00
+10984,04.06.2023,£97.12,GBP,Uk ,eu_shop,user64585@yahoo.com, COMPLETED,,2023-06-04 15:50:00
+11052,2023-10-14,38.74 GBP,GBP, gb ,eu_shop,user56470@gmail.com, COMPLETED,,2023-10-14 08:51:00
+10945,07/22/2023,62.29,USD,Usa,us_shop,user89659@gmail.com, COMPLETED,,2023-07-22 15:21:00
+10484,07/10/2023,USD 22.28,USD,  U.S.,us_shop,user16612@gmail.com,Completed,,2023-07-10 19:45:00
+10146,27.04.2023,"124,59 €",EUR,France ,eu_shop,user34178@web.de,completed,,2023-04-27 14:37:00
+10107,2023-02-18,$50.55,USD,UNITED STATES OF AMERICA ,us_shop,user16128@mail.de,completed,,2023-02-18 15:37:00
+11174,09.08.2023,"23,74 EUR",EUR, spain,eu_shop,user95615@mail.de,completed,,2023-08-09 12:45:00
+11060,08/21/2023,$58.18,USD,U.S. ,us_shop,user77402@web.de,Completed,,2023-08-21 09:08:00
+10137,2023-11-29,$21.07,USD, Usa ,us_shop,user46379@outlook.com,Completed,,2023-11-29 05:02:00
+10989,2023-03-21,"69,47 EUR",EUR,  DE ,eu_shop,user17177@outlook.com,completed,,2023-03-21 14:06:00
+10244,02/22/2023,$39.18,USD, us,us_shop,user28263@web.de,completed,,2023-02-22 14:03:00
+10039,2023-05-13,USD 20.55,USD, US,us_shop,user19440@outlook.com,completed,,2023-05-13 23:19:00
+10231,15.05.2023,"88,91 EUR",EUR, It ,eu_shop,user68425@web.de,completed,,2023-05-15 15:36:00
+11058,21.01.2023,113.91 GBP,GBP, GREAT BRITAIN ,eu_shop,user76872@gmail.com,completed,,2023-01-21 23:46:00
+10834,2023-11-29,63.49,USD,  united states,us_shop,user64208@gmail.com, COMPLETED,,2023-11-29 06:35:00
+11049,2023-10-02,"€1.490,99",EUR, IT ,eu_shop,user76257@mail.de,completed,,2023-10-02 19:13:00
+10765,2023-06-24,£35.24,GBP,United Kingdom ,eu_shop,user99065@outlook.com, COMPLETED,,2023-06-24 02:51:00
+10934,02.09.2023,"17,78 €",EUR,  DEUTSCHLAND ,eu_shop,user43794@mail.de, COMPLETED,,2023-09-02 01:37:00
+50059,2023-11-25,-73.93,USD, CANADA,us_shop,user80204@yahoo.com,completed,10536,2023-11-25 12:00:00
+11042,2023-10-27,"38,69 EUR",EUR,France ,eu_shop,user86980@web.de, COMPLETED,,2023-10-27 07:56:00
+10717,09/18/2023,$66.00,USD, U.K. ,us_shop,user13928@outlook.com, COMPLETED,,2023-09-18 19:54:00
+10830,2023-04-07,4819,cents, UNITED STATES,us_shop,user81465@outlook.com, COMPLETED,,2023-04-07 03:54:00
+10347,03/26/2023,27.99,USD, united states ,us_shop,user3943@yahoo.com,completed,,2023-03-26 20:12:00
+11400,2023-02-19,69.39,usd,canada ,us_shop,user23681@mail.de,completed,,2023-02-19 07:13:00
+10203,15.01.2023,"25,76 EUR",EUR, España ,eu_shop,user85056@mail.de,completed,,2023-01-15 12:39:00
+11437,2023-03-26,USD 43.21,USD,u.s. ,us_shop,user17920@web.de,completed,,2023-03-26 21:36:00
+11537,2023-01-24,"29,39 EUR",EUR, FRANCE ,eu_shop,user20145@mail.de, COMPLETED,,2023-01-24 05:03:00
+10895,2023-10-27,USD 94.25,USD,  canada ,us_shop,user84688@yahoo.com,completed,,2023-10-27 21:24:00
+10772,09/19/2023,USD 39.86,USD, us,us_shop,user61993@outlook.com,Completed,,2023-09-19 12:45:00
+10954,2023-10-11,"59,84 EUR",EUR, DE,eu_shop,user7874@outlook.com,completed,,2023-10-11 06:04:00
+10711,2023-11-25,71.61 GBP,GBP,UK ,eu_shop,user90449@gmail.com,completed,,2023-11-25 23:09:00
+10594,04/12/2023,$92.14,USD,TEST,us_shop,qa308@example.com, COMPLETED,,2023-04-12 09:22:00
+10121,13.12.2023,"53,49 EUR",EUR, france ,eu_shop,user46196@yahoo.com,completed,,2023-12-13 21:12:00
+10331,2023-03-11,$75.32,USD, u.s.,us_shop,user7184@yahoo.com,completed,,2023-03-11 19:18:00
+10713,09/06/2023,25.26,USD,,us_shop,user71777@gmail.com,completed,,2023-09-06 06:30:00
+11294,09.09.2023,"69,19 €",EUR,  DE ,eu_shop,user83576@mail.de,Completed,,2023-09-09 14:10:00
+11150,2023-01-05,"27,00 EUR",EUR,  Deutschland,eu_shop,user84366@mail.de,completed,,2023-01-05 13:05:00
+11275,08/05/2023,49.02,USD,U.S. ,us_shop,user6256@web.de,completed,,2023-08-05 02:11:00
+10743,08/24/2023,USD 89.67,USD,  u.s.,us_shop,user40256@web.de,completed,,2023-08-24 07:10:00
+10221,2023-02-26,1867,cents,  CANADA,us_shop,user17800@web.de, COMPLETED,,2023-02-26 13:00:00
+10488,11/21/2023,$61.94,USD,United States ,us_shop,user93587@mail.de,completed,,2023-11-21 14:00:00
+11509,2023-06-24,"29,66 EUR",EUR,  france ,eu_shop,user96888@outlook.com,completed,,2023-06-24 23:17:00
+11470,06/15/2023,"$3,571.00",USD,U.S. ,us_shop,user49938@mail.de,completed,,2023-06-15 22:16:00
+10546,2023-01-30,$125.16, USD ,  United States,us_shop,user91160@mail.de,Completed,,2023-01-30 17:09:00
+11041,12/14/2023,$39.27,USD,  US,us_shop,user11914@outlook.com, COMPLETED,,2023-12-14 14:40:00
+11413,09/28/2023,USD 15.44, USD ,united states of america,us_shop,user70873@yahoo.com, COMPLETED,,2023-09-28 03:28:00
+11148,2023-12-19,USD 57.72,USD, U.S.,us_shop,user14284@yahoo.com,completed,,2023-12-19 03:58:00
+10998,06/03/2023,USD 17.74,USD,  United States Of America,us_shop,user18178@gmail.com, COMPLETED,,2023-06-03 17:35:00
+11239,2023-04-23,50.99,USD,united states ,us_shop,user67836@yahoo.com,completed,,2023-04-23 16:56:00
+10682,01/13/2023,USD 64.11,USD, UNITED STATES OF AMERICA,us_shop,user68699@mail.de, COMPLETED,,2023-01-13 23:28:00
+10939,02/07/2023,2390,cents, USA ,us_shop,user43552@gmail.com, COMPLETED,,2023-02-07 05:58:00
+11330,11/02/2023,110.29,USD,  United States,us_shop,user99787@web.de,completed,,2023-11-02 20:38:00
+11423,2023-12-23,"1.345,26 €",EUR, France ,eu_shop,user84236@yahoo.com,completed,,2023-12-23 03:28:00
+10465,2023-08-21,$35.11,USD, Us,us_shop,user11509@web.de,completed,,2023-08-21 21:18:00
+10010,20.08.2023,"€45,79",EUR,  Fr,eu_shop,user13711@outlook.com,completed,,2023-08-20 17:40:00
+10809,2023-10-13,"17,07 EUR",EUR,DEUTSCHLAND,eu_shop,user98271@yahoo.com,Completed,,2023-10-13 11:47:00
+10407,2023-03-15,"47,58 EUR",EUR,Germany,eu_shop,user21504@yahoo.com,completed,,2023-03-15 00:58:00
+11263,2023-01-10,USD 32.16,USD,United States ,us_shop,user87539@gmail.com,completed,,2023-01-10 23:44:00
+10917,2023-05-10,USD 18.38,USD,  us ,us_shop,user614@yahoo.com,completed,,2023-05-10 12:10:00
+11464,01.06.2023,"23,06",EUR,DEUTSCHLAND ,eu_shop,user13668@gmail.com, COMPLETED,,2023-06-01 07:24:00
+10869,2023-08-24,USD 18.55,usd, U.S.,us_shop,user18386@mail.de,Completed,,2023-08-24 04:27:00
+10870,03.12.2023,"42,57 €",EUR,ESPAÑA,eu_shop,user7880@web.de,Completed,,2023-12-03 22:58:00
+10402,2023-06-30,"USD 4,352.00",USD,  CA,us_shop,user77003@web.de,completed,,2023-06-30 02:30:00
+11473,2023-07-09,"€16,88",EUR,  Germany ,eu_shop,user72602@outlook.com, COMPLETED,,2023-07-09 20:42:00
+11055,2023-03-25,"€57,15",EUR,  Germany ,eu_shop,user14580@gmail.com, COMPLETED,,2023-03-25 07:30:00
+10257,2023-01-17,"32,42 EUR",EUR,  deutschland,eu_shop,user85829@web.de, COMPLETED,,2023-01-17 22:05:00
+10131,05.07.2023,"79,63 EUR",EUR, de,eu_shop,user38655@outlook.com, COMPLETED,,2023-07-05 16:56:00
+11484,2023-03-17,"22,63",EUR,  FR,eu_shop,user5394@yahoo.com,Completed,,2023-03-17 17:41:00
+10538,2023-12-05,"58,49 €",EUR, Deutschland ,eu_shop,user69295@mail.de,completed,,2023-12-05 01:57:00
+50041,11/01/2023,141.42,USD, us ,us_shop,user90784@mail.de,refunded,10377,2023-11-01 08:00:00
+10984,2023-06-04,126.93 GBP,GBP, U.K.,eu_shop,user64585@yahoo.com, COMPLETED,,2023-05-28 12:50:00
+11444,20.05.2023,"€12,32",EUR,  GERMANY ,eu_shop,user68448@outlook.com,completed,,2023-05-20 21:25:00
+10189,14.11.2023,"€111,18",EUR, Deutschland ,eu_shop,user62358@yahoo.com,completed,,2023-11-14 22:54:00
+10410,2023-08-06,"12,07 €",EUR,  It,eu_shop,user30642@mail.de,completed,,2023-08-06 06:32:00
+50048,2023-03-03,111.41 GBP,GBP,united kingdom,eu_shop,user11742@yahoo.com,refunded,10426,2023-03-03 12:00:00
+11446,07/16/2023,19.80, USD ,ca,us_shop,user52973@yahoo.com,completed,,2023-07-16 10:55:00
+50147,04/22/2023,69.60,USD,  us ,us_shop,user92540@yahoo.com,refunded,11383,2023-04-22 17:00:00
+11469,11/02/2023,26.72,USD,US,us_shop,user98801@yahoo.com, COMPLETED,,2023-11-02 05:03:00
+11204,12/07/2023,45.67,USD,  United States,us_shop,user85000@gmail.com,completed,,2023-12-07 11:29:00
+10842,2023-02-10,"€36,72",EUR, Italia ,eu_shop,user24476@gmail.com, COMPLETED,,2023-02-10 09:36:00
+10302,2023-09-14,"€2.742,77",EUR,IT ,eu_shop,user85045@mail.de,completed,,2023-09-14 09:08:00
+11226,2023-01-19,$17.39,USD,  GREAT BRITAIN ,us_shop,user82982@outlook.com,Completed,,2023-01-19 15:50:00
+10494,30.09.2023,"47,37 €",EUR, FR ,eu_shop,user14933@outlook.com,completed,,2023-09-30 05:26:00
+11215,28.04.2023,"€41,26",EUR, france ,eu_shop,user52515@web.de,Completed,,2023-04-28 13:14:00
+11283,2023-11-02,"26,84",EUR,,eu_shop,user72786@outlook.com, COMPLETED,,2023-11-02 18:03:00
+11121,2023-04-13,79.95,USD, united states of america ,us_shop,user31351@outlook.com, COMPLETED,,2023-04-13 01:11:00
+10175,10/01/2023,USD 76.88,USD,USA ,us_shop,user7865@outlook.com, COMPLETED,,2023-10-01 19:42:00
+11228,2023-11-14,"32,62",EUR,  españa,eu_shop,user29954@web.de,completed,,2023-11-09 02:39:00
+11452,01/03/2023,USD 66.21,USD, US ,us_shop,user19058@web.de,completed,,2023-01-03 23:09:00
+10447,06/12/2023,"USD 3,557.00",USD,  united states,us_shop,user17969@mail.de,Completed,,2023-06-12 15:31:00
+10913,2023-10-11,1396,Cents, united states of america,us_shop,user26965@web.de,completed,,2023-10-11 18:05:00
+11426,2023-04-23,30.11 GBP,GBP, gb ,eu_shop,user31908@yahoo.com,completed,,2023-04-23 19:48:00
+10606,2023-04-25,"44,89 EUR",EUR,  FR,eu_shop,user13416@yahoo.com,completed,,2023-04-25 17:46:00
+10620,11/18/2023,$34.68,USD,united states of america,us_shop,user73529@web.de,Completed,,2023-11-18 11:33:00
+10277,2023-11-20,"59,41 EUR",EUR, FR ,eu_shop,user30420@yahoo.com,Completed,,2023-11-20 06:37:00
+10712,2023-06-07,2780,cents,USA,us_shop,user37176@mail.de,completed,,2023-06-07 16:23:00
+10373,2023-12-07,102.30,USD,  CA,us_shop, user25993@gmail.com,  completed ,,2023-12-07 19:34:00
+10751,2023-06-23,£24.91,GBP,  Gb ,eu_shop,user47089@outlook.com,Completed,,2023-06-23 02:34:00
+50116,27.08.2023,"-30,21 €",EUR, IT ,eu_shop,user45462@gmail.com,completed,11105,2023-08-27 14:00:00
+11465,14.09.2023,"31,86",EUR,DE,eu_shop,user4591@yahoo.com, COMPLETED,,2023-09-14 22:34:00
+10401,2023-07-13,USD 23.49,USD,  USA,us_shop,user75591@mail.de,completed,,2023-07-13 10:57:00
+11032,2023-08-05,"32,78 EUR",EUR, FRANCE ,eu_shop,user72527@gmail.com,completed,,2023-08-05 05:21:00
+11245,2023-06-16,"51,42",EUR,  Italia ,eu_shop,user22211@yahoo.com,completed,,2023-06-16 09:40:00
+11232,2023-10-09,,USD,USA,us_shop,user62631@mail.de,Completed,,2023-10-09 00:12:00
+50107,2023-04-20,$87.37,USD, usa ,us_shop,user28248@outlook.com,refunded,11027,2023-04-20 22:00:00
+10197,07/27/2023,35.12,USD, CA ,us_shop,user39637@yahoo.com,completed,,2023-07-27 18:04:00
+10856,04.08.2023,"€22,60",EUR,Germany,eu_shop,USER64158@OUTLOOK.COM,COMPLETED ,,2023-08-04 06:56:00
+10141,2023-07-31,"8,28 EUR",EUR,  france,eu_shop,user31901@gmail.com, COMPLETED,,2023-07-31 05:10:00
+10086,10/28/2023,43.93,USD,  CANADA,us_shop,user36677@mail.de,completed,,2023-10-28 03:28:00
+10342,02/18/2023,79.71,USD,  USA,us_shop,user42295@yahoo.com,completed,,2023-02-18 00:24:00
+11457,2023-10-11,27.84,USD,United States,us_shop,user22329@gmail.com, COMPLETED,,2023-10-11 17:06:00
+10218,05.01.2023,"€23,28",EUR,  germany,eu_shop,user46094@gmail.com, COMPLETED,,2023-01-05 05:29:00
+10148,17.07.2023,"81,38 €",EUR,  españa ,eu_shop,user30351@outlook.com,completed,,2023-07-17 06:42:00
+11172,2023-05-09,$26.25,USD, Canada ,us_shop,user72193@yahoo.com,completed,,2023-05-09 12:29:00
+10150,07/02/2023,1342.00,USD, test ,us_shop,user82317@yahoo.com,completed,,2023-07-02 08:11:00
+11441,07/27/2023,USD 43.59,USD,U.S.,us_shop,user75260@mail.de,completed,,2023-07-27 16:11:00
+10674,11.06.2023,"71,04 EUR",EUR,GERMANY,eu_shop,user49862@mail.de,completed,,2023-06-11 05:34:00
+11247,06/17/2023,3666.00,USD,,us_shop,user97458@mail.de,completed,,2023-06-17 20:25:00
+10391,13.05.2023,"57,88",EUR,  TEST ,eu_shop,user24242@web.de,Completed,,2023-05-13 09:48:00
+10515,2023-11-01,"20,78 €",EUR, DE,eu_shop,user48712@gmail.com,Completed,,2023-11-01 15:51:00
+11192,08/08/2023,USD 24.56,USD,  united states of america,us_shop,user50177@outlook.com,Completed,,2023-08-08 07:00:00
+11309,03/14/2023,USD 29.54,USD,  Usa,us_shop,user46299@mail.de,completed,,2023-03-07 09:09:00
+10554,01/20/2023,2523,cents,CA,us_shop,user1578@gmail.com, COMPLETED,,2023-01-20 03:53:00
+11140,2023-12-25,USD 70.15,  USD , U.K. ,us_shop,USER68327@YAHOO.COM, Completed,,2023-12-25 07:42:00
+11340,2023-08-18,"38,59 €",EUR,Germany,eu_shop,user75555@outlook.com, COMPLETED,,2023-08-18 09:51:00
+11116,2023-05-05,22.70 GBP,GBP, GREAT BRITAIN,eu_shop,user18756@outlook.com, COMPLETED,,2023-05-05 05:42:00
+11170,2023-10-07,"126,94 €",EUR,España ,eu_shop,user25717@web.de,completed,,2023-10-07 06:58:00
+10985,2023-04-19,$23.82, USD , Canada ,us_shop,user82069@yahoo.com,Completed,,2023-04-19 09:46:00
+10542,2023-10-07,"49,36 EUR",EUR,deutschland ,eu_shop,user74447@web.de,Completed,,2023-10-07 06:30:00
+10980,07/05/2023,8.62,USD,  CA ,us_shop,user19007@outlook.com,completed,,2023-07-05 03:50:00
+10877,15.01.2023,"€28,92",EUR,  France,eu_shop,user42260@outlook.com,completed,,2023-01-15 16:09:00
+10177,2023-08-18,"50,39",EUR,Deutschland,eu_shop,user72728@web.de, COMPLETED,,2023-08-18 13:23:00
+50143,06/23/2023,"USD 5,065.00",USD, US,us_shop,user19082@outlook.com,refunded,11357,2023-06-23 23:00:00
+10419,09/18/2023,$213.94,USD,CANADA ,us_shop,user52644@mail.de,completed,,2023-09-18 19:19:00
+50015,2023-07-25,"81,38 EUR",EUR, Es ,eu_shop,user30351@outlook.com,refunded,10148,2023-07-25 03:00:00
+11027,04/09/2023,USD 87.37,USD,  US,us_shop,user28248@outlook.com, COMPLETED,,2023-04-09 17:00:00
+50006,09/19/2023,-$55.48,USD,  US ,us_shop,user65646@web.de,completed,10065,2023-09-19 10:00:00
+11136,2023-01-20,19.97,USD,  U.S. ,us_shop,user43046@outlook.com,Completed,,2023-01-10 08:31:00
+10975,28.01.2023,"106,89",EUR,ESPAÑA ,eu_shop,user55771@gmail.com,completed,,2023-01-28 02:34:00
+11325,27.08.2023,"44,69 €",EUR, IT,eu_shop,user52559@web.de,completed,,2023-08-27 22:07:00
+10963,2023-05-17,"€20,05",EUR,  Deutschland ,eu_shop,user56922@mail.de,completed,,2023-05-17 23:40:00
+10346,2023-07-01,£24.11,GBP, GB ,eu_shop,user96623@outlook.com,completed,,2023-07-01 11:23:00
+10242,2023-08-01,19.02, USD , United States Of America,us_shop,user17731@web.de,Completed,,2023-08-01 00:42:00
+10646,2023-06-18,"€29,36",EUR, GERMANY,eu_shop,user13224@yahoo.com, COMPLETED,,2023-06-18 22:59:00
+10698,13.06.2023,"19,70 €",EUR, DE,eu_shop,user78949@web.de,completed,,2023-06-13 12:33:00
+11188,2023-02-15,"52,43 EUR",EUR,  GERMANY ,eu_shop,user4687@outlook.com,completed,,2023-02-15 19:10:00
+10968,2023-01-24,17.07,USD,united states of america ,us_shop,user69096@outlook.com,completed,,2023-01-24 11:32:00
+10566,24.08.2023,"40,35",EUR, De ,eu_shop,user15825@yahoo.com,completed,,2023-08-24 04:51:00
+10536,11/03/2023,USD 73.93,USD, ca ,us_shop,user80204@yahoo.com, COMPLETED,,2023-11-03 04:35:00
+11436,28.09.2023,"30,53 €",EUR,FR ,eu_shop,user72298@web.de,completed,,2023-09-28 17:16:00
+10569,05/05/2023,USD 64.71,USD,  CANADA ,us_shop,USER40142@GMAIL.COM,completed ,,2023-05-05 09:20:00
+10762,2023-12-13,6036,cents, united states of america ,us_shop,user39337@mail.de, COMPLETED,,2023-12-13 06:20:00
+10570,2023-08-27,$53.75,USD,  UNITED STATES OF AMERICA,us_shop,user58029@gmail.com, COMPLETED,,2023-08-25 21:22:00
+10721,04/03/2023,$25.54,USD,U.S. ,us_shop,user52829@gmail.com,completed,,2023-04-03 19:30:00
+10386,2023-12-28,31.50,USD, UNITED STATES,us_shop,user94988@outlook.com,Completed,,2023-12-28 19:03:00
+11552,2023-07-01,2077.00,USD,United States Of America ,us_shop,user15331@mail.de,Completed,,2023-07-01 01:47:00
+10570,2023-08-27,79.44,usd, United States,us_shop,user58029@gmail.com, COMPLETED,,2023-08-27 02:22:00
+10232,09/28/2023,USD 33.55,USD,  united states of america ,us_shop,user22168@outlook.com,Completed,,2023-09-28 07:43:00
+50053,2023-03-23,-$19.79,USD,  United States ,us_shop,user75292@gmail.com,completed,10458,2023-03-23 17:00:00
+10619,2023-10-15,"1.779,29",EUR, fr ,eu_shop,user944@mail.de,completed,,2023-10-06 06:48:00
+10735,11.10.2023,"£1,568.43",GBP,  uk,eu_shop,user4150@mail.de,Completed,,2023-10-11 01:59:00
+10511,2023-12-25,£59.86,GBP,gb ,eu_shop,user88886@mail.de,completed,,2023-12-25 14:27:00
+10297,05.11.2023,"74,10 €",  eur,  DEUTSCHLAND ,eu_shop,USER9157@WEB.DE, completed,,2023-11-05 03:48:00
+10097,2023-09-20,49.82, USD ,  UNITED KINGDOM,us_shop,user62581@outlook.com, COMPLETED,,2023-09-20 03:16:00
+10725,2023-01-03,$49.24,USD,  UNITED STATES,us_shop,user90475@gmail.com, COMPLETED,,2022-12-29 15:04:00
+11524,2023-03-03,$57.68,USD,  test,us_shop,user15994@outlook.com,Completed,,2023-03-03 22:39:00
+10697,2023-08-30,"37,84",EUR, de,eu_shop,user17794@gmail.com,completed,,2023-08-30 16:29:00
+10816,02/22/2023,USD 51.08,USD,  US,us_shop,user64552@yahoo.com,completed,,2023-02-22 20:39:00
+10214,2023-07-01,1125.00,USD,,us_shop,user84241@outlook.com,Completed,,2023-07-01 09:56:00
+11109,2023-07-25,USD 25.24,  Usd ,  Us ,us_shop, user81133@gmail.com,COMPLETED ,,2023-07-25 22:01:00
+11507,2023-06-14,£50.47,GBP, GREAT BRITAIN,eu_shop,user74573@mail.de,completed,,2023-06-14 10:37:00
+11073,01/21/2023,USD 23.73,USD, US,us_shop,user60249@gmail.com,completed,,2023-01-21 04:34:00
+10815,01/08/2023,$76.55,USD, canada,us_shop,user73972@yahoo.com, COMPLETED,,2023-01-08 03:32:00
+10703,2023-12-12,"€15,27",EUR, Germany,eu_shop,user10533@gmail.com,Completed,,2023-12-12 11:15:00
+11100,2023-05-02,$34.82,USD, ca,us_shop,user2060@yahoo.com,completed,,2023-05-02 13:43:00
+11488,10/31/2023,$32.21,USD, USA,us_shop,user90303@gmail.com,completed,,2023-10-31 20:01:00
+50097,2023-03-14,$34.17,usd,  Canada ,us_shop,user55790@gmail.com,refunded,10931,2023-03-14 13:00:00
+10521,2023-07-28,40.40 GBP,GBP,  Great Britain,eu_shop,user56479@gmail.com,Completed,,2023-07-28 00:16:00
+11008,2023-01-16,$12.83,USD,  USA ,us_shop,user71880@mail.de,Completed,,2023-01-16 13:47:00
+11251,2023-12-11,"18,88",EUR,  italia,eu_shop,user4965@web.de, COMPLETED,,2023-12-11 22:20:00
+11253,29.08.2023,"75,88 €",EUR, de ,eu_shop,user96644@outlook.com,completed,,2023-08-29 13:04:00
+10239,2023-06-01,$93.57,USD, United States ,us_shop,user79618@outlook.com,Completed,,2023-06-01 11:15:00
+10605,26.06.2023,"€15,14",EUR, Deutschland ,eu_shop,user26085@web.de,Completed,,2023-06-26 16:07:00
+10387,05/23/2023,112.22,USD,  Usa,us_shop,user8283@mail.de, COMPLETED,,2023-05-23 21:39:00
+50049,2023-02-09,"-22,40 €",EUR,  De,eu_shop,user60734@yahoo.com,completed,10428,2023-02-09 02:00:00
+10139,14.11.2023,"28,28 EUR",EUR,Fr ,eu_shop,user76938@yahoo.com, COMPLETED,,2023-11-14 10:00:00
+10912,2023-05-15,USD 39.77, USD, Canada,us_shop, user96504@gmail.com,completed,,2023-05-15 23:15:00
+10496,08/23/2023,12.95,USD,  United States,us_shop,user42040@mail.de,completed,,2023-08-23 21:02:00
+10745,2023-06-14,"$5,087.00",USD, US,us_shop,user87127@yahoo.com,completed,,2023-06-14 16:37:00
+11402,05/08/2023,$43.68,USD,United States Of America,us_shop,user31062@web.de, COMPLETED,,2023-05-08 21:14:00
+10222,10/07/2023,USD 40.03,USD, UNITED STATES OF AMERICA ,us_shop,user46343@mail.de,Completed,,2023-10-07 02:22:00
+11290,2023-03-27,"37,87 EUR",EUR,fr ,eu_shop,user1982@gmail.com,Completed,,2023-03-27 04:11:00
+10643,10/05/2023,50.87,USD, CA,us_shop,user17536@mail.de,completed,,2023-10-05 05:28:00
+10826,06/24/2023,"USD 3,901.00",USD,  USA,us_shop,user86252@mail.de,completed,,2023-06-24 07:15:00
+11086,2023-08-17,16.96,usd,united states,us_shop,user65035@outlook.com,completed,,2023-08-17 07:28:00
+11486,09.09.2023,"112,31 EUR",EUR,  deutschland,eu_shop,user19161@mail.de,completed,,2023-09-09 05:48:00
+11177,2023-03-30,N/A,EUR,Fr,eu_shop,user78839@mail.de,completed,,2023-03-30 10:19:00
+11175,2023-06-01,£20.10,GBP,UNITED KINGDOM ,eu_shop,user73959@yahoo.com, COMPLETED,,2023-06-01 08:18:00
+10986,03.07.2023,"€38,37",EUR,Fr ,eu_shop,user48723@outlook.com, COMPLETED,,2023-07-03 05:28:00
+10838,2023-03-16,"€49,17",EUR,Italia ,eu_shop,user11942@outlook.com,completed,,2023-03-16 22:49:00
+11206,20.03.2023,"34,57 EUR",EUR,deutschland,eu_shop,user29365@mail.de,Completed,,2023-03-20 22:24:00
+11458,2023-09-19,26.19,USD, usa,us_shop,user42145@yahoo.com, COMPLETED,,2023-09-19 09:19:00
+50141,2023-03-27,"19,72 €",EUR,  España,eu_shop,user66703@mail.de,refunded,11346,2023-03-27 08:00:00
+11236,2023-12-28,"51,08 €",EUR, FRANCE,eu_shop,user92464@web.de, COMPLETED,,2023-12-28 19:24:00
+10247,2023-06-02,$44.98,USD,USA,us_shop,user55079@gmail.com,completed,,2023-06-02 09:19:00
+11539,2023-05-21,$80.18,USD, USA,us_shop,user49642@gmail.com, COMPLETED,,2023-05-21 09:27:00
+11222,2023-12-14,$55.54,USD,US,us_shop,user3879@web.de,Completed,,2023-12-14 07:02:00
+10921,03/15/2023,USD 31.20,usd, United States ,us_shop,user38811@gmail.com,completed,,2023-03-15 21:50:00
+10048,2023-01-07,60.09,usd,united states ,us_shop,user76044@outlook.com,completed,,2023-01-07 03:14:00
+10018,30.09.2023,"14,00 EUR",EUR,de ,eu_shop,user25855@yahoo.com,completed,,2023-09-30 13:12:00
+50057,06.10.2023,"€29,52",EUR,FR ,eu_shop,user97667@outlook.com,refunded,10507,2023-10-06 01:00:00
+11210,2023-03-30,$27.08,USD, CA,us_shop,user53701@outlook.com,completed,,2023-03-30 02:16:00
+11529,19.01.2023,"21,50 EUR",EUR, Spain,eu_shop,user48961@mail.de,completed,,2023-01-19 06:25:00
+10863,13.01.2023,"26,68 EUR",EUR,Italy ,eu_shop,user82338@mail.de, COMPLETED,,2023-01-13 19:33:00
+11029,2023-03-25,86.20,USD,United States ,us_shop,user71235@yahoo.com,completed,,2023-03-25 13:48:00
+50026,10.11.2023,"43,19 EUR",EUR, Fr,eu_shop,user97426@mail.de,refunded,10229,2023-11-10 21:00:00
+10625,2023-08-16,USD 55.30,USD,United States,us_shop,user80817@yahoo.com,completed,,2023-08-16 03:44:00
+50054,03.06.2023,"-1.691,50",EUR, Deutschland ,eu_shop,user56453@gmail.com,completed,10466,2023-06-03 16:00:00
+10076,17.07.2023,"67,49", EUR , france ,eu_shop, user98929@web.de,  Completed,,2023-07-17 10:18:00
+10099,2023-10-20,41.18,USD,UNITED KINGDOM ,us_shop,user23019@yahoo.com,Completed,,2023-10-20 19:05:00
+10458,03/05/2023,USD 19.79,usd,  us ,us_shop,user75292@gmail.com,completed,,2023-03-05 17:31:00
+11268,09/20/2023,USD 57.94,USD, usa,us_shop,user76042@outlook.com,completed,,2023-09-20 10:26:00
+11103,02/13/2023,USD 17.65,USD,United States ,us_shop,user49635@web.de,Completed,,2023-02-13 22:08:00
+10828,2023-10-08,"29,55 EUR",EUR,,eu_shop,user83021@yahoo.com,completed,,2023-10-08 19:37:00
+10072,2023-04-06,79.45,USD,  United States ,us_shop,user97942@yahoo.com, COMPLETED,,2023-04-06 23:48:00
+10681,2023-01-03,USD 203.46,USD, GREAT BRITAIN,us_shop,user7591@gmail.com, COMPLETED,,2023-01-03 21:19:00
+11026,2023-01-11,USD 36.29,USD,canada ,us_shop,user38286@outlook.com, COMPLETED,,2023-01-11 09:45:00
+10412,2023-02-26,£97.50,GBP,U.K. ,eu_shop,user35722@mail.de, COMPLETED,,2023-02-26 16:03:00
+10203,15.01.2023,"19,30 €",EUR, ES ,eu_shop,user85056@mail.de,completed,,2023-01-05 22:39:00
+11448,12/01/2023,USD 31.32,USD,  Us,us_shop,user60568@gmail.com,Completed,,2023-12-01 04:18:00
+11372,05/27/2023,71.46,USD,USA,us_shop,user57793@gmail.com,completed,,2023-05-27 19:56:00
+10399,2023-08-22,95.18,USD,canada,us_shop,user60527@yahoo.com, COMPLETED,,2023-08-22 23:21:00
+50030,09/03/2023,USD 21.83,USD, UNITED STATES OF AMERICA ,us_shop,user5513@web.de,refunded,10266,2023-09-03 00:00:00
+50063,2023-08-28,"40,35 EUR",EUR,Germany ,eu_shop,user15825@yahoo.com,refunded,10566,2023-08-28 06:00:00
+10168,2023-07-22,6573,Cents,USA ,us_shop,user24344@web.de,completed,,2023-07-22 21:10:00
+50044,10/30/2023,USD 35.38,USD,  CANADA,us_shop,user15128@yahoo.com,refunded,10421,2023-10-30 16:00:00
+11481,20.10.2023,"68,84 EUR",EUR,deutschland ,eu_shop,user44785@web.de,Completed,,2023-10-20 04:09:00
+10777,02/12/2023,20.58, USD , U.S.,us_shop,user52068@outlook.com,completed,,2023-02-12 16:52:00
+11536,2023-04-07,1305,cents,  u.s.,us_shop,user31414@web.de, COMPLETED,,2023-04-07 20:26:00
+50021,16.02.2023,"-13,35 €",EUR,De ,eu_shop,user78360@mail.de,completed,10204,2023-02-16 13:00:00
+10690,10/18/2023,33.17,usd, Us ,us_shop,user13856@outlook.com, COMPLETED,,2023-10-13 10:07:00
+10191,2023-07-04,"€56,75",EUR,  de ,eu_shop,user46357@outlook.com,Completed,,2023-07-04 00:21:00
+50132,2023-10-03,-$57.94,USD, united states ,us_shop,user76042@outlook.com,completed,11268,2023-10-03 15:00:00
+10722,2023-03-24,23.60,USD,  CA ,us_shop,user4490@web.de,Completed,,2023-03-24 04:34:00
+10467,11/18/2023,USD 17.49,USD,UNITED STATES,us_shop,user64021@outlook.com, COMPLETED,,2023-11-18 06:06:00
+11011,04.08.2023,£71.41,GBP,GB ,eu_shop,user90720@gmail.com,completed,,2023-08-04 02:45:00
+10876,19.03.2023,"36,46 €",EUR,  Fr,eu_shop,user74909@gmail.com,Completed,,2023-03-19 09:13:00
+11141,27.07.2023,"87,55 EUR",EUR, France,eu_shop,user26540@outlook.com,completed,,2023-07-27 15:03:00
+10219,2023-06-23,"61,94 EUR",EUR,deutschland ,eu_shop,user43996@gmail.com,completed,,2023-06-23 18:15:00
+10082,07/01/2023,5763.00, USD ,united states of america ,us_shop, user75968@web.de, Completed ,,2023-07-01 08:56:00
+11262,2023-08-10,"€20,40",EUR, Germany ,eu_shop,user56976@yahoo.com,Completed,,2023-08-10 22:03:00
+11518,2023-03-31,"€43,31",EUR,Germany ,eu_shop,user15908@outlook.com,completed,,2023-03-31 04:32:00
+10537,2023-10-13,"55,50 €",EUR,IT,eu_shop,user25425@mail.de,completed,,2023-10-13 14:11:00
+11390,2023-01-20,"76,50 €",EUR,  De,eu_shop,user14461@yahoo.com,completed,,2023-01-20 12:54:00
+10611,2023-05-19,USD 20.94,USD,  U.S. ,us_shop,user429@mail.de,completed,,2023-05-19 13:44:00
+50136,2023-04-06,"-17,09 €",EUR,,eu_shop,user46325@outlook.com,completed,11299,2023-04-06 15:00:00
+11256,2023-01-17,74.08,USD,  U.S. ,us_shop,user42141@yahoo.com,Completed,,2023-01-17 04:47:00
+11442,2023-01-08,11.99,USD,Canada ,us_shop,user52355@web.de, COMPLETED,,2023-01-08 12:02:00
+10706,30.12.2023,"€35,39",EUR,DE,eu_shop,user57289@outlook.com,Completed,,2023-12-30 22:42:00
+10607,10.02.2023,"€2.673,53",EUR,  France ,eu_shop,user50390@mail.de,completed,,2023-02-10 15:17:00
+10849,2023-01-07,4249,cents,us,us_shop,user90094@mail.de,Completed,,2023-01-07 05:36:00
+10310,2023-11-13,N/A,USD,UK ,us_shop,user24892@gmail.com,completed,,2023-11-13 12:10:00
+10200,03/26/2023,47.44,USD, Ca ,us_shop,user2630@yahoo.com,completed,,2023-03-26 01:25:00
+10260,2023-10-04,$55.65,USD,  CA ,us_shop,user61663@outlook.com,Completed,,2023-10-04 07:37:00
+10947,2023-10-17,"88,78 €",EUR, italy,eu_shop,user99958@mail.de,completed,,2023-10-17 08:49:00
+50110,2023-09-28,£38.39,GBP,gb,eu_shop,user11688@outlook.com,refunded,11064,2023-09-28 14:00:00
+11224,09/26/2023,$25.17,USD, US ,us_shop,user21295@gmail.com,completed,,2023-09-26 09:20:00
+10851,2023-09-02,USD 12.81,USD, united states of america,us_shop,user73802@mail.de,Completed,,2023-09-02 15:15:00
+10210,2023-10-12,USD 58.81,USD,  US,us_shop,user79439@outlook.com, COMPLETED,,2023-10-12 23:09:00
+10344,06/09/2023,USD 48.98,USD,  Ca ,us_shop,user18829@mail.de,completed,,2023-06-09 03:53:00
+11068,02/26/2023,$17.19,USD, United States ,us_shop,user45160@outlook.com,completed,,2023-02-26 21:05:00
+10530,06/04/2023,USD 41.41,USD, GB,us_shop,user49212@outlook.com,Completed,,2023-06-04 04:51:00
+10680,2023-01-14,$31.53,USD,US ,us_shop,user27455@outlook.com,Completed,,2023-01-14 20:39:00
+11161,2023-05-17,$36.51,USD, Usa ,us_shop,user45620@gmail.com,Completed,,2023-05-17 10:05:00
+10303,16.07.2023,46.92 GBP,GBP,U.K.,eu_shop,user79082@web.de, COMPLETED,,2023-07-16 16:17:00
+10596,2023-11-25,USD 16.40,USD, canada ,us_shop,user91173@web.de,completed,,2023-11-25 10:16:00
+11269,2023-06-17,16995.00,usd, US ,us_shop,user11999@yahoo.com, COMPLETED,,2023-06-17 23:25:00
+11028,16.01.2023,"22,80 €",EUR,España,eu_shop,user42727@web.de,Completed,,2023-01-16 00:34:00
+10771,2023-11-28,USD 51.41,USD, ca ,us_shop,user67172@outlook.com,completed,,2023-11-28 06:51:00
+10729,2023-07-08,£56.32,GBP,  UK,eu_shop,user78969@mail.de,completed,,2023-07-08 05:03:00
+11184,12/31/2023,$55.52,USD,  U.S.,us_shop,user39469@yahoo.com,Completed,,2023-12-31 05:12:00
+10671,01/02/2023,USD 116.28, USD ,  United States,us_shop,user71405@yahoo.com,Completed,,2023-01-02 04:16:00
+50033,2023-10-04,"€2.742,77",EUR, IT,eu_shop,user85045@mail.de,refunded,10302,2023-10-04 03:00:00
+10904,09.12.2023,"€42,08",EUR,FR,eu_shop,user65284@gmail.com,completed,,2023-12-09 04:54:00
+10080,08.10.2023,"€33,67",EUR,  Italy,eu_shop,user50035@yahoo.com,completed,,2023-10-08 23:59:00
+10046,2023-04-15,"63,27 EUR",EUR, France,eu_shop,user48485@web.de, COMPLETED,,2023-04-15 10:26:00
+11154,2023-09-18,19.82,usd, UNITED STATES ,us_shop,user88954@mail.de,completed,,2023-09-18 20:59:00
+10163,07/27/2023,$58.78,USD,U.K. ,us_shop,user37924@gmail.com, COMPLETED,,2023-07-27 11:31:00
+10831,2023-06-22,"€42,43",EUR,Fr ,eu_shop,user26058@mail.de,completed,,2023-06-22 08:44:00
+10249,10/26/2023,USD 36.14, USD ,  united states of america ,us_shop,user92657@web.de, COMPLETED,,2023-10-21 09:03:00
+10873,02.03.2023,"61,57 EUR",EUR,,eu_shop,user83008@gmail.com,completed,,2023-03-02 10:34:00
+10457,24.03.2023,"32,49 €",EUR,TEST,eu_shop,user48505@outlook.com,completed,,2023-03-24 17:09:00
+10556,2023-07-29,USD 45.69,usd,  u.k. ,us_shop,user71080@web.de,Completed,,2023-07-29 12:06:00
+10280,09/01/2023,USD 32.36,USD, united states of america,us_shop,user59963@yahoo.com,Completed,,2023-09-01 10:34:00
+10054,2023-06-26,"2.708,36 €",EUR,France,eu_shop,user85977@outlook.com, COMPLETED,,2023-06-26 08:38:00
+50005,11.02.2023,"-31,67 EUR",EUR,  DE,eu_shop,user75241@gmail.com,completed,10064,2023-02-11 11:00:00
+10839,11.05.2023,"28,58",EUR, spain ,eu_shop,user39108@gmail.com,Completed,,2023-05-11 00:40:00
+10699,2023-06-02,USD 23.86,usd,  UNITED STATES OF AMERICA ,us_shop,user26254@web.de,completed,,2023-06-02 12:17:00
+10154,12/10/2023,USD 53.54,USD, United States Of America,us_shop,user127@gmail.com,completed,,2023-12-10 20:18:00
+11317,07/13/2023,$96.41,USD, UNITED STATES ,us_shop,user79574@mail.de, COMPLETED,,2023-07-13 21:28:00
+10933,24.02.2023,"€18,57",EUR,GERMANY ,eu_shop,user99939@web.de, COMPLETED,,2023-02-24 17:25:00
+10672,03/31/2023,32.84,USD,  USA ,us_shop,user34533@yahoo.com,completed,,2023-03-31 07:37:00
+10264,2023-07-11,$96.59,USD,  usa,us_shop,user47112@yahoo.com,completed,,2023-07-11 21:05:00
+11260,06/28/2023,11528.00,USD, united states of america ,us_shop,user52363@web.de, COMPLETED,,2023-06-28 05:09:00
+10878,2023-02-12,"€29,93", EUR , spain ,eu_shop, user40692@mail.de, COMPLETED,,2023-02-12 11:41:00
+10525,2023-06-03,33.92 GBP,GBP,  Great Britain ,eu_shop,user65709@mail.de,completed,,2023-06-03 03:07:00
+10140,05.06.2023,"€35,75",EUR,  IT ,eu_shop,user8850@yahoo.com, COMPLETED,,2023-06-05 21:24:00
+10564,05/28/2023,USD 25.11,USD, Test,us_shop,user16014@yahoo.com,completed,,2023-05-28 00:25:00
+11203,2023-09-12,"72,88 €",EUR,  Es ,eu_shop,user41394@outlook.com,Completed,,2023-09-12 21:31:00
+10153,2023-01-21,USD 46.26,USD,  USA,us_shop,user23549@web.de,completed,,2023-01-21 07:36:00
+11144,03/25/2023,USD 28.35,USD,CA ,us_shop,user91338@outlook.com,completed,,2023-03-25 07:59:00
+10479,2023-11-08,4322,cents, united states of america,us_shop,user40046@yahoo.com,Completed,,2023-11-08 10:21:00
+11540,06/09/2023,USD 35.24,USD,us,us_shop,user76844@web.de, COMPLETED,,2023-06-09 04:42:00
+11379,2023-05-25,USD 46.98,USD, US,us_shop,user16249@outlook.com, COMPLETED,,2023-05-25 20:36:00
+11470,06/15/2023,"$3,571.00",USD,U.S. ,us_shop,user49938@mail.de,completed,,2023-06-15 22:16:00
+11087,2023-02-14,"2,669.09 GBP",GBP,  Great Britain,eu_shop,user27086@outlook.com,completed,,2023-02-14 13:38:00
+10408,27.02.2023,£72.46,GBP,GREAT BRITAIN ,eu_shop,user27183@web.de,Completed,,2023-02-27 00:57:00
+11498,2023-06-09,40.93, USD ,  Usa ,us_shop,user58343@gmail.com,completed,,2023-06-09 13:45:00
+11098,2023-09-06,"57,92 €",EUR,  France,eu_shop,user96565@mail.de, COMPLETED,,2023-09-06 19:54:00
+11004,26.04.2023,"13,46 €",EUR,germany ,eu_shop,user48395@yahoo.com, COMPLETED,,2023-04-26 22:01:00
+10793,2023-09-19,61.28,USD,  USA ,us_shop,user8505@yahoo.com, COMPLETED,,2023-09-19 18:42:00
+11316,24.10.2023,"42,19 EUR",EUR,fr ,eu_shop,user57950@outlook.com,Completed,,2023-10-24 18:11:00
+10497,2023-03-30,40.24,USD,USA ,us_shop,user22497@web.de,Completed,,2023-03-30 10:18:00
+10775,2023-11-10,USD 16.14,usd,Canada,us_shop,user57143@web.de,completed,,2023-11-10 05:00:00
+11373,2023-04-19,"€16,44",EUR,  SPAIN,eu_shop,user76187@web.de,completed,,2023-04-19 13:13:00
+10660,2023-05-27,15.20,USD, united states of america,us_shop,user39398@web.de,completed,,2023-05-27 12:38:00
+10114,2023-05-02,7673,cents,USA,us_shop,user40030@outlook.com,completed,,2023-05-02 20:10:00
+10862,2023-10-22,$43.96,USD, US,us_shop,user17568@gmail.com, COMPLETED,,2023-10-22 23:59:00
+10518,07/31/2023,23.98,usd, U.S. ,us_shop,user1082@gmail.com,completed,,2023-07-31 10:47:00
+50113,20.03.2023,"-€36,12",EUR,  deutschland ,eu_shop,user37773@web.de,completed,11085,2023-03-20 11:00:00
+11108,16.05.2023,"62,78",EUR, deutschland ,eu_shop,user22457@gmail.com,completed,,2023-05-16 21:33:00
+11046,2023-11-02,35.45,USD,  united states of america ,us_shop,user36316@yahoo.com, COMPLETED,,2023-11-02 22:26:00
+10986,03.07.2023,"€38,37",EUR,Fr ,eu_shop,user48723@outlook.com, COMPLETED,,2023-07-03 05:28:00
+11473,2023-07-09,"€16,88",Eur,  GERMANY ,eu_shop, user72602@outlook.com,  COMPLETED ,,2023-07-09 20:42:00
+11235,08.04.2023,"30,51 €",EUR,  France ,eu_shop,user10098@web.de,completed,,2023-04-08 16:26:00
+10632,2023-04-01,USD 54.14,USD, Ca,us_shop,user35592@yahoo.com,Completed,,2023-04-01 04:56:00
+10286,2023-08-02,"€12,53",EUR,Deutschland,eu_shop,user38775@outlook.com,completed,,2023-08-02 09:42:00
+10506,03/10/2023,55.77,USD,  GREAT BRITAIN,us_shop,user29370@gmail.com,completed,,2023-03-10 06:28:00
+10694,2023-10-10,"17,34",EUR,test,eu_shop,user2617@yahoo.com, COMPLETED,,2023-10-10 15:10:00
+10318,2023-02-06,"69,87 €",EUR, fr ,eu_shop,user60524@mail.de,completed,,2023-02-06 20:57:00
+11307,01/13/2023,$99.36,USD,u.k.,us_shop,user71222@web.de,Completed,,2023-01-13 00:29:00
+10030,2023-09-23,"61,50 EUR",EUR, De ,eu_shop,user70501@web.de,completed,,2023-09-23 06:45:00
+10755,2023-10-23,"€46,39",EUR,  Germany ,eu_shop,user96832@web.de,Completed,,2023-10-23 05:08:00
+10628,2023-11-07,"40,06",EUR,de,eu_shop,user42210@web.de, COMPLETED,,2023-11-07 06:10:00
+10740,11/13/2023,14.28,USD,U.S. ,us_shop,user79729@web.de,Completed,,2023-11-13 10:11:00
+10967,12/22/2023,2771,Cents,United States ,us_shop,user51820@web.de,completed,,2023-12-22 04:08:00
+10061,12/04/2023,3577,cents,united states of america,us_shop,user68883@web.de, COMPLETED,,2023-11-30 13:18:00
+11075,2023-02-14,"€22,09",EUR,  DE ,eu_shop,user97535@web.de, COMPLETED,,2023-02-14 07:08:00
+11223,11/04/2023,USD 65.32,usd,GB,us_shop,user48509@mail.de, COMPLETED,,2023-11-04 23:17:00
+10716,11/05/2023,20.03,USD, CANADA ,us_shop,user61418@gmail.com, COMPLETED,,2023-11-05 03:25:00
+10336,28.07.2023,"€100,66",EUR, Fr ,eu_shop,user82770@gmail.com,completed,,2023-07-28 20:13:00
+11002,2023-07-24,USD 38.89,USD, GB ,us_shop,user2066@gmail.com, COMPLETED,,2023-07-24 10:23:00
+10499,2023-04-24,79.61 GBP,GBP, Great Britain ,eu_shop,user16551@outlook.com,completed,,2023-04-24 15:28:00
+10670,13.01.2023,"€2.416,19",EUR, Germany ,eu_shop,user57588@outlook.com,completed,,2023-01-13 05:26:00
+10818,2023-06-01,USD 50.39,USD, ca ,us_shop,user62465@yahoo.com,Completed,,2023-06-01 12:55:00
+11143,05/05/2023,USD 40.36,USD,  Usa,us_shop,user77446@yahoo.com, COMPLETED,,2023-05-05 14:03:00
+11130,01/03/2023,,USD,  Us,us_shop,user52469@gmail.com,Completed,,2023-01-03 03:09:00
+11542,10/11/2023,USD 41.20,USD,  Canada,us_shop,user82586@yahoo.com,completed,,2023-10-11 12:31:00
+11187,06/19/2023,"$1,795.00",USD,  US ,us_shop,user87619@web.de,Completed,,2023-06-19 17:12:00
+10822,2023-09-22,USD 30.02, USD , united states ,us_shop,USER53781@OUTLOOK.COM, completed ,,2023-09-22 09:22:00
+11053,20.12.2023,"54,29 €",EUR,  FR,eu_shop,user38520@web.de,Completed,,2023-12-20 10:32:00
+10923,2023-12-02,"35,19 EUR",EUR, ES ,eu_shop,user52213@gmail.com,Completed,,2023-12-02 09:34:00
+50122,24.01.2023,"64,09",EUR,FR,eu_shop,user31033@gmail.com,refunded,11166,2023-01-24 05:00:00
+10220,2023-03-11,4026,Cents, UNITED STATES OF AMERICA,us_shop,user56426@gmail.com,Completed,,2023-03-11 23:01:00
+10692,05/18/2023,25.65,USD,UNITED STATES OF AMERICA,us_shop,user44496@mail.de,Completed,,2023-05-18 05:28:00
+10455,2023-04-25,40.96 GBP,GBP, u.k.,eu_shop,user53093@gmail.com,completed,,2023-04-25 02:38:00
+11422,09/22/2023,$38.44,USD,  canada ,us_shop,user64527@web.de,completed,,2023-09-22 16:55:00
+10481,08/13/2023,USD 30.91,USD, US,us_shop,user20173@yahoo.com, COMPLETED,,2023-08-13 22:10:00
+10878,2023-02-12,"€29,93",EUR,Spain ,eu_shop,user40692@mail.de,completed,,2023-02-12 11:41:00
+11016,10/26/2023,USD 56.14,USD,  great britain,us_shop,user48760@gmail.com,Completed,,2023-10-26 18:27:00
+10617,2023-10-12,"56,65",EUR, deutschland ,eu_shop,user5562@outlook.com,Completed,,2023-10-12 17:52:00
+11544,2023-12-27,"32,40",EUR,Germany,eu_shop,user63192@outlook.com,completed,,2023-12-27 10:21:00
+11284,2023-02-20,$63.86,USD, CA,us_shop,user98580@mail.de,completed,,2023-02-20 11:46:00
+10292,24.09.2023,"1.465,50",EUR, GERMANY ,eu_shop,user50196@outlook.com,Completed,,2023-09-24 22:11:00
+10417,2023-03-28,USD 26.17,usd, test,us_shop,user50258@gmail.com, COMPLETED,,2023-03-28 12:06:00
+10003,2023-01-02,50.84,USD,  USA ,us_shop,user30834@mail.de, COMPLETED,,2023-01-02 19:49:00
+11508,2023-08-08,$26.45,USD,United States,us_shop,user40289@yahoo.com,Completed,,2023-08-08 12:31:00
+10911,12/23/2023,$26.85, USD , U.S.,us_shop,user6820@yahoo.com, COMPLETED,,2023-12-23 22:40:00
+10055,08/20/2023,USD 33.19,USD, usa,us_shop,user52754@web.de,Completed,,2023-08-20 05:39:00
+10350,2023-08-29,$26.65,USD,  US,us_shop,user7509@gmail.com,completed,,2023-08-29 16:14:00
+10841,2023-08-03,$22.71,USD, united states of america,us_shop,user73203@yahoo.com,Completed,,2023-08-03 12:27:00
+11003,07.08.2023,29.89 GBP,GBP, uk,eu_shop,user53965@outlook.com,completed,,2023-08-07 13:58:00
+11440,2023-06-21,9231.00,USD,  US ,us_shop,user61735@mail.de,completed,,2023-06-21 09:21:00
+50117,27.08.2023,"€30,21",EUR, Italy,eu_shop,user45462@gmail.com,refunded,11105,2023-08-27 14:00:00
+50042,08/31/2023,-USD 95.18,USD,ca,us_shop,user60527@yahoo.com,completed,10399,2023-08-31 16:00:00
+10835,2023-01-16,USD 26.36,USD, US ,us_shop,user97920@yahoo.com, COMPLETED,,2023-01-16 21:29:00
+10362,2023-05-10,$130.40,USD,,us_shop,user19760@outlook.com, COMPLETED,,2023-05-10 22:26:00
+10207,13.11.2023,"16,86 €",EUR,  Deutschland ,eu_shop,user84843@outlook.com,Completed,,2023-11-13 20:49:00
+10558,2023-06-05,"50,59 EUR",EUR,IT ,eu_shop,user62200@yahoo.com,completed,,2023-06-05 11:36:00
+10803,03/23/2023,129.82,USD, united states,us_shop,user90250@gmail.com,completed,,2023-03-23 16:40:00
+11528,2023-12-22,"13,53 €",EUR, ESPAÑA,eu_shop,user95635@web.de,completed,,2023-12-22 00:14:00
+10825,05.07.2023,"34,88 €",EUR, FR,eu_shop,user65895@outlook.com, COMPLETED,,2023-07-05 05:57:00
+10059,06/01/2023,USD 70.09,usd,  UNITED STATES ,us_shop,user54895@gmail.com,completed,,2023-06-01 05:40:00
+11010,02/23/2023,26.80,USD,  Us ,us_shop,user82958@outlook.com,completed,,2023-02-23 05:03:00
+50156,05.10.2023,"€26,09",EUR,France,eu_shop,user89836@outlook.com,refunded,11480,2023-10-05 06:00:00
+10770,2023-03-04,USD 26.96, USD ,Usa ,us_shop,user76298@outlook.com,Completed,,2023-03-04 18:41:00
+50039,2023-11-13,-18.97,USD,UNITED STATES ,us_shop,user21987@yahoo.com,completed,10361,2023-11-13 18:00:00
+11360,12/07/2023,$36.34,USD,united states of america ,us_shop,user77682@outlook.com,completed,,2023-12-07 15:34:00
+50066,2023-03-22,"11,41",EUR,  DEUTSCHLAND ,eu_shop,user98463@web.de,refunded,10595,2023-03-22 01:00:00
+10729,2023-07-08,£56.32,GBP,  UK,eu_shop,user78969@mail.de,completed,,2023-07-08 05:03:00
+11122,2023-05-10,USD 12.89,USD,  US ,us_shop,user96468@yahoo.com, COMPLETED,,2023-05-10 20:31:00
+10186,10/25/2023,$29.74,USD, Us ,us_shop,user63969@gmail.com,Completed,,2023-10-25 02:51:00
+11376,11/01/2023,8470,Cents,canada,us_shop,user69117@mail.de,Completed,,2023-11-01 10:03:00
+11230,27.02.2023,"€61,53",EUR, germany ,eu_shop,user49901@web.de,Completed,,2023-02-27 17:15:00
+11510,2023-06-27,"€24,69",EUR,  FR ,eu_shop,user86428@yahoo.com,Completed,,2023-06-27 15:48:00
+10421,2023-10-10,$35.38,USD,Canada,us_shop,user15128@yahoo.com, COMPLETED,,2023-10-10 00:39:00
+50131,2023-01-26,29.55,USD,  united states of america,us_shop,user93545@gmail.com,refunded,11244,2023-01-26 19:00:00
+10627,11/10/2023,5933,Cents,ca,us_shop,user94387@web.de,Completed,,2023-11-10 10:46:00
+10492,19.09.2023,"41,32 EUR",EUR,  DE ,eu_shop,user70918@yahoo.com,completed,,2023-09-19 07:56:00
+11248,10/29/2023,USD 29.98,USD, USA ,us_shop,user32815@gmail.com,completed,,2023-10-29 02:12:00
+10077,2023-11-04,$25.80,USD, United States ,us_shop,user2031@yahoo.com,completed,,2023-11-04 19:53:00
+10406,02.08.2023,"25,77",EUR, Germany ,eu_shop,user95971@yahoo.com, COMPLETED,,2023-08-02 15:34:00
+10893,22.04.2023,£49.11,GBP, U.K. ,eu_shop,user64158@mail.de,Completed,,2023-04-22 13:31:00
+10875,05/19/2023,USD 61.41, USD , USA,us_shop,user80878@mail.de,Completed,,2023-05-19 04:21:00
+10636,2023-10-27,$63.74,USD,,us_shop,user64067@web.de, COMPLETED,,2023-10-27 10:29:00
+10439,2023-07-09,"21,61 EUR",EUR,  Germany,eu_shop,user69078@mail.de,completed,,2023-07-09 18:44:00
+11323,2023-03-10,USD 28.78,USD,  u.s. ,us_shop,user2296@gmail.com,Completed,,2023-03-10 19:46:00
+10360,2023-12-31,USD 34.15,usd, UNITED STATES,us_shop,user73675@gmail.com,completed,,2023-12-31 08:26:00
+10281,11/14/2023,19.38, USD ,UNITED STATES ,us_shop,user35521@yahoo.com,Completed,,2023-11-14 22:56:00
+10333,2023-06-16,"29,34 EUR",EUR,It ,eu_shop,user2742@outlook.com,completed,,2023-06-16 07:34:00
+50092,2023-12-26,"55,02",EUR, Germany,eu_shop,user6630@mail.de,refunded,10861,2023-12-26 11:00:00
+10589,05.01.2023,"€25,93",EUR,Germany,eu_shop,user94216@outlook.com, COMPLETED,,2023-01-05 09:31:00
+10490,2023-05-14,"115,07 EUR",EUR, Deutschland ,eu_shop,user11920@outlook.com,completed,,2023-05-14 14:55:00
+11438,12/17/2023,$21.78,USD, Gb,us_shop,user99101@yahoo.com, COMPLETED,,2023-12-17 21:44:00
+11205,08/06/2023,USD 54.29,USD,  u.s. ,us_shop,user16409@outlook.com,Completed,,2023-08-06 18:26:00
+11164,2023-02-16,"41,42",EUR, De ,eu_shop,user97134@web.de,completed,,2023-02-16 08:28:00
+10572,2023-05-04,$46.94,USD, U.S. ,us_shop,user45456@mail.de,Completed,,2023-05-04 17:23:00
+10510,2023-01-01,"69,30 EUR",EUR,DEUTSCHLAND,eu_shop,user18067@web.de, COMPLETED,,2023-01-01 17:38:00
+10533,01/30/2023,$55.26,USD,  U.S. ,us_shop,user36413@mail.de,Completed,,2023-01-30 09:11:00
+11547,07.06.2023,"30,68",EUR,France ,eu_shop,user84343@mail.de,completed,,2023-06-07 22:29:00
+50121,2023-03-31,£24.28,GBP,  UK ,eu_shop,user43576@gmail.com,refunded,11127,2023-03-31 03:00:00
+10288,20.09.2023,"32,47 EUR",EUR, Fr,eu_shop,user35580@yahoo.com,completed,,2023-09-20 06:37:00
+10334,2023-06-18,26.57 GBP,GBP,u.k. ,eu_shop,user21142@gmail.com,Completed,,2023-06-18 01:52:00
+10381,11/11/2023,USD 27.13,USD,  UNITED STATES ,us_shop,user40781@outlook.com,completed,,2023-11-11 04:10:00
+11183,11/04/2023,2795,cents,U.S. ,us_shop,user20193@yahoo.com, COMPLETED,,2023-11-04 02:52:00
+10731,2023-09-30,USD 73.93,USD,  TEST ,us_shop,user65478@yahoo.com,completed,,2023-09-30 11:21:00
+10902,10/21/2023,USD 38.98,USD,  united states of america ,us_shop,user25577@outlook.com,completed,,2023-10-21 03:02:00
+10702,2023-04-05,"€10,29",EUR, DE,eu_shop,user11497@yahoo.com,Completed,,2023-04-05 02:37:00
+11393,07/30/2023,$43.66,  USD, us ,us_shop, user2919@gmail.com,  Completed,,2023-07-30 22:14:00
+11435,2023-01-12,"122,36",EUR,de,eu_shop,user64191@mail.de, COMPLETED,,2023-01-12 22:27:00
+10784,2023-06-04,78.49,USD,USA ,us_shop,user1782@mail.de,Completed,,2023-06-04 12:14:00
+10553,2023-10-28,34.81,USD, canada ,us_shop,user82627@mail.de,completed,,2023-10-28 13:25:00
+11514,2023-08-19,$46.30,USD,usa ,us_shop,user62819@mail.de,completed,,2023-08-19 11:24:00
+10104,02/25/2023,10089,cents,CANADA ,us_shop,user67281@gmail.com, COMPLETED,,2023-02-25 16:51:00
+10909,05/03/2023,63.86,USD, united states of america ,us_shop,user28995@mail.de, COMPLETED,,2023-05-03 07:35:00
+50022,07/18/2023,15.18,USD, united states of america,us_shop,user52539@gmail.com,refunded,10209,2023-07-18 05:00:00
+11145,07/27/2023,32.91,USD,  usa ,us_shop,user75351@yahoo.com,completed,,2023-07-27 15:11:00
+11461,2023-01-09,USD 30.73,USD, TEST ,us_shop,qa621@example.com,completed,,2023-01-09 01:41:00
+10429,04/12/2023,$35.81,USD, United States Of America ,us_shop,user33202@mail.de, COMPLETED,,2023-04-12 07:30:00
+10623,04.05.2023,"29,49 EUR",EUR,  Italy,eu_shop,user61558@mail.de,completed,,2023-05-04 12:07:00
+10404,19.10.2023,"31,26 €",EUR,  FR ,eu_shop,user12102@yahoo.com,Completed,,2023-10-19 16:18:00
+10256,2023-10-15,"€55,47",EUR, DE,eu_shop,user71923@yahoo.com,completed,,2023-10-15 04:51:00
+10810,05.10.2023,£43.43,GBP,  Great Britain,eu_shop,user67071@web.de,completed,,2023-10-05 08:18:00
+11553,2023-09-18,$45.06,USD,  UK,us_shop,user74223@web.de,completed,,2023-09-18 17:43:00
+10293,2023-11-14,28.81,USD,Canada ,us_shop,user14211@outlook.com,completed,,2023-11-14 11:25:00
+10971,13.11.2023,"27,30",EUR,Fr ,eu_shop,user53824@gmail.com,completed,,2023-11-13 03:08:00
+10650,06/06/2023,61.59,USD,  United States Of America,us_shop,user86098@mail.de,completed,,2023-06-06 01:02:00
+50011,06.07.2023,"-48,62",EUR,ESPAÑA ,eu_shop,user90667@mail.de,completed,10133,2023-07-06 17:00:00
+10972,08/15/2023,61.40,USD, ca ,us_shop,user99304@gmail.com,Completed,,2023-08-15 15:20:00
+11338,11/04/2023,31.18,USD,  USA ,us_shop,user3367@gmail.com, COMPLETED,,2023-11-04 07:34:00
+11549,2023-08-02,"82,90 EUR",  eur ,IT,eu_shop, user41823@mail.de,  completed ,,2023-08-02 19:32:00
+10282,2023-03-03,18.28, USD , United States ,us_shop,user49236@yahoo.com,completed,,2023-03-03 12:17:00
+11278,11/22/2023,4013,Cents, U.S. ,us_shop,user35119@gmail.com,completed,,2023-11-22 17:40:00
+10216,05/08/2023,$13.34,USD,U.S. ,us_shop,user78327@mail.de, COMPLETED,,2023-05-08 06:37:00
+11024,03/10/2023,USD 24.65,USD, US ,us_shop,user75181@outlook.com,completed,,2023-03-10 13:21:00
+50087,2023-07-20,"-34,88 €",EUR,  fr ,eu_shop,user65895@outlook.com,completed,10825,2023-07-20 00:00:00
+11156,2023-03-07,"€45,60",EUR,DE,eu_shop,user7348@web.de,Completed,,2023-03-07 02:31:00
+11299,31.03.2023,"17,09 €",EUR,,eu_shop,user46325@outlook.com,completed,,2023-03-31 16:58:00
+11069,15.07.2023,"49,44 €",EUR,  france ,eu_shop,user44893@yahoo.com,completed,,2023-07-15 18:26:00
+11218,01/28/2023,$48.01,USD,CA ,us_shop,user73708@mail.de, COMPLETED,,2023-01-28 00:22:00
+11485,2023-11-20,"21,40 EUR",EUR,De ,eu_shop,qa624@example.com,Completed,,2023-11-20 00:42:00
+10123,03/02/2023,$37.73,USD , USA,us_shop, user74967@yahoo.com,Completed,,2023-03-02 13:54:00
+11296,01/23/2023,USD 37.67,USD,  united states of america ,us_shop,user29398@mail.de,completed,,2023-01-23 20:03:00
+11094,07.08.2023,"143,80",EUR, DE ,eu_shop,user55971@yahoo.com, COMPLETED,,2023-08-07 21:23:00
+50096,06/07/2023,32.71,USD,,us_shop,user26374@mail.de,refunded,10910,2023-06-07 16:00:00
+11381,04/26/2023,27.04,  USD ,  U.S. ,us_shop, user34370@gmail.com, completed ,,2023-04-26 09:39:00
+10314,06/25/2023,"$2,479.00",USD,united states of america ,us_shop,user61769@mail.de,completed,,2023-06-25 02:58:00
+10445,02.02.2023,"53,37 €",EUR,  Deutschland,eu_shop,user58136@yahoo.com,completed,,2023-02-02 03:26:00
+11331,2023-02-28,"€37,51",EUR, Germany ,eu_shop,user68545@yahoo.com,completed,,2023-02-28 20:23:00
+11209,2023-06-11,USD 50.54,USD, United Kingdom,us_shop,user61000@mail.de,completed,,2023-06-11 07:53:00
+10213,29.06.2023,"14,15 €",EUR, FRANCE ,eu_shop,user49226@yahoo.com,completed,,2023-06-29 00:16:00
+11417,02/16/2023,68.25,USD,  CANADA,us_shop,user58685@web.de, COMPLETED,,2023-02-16 09:59:00
+10435,2023-10-24,"53,13 €",EUR, de,eu_shop,user34378@web.de,Completed,,2023-10-24 10:10:00
+10568,2023-03-16,"91,64 EUR",EUR, FR ,eu_shop,user32983@web.de,Completed,,2023-03-16 17:11:00
+11493,2023-12-31,"38,74 EUR",EUR,es ,eu_shop,user84666@web.de,Completed,,2023-12-31 18:26:00
+10811,2023-08-04,"11,47 EUR",EUR,DE,eu_shop,user77203@web.de,Completed,,2023-08-04 03:18:00
+10269,2023-08-06,31.85 GBP,GBP,  United Kingdom ,eu_shop,user15827@gmail.com,completed,,2023-08-06 21:37:00
+50020,07/29/2023,-35.12,USD, Canada ,us_shop,user39637@yahoo.com,completed,10197,2023-07-29 07:00:00
+10271,13.11.2023,"56,22 EUR",EUR,germany,eu_shop,user11010@mail.de,Completed,,2023-11-13 18:58:00
+11370,2023-06-21,1103.00,USD,USA,us_shop,user34294@mail.de,completed,,2023-06-21 01:25:00
+10764,2023-12-01,"93,03",EUR,ES,eu_shop,user63142@yahoo.com,completed,,2023-12-01 11:11:00
+10734,2023-03-01,$27.04,USD, UNITED STATES OF AMERICA,us_shop,user4122@outlook.com,completed,,2023-03-01 20:41:00
+10304,2023-06-08,24.74 GBP,GBP, united kingdom,eu_shop,user42617@yahoo.com,completed,,2023-06-08 00:29:00
+10638,06.11.2023,63.52 GBP,GBP,Great Britain ,eu_shop,user35713@web.de,completed,,2023-11-06 02:14:00
+10639,10.11.2023,"30,06",EUR,Germany ,eu_shop,user44526@outlook.com,completed,,2023-11-10 07:40:00
+10690,10/18/2023,35.11,USD,  U.S. ,us_shop,user13856@outlook.com, COMPLETED,,2023-10-18 17:07:00
+11183,11/04/2023,2795,cents,U.S. ,us_shop,user20193@yahoo.com, COMPLETED,,2023-11-04 02:52:00
+50133,12/30/2023,-USD 29.84,USD,  u.s.,us_shop,user52585@web.de,completed,11276,2023-12-30 18:00:00
+10285,13.12.2023,"€15,97",EUR,  ESPAÑA ,eu_shop,user67353@mail.de,completed,,2023-12-13 04:59:00
+10844,2023-01-25,"44,86 EUR",EUR,Italia,eu_shop,user72313@gmail.com, COMPLETED,,2023-01-25 12:07:00
+11520,15.06.2023,"32,80",EUR, France ,eu_shop,user94937@gmail.com,completed,,2023-06-15 05:11:00
+11132,02/13/2023,USD 45.82,USD,UNITED STATES,us_shop,user74497@outlook.com,completed,,2023-02-13 18:27:00
+10907,27.07.2023,"46,01",EUR, Deutschland,eu_shop,user44064@mail.de, COMPLETED,,2023-07-27 12:57:00
+10397,2023-08-12,$59.89,USD,  united states ,us_shop,user70663@outlook.com, COMPLETED,,2023-08-12 21:52:00
+10654,23.07.2023,"26,73",EUR,Spain,eu_shop,user63800@gmail.com,Completed,,2023-07-23 11:27:00
+10029,2023-07-08,48.88,USD, united states of america ,us_shop,user37702@web.de,completed,,2023-07-08 23:01:00
+11249,10/27/2023,5621,cents,  US,us_shop,user25201@yahoo.com, COMPLETED,,2023-10-27 10:53:00
+11487,06/09/2023,3386,Cents,,us_shop,user73243@yahoo.com,completed,,2023-06-09 02:25:00
+10688,05.01.2023,"26,36 €",EUR,  es,eu_shop,user7904@outlook.com,completed,,2023-01-05 13:42:00
+10502,2023-11-21,"33,74",EUR, DE ,eu_shop,user8662@gmail.com,completed,,2023-11-21 00:39:00
+10503,2023-12-26,"29,75",EUR,  deutschland ,eu_shop,user11452@yahoo.com,completed,,2023-12-26 14:38:00
+10444,26.03.2023,"€35,28",EUR,  deutschland,eu_shop,user7986@yahoo.com, COMPLETED,,2023-03-26 05:58:00
+11557,2023-03-08,USD 28.29,USD, USA ,us_shop,user6006@outlook.com,Completed,,2023-03-08 03:42:00
+10431,14.08.2023,"1,734.09 GBP",GBP,  UNITED KINGDOM ,eu_shop,user3016@web.de, COMPLETED,,2023-08-14 20:21:00
+10779,10/04/2023,46.90,USD, ca ,us_shop,user1755@yahoo.com,completed,,2023-10-04 14:38:00
+10952,2023-08-08,USD 17.36,USD,Us ,us_shop,user23972@gmail.com,completed,,2023-08-08 05:22:00
+10246,2023-03-16,31.84 GBP,GBP,  United Kingdom ,eu_shop,user24398@web.de,completed,,2023-03-16 08:33:00
+10637,2023-03-02,$24.79,USD,gb,us_shop,user72485@outlook.com,completed,,2023-03-02 22:06:00
+10235,08/17/2023,USD 57.59,USD,  test,us_shop,qa883@example.com,completed,,2023-08-17 16:09:00
+10223,25.04.2023,55.51 GBP,GBP, uk,eu_shop,user34687@outlook.com, COMPLETED,,2023-04-25 02:02:00
+10523,2023-07-15,36.59,usd,  us ,us_shop,user78277@yahoo.com,completed,,2023-07-15 10:04:00
+11346,2023-03-08,"19,72 EUR",EUR, Spain ,eu_shop,user66703@mail.de,completed,,2023-03-08 08:24:00
+10925,12/07/2023,3228,Cents, US ,us_shop,user85377@yahoo.com, COMPLETED,,2023-12-07 20:59:00
+10178,2023-02-28,11.78,USD,us,us_shop,user29000@outlook.com,completed,,2023-02-28 20:06:00
+10652,08/15/2023,USD 84.67,USD,  US ,us_shop,user90781@gmail.com,Completed,,2023-08-15 07:03:00
+50071,11/05/2023,-USD 88.97, USD ,  us ,us_shop,user76051@mail.de,completed,10641,2023-11-05 23:00:00
+11179,2023-12-16,"29,45",EUR, DE,eu_shop,user74223@web.de, COMPLETED,,2023-12-16 17:43:00
+11406,19.01.2023,"€54,85",EUR,  test ,eu_shop,user34381@gmail.com,completed,,2023-01-19 16:12:00
+50031,31.12.2023,"€22,46",EUR,IT ,eu_shop,user94754@gmail.com,refunded,10298,2023-12-31 07:00:00
+10011,2023-07-10,"45,30 EUR",EUR, Spain ,eu_shop,user57970@yahoo.com,completed,,2023-07-10 05:39:00
+10083,17.09.2023,"44,80 EUR",EUR,DE ,eu_shop,user23683@outlook.com,completed,,2023-09-17 11:36:00
+50118,2023-09-16,-51.37,USD,USA,us_shop,user78268@gmail.com,completed,11125,2023-09-16 19:00:00
+10761,05/24/2023,USD 15.81,USD,  UNITED STATES OF AMERICA ,us_shop,user92240@yahoo.com,completed,,2023-05-24 17:59:00
+10970,2023-06-27,"$4,801.00",USD,US ,us_shop,user17480@gmail.com,Completed,,2023-06-27 15:25:00
+10955,2023-06-28,"33,80",EUR, FR ,eu_shop,user74446@yahoo.com, COMPLETED,,2023-06-28 09:10:00
+10088,02.02.2023,"112,87",EUR,france ,eu_shop,user92586@gmail.com,completed,,2023-02-02 08:20:00
+10364,12/28/2023,USD 40.60,Usd ,  U.S.,us_shop, user31948@mail.de,  completed ,,2023-12-28 21:33:00
+11559,09/22/2023,10.36,usd, CANADA ,us_shop,user24055@web.de,completed,,2023-09-22 11:47:00
+11112,04/09/2023,46.83,USD,ca ,us_shop,user54179@web.de,completed,,2023-04-09 00:35:00
+10958,08/13/2023,USD 39.20,USD,  united states,us_shop,user4026@yahoo.com,completed,,2023-08-13 00:47:00
+11151,2023-11-20,"29,20 €", Eur ,  de ,eu_shop,USER33719@YAHOO.COM,  Completed ,,2023-11-20 23:40:00
+10223,25.04.2023,55.51 GBP,GBP, uk,eu_shop,user34687@outlook.com, COMPLETED,,2023-04-25 02:02:00
+50035,08.12.2023,"80,30",EUR,  It,eu_shop,user26231@gmail.com,refunded,10322,2023-12-08 08:00:00
+11393,07/30/2023,$43.66,USD,  us,us_shop,user2919@gmail.com, COMPLETED,,2023-07-30 22:14:00
+10342,02/18/2023,79.71,USD,usa ,us_shop, user42295@yahoo.com,  COMPLETED ,,2023-02-18 00:24:00
+10943,26.10.2023,"61,95",EUR, españa,eu_shop,user43219@web.de,Completed,,2023-10-26 08:51:00
+10978,2023-11-04,"€20,61",EUR,  DE,eu_shop,user66059@gmail.com,Completed,,2023-11-04 23:21:00
+11469,11/02/2023,26.72,USD,US,us_shop,user98801@yahoo.com, COMPLETED,,2023-11-02 05:03:00
+11050,11/27/2023,$27.06,USD,  UNITED STATES OF AMERICA ,us_shop,user18887@gmail.com, COMPLETED,,2023-11-27 20:07:00
+10730,2023-08-31,"66,90 EUR",EUR,deutschland ,eu_shop,user65329@mail.de, COMPLETED,,2023-08-31 20:05:00
+10414,2023-07-29,USD 57.53,USD,U.S. ,us_shop,user26066@yahoo.com,Completed,,2023-07-29 05:55:00
+11146,2023-04-15,54.36,USD,  UK,us_shop,user42693@web.de,Completed,,2023-04-15 08:18:00
+11201,12/29/2023,USD 18.74, USD ,  united states of america,us_shop,user88420@outlook.com,completed,,2023-12-29 16:47:00
+10426,2023-02-24,£111.41,GBP,u.k. ,eu_shop,user11742@yahoo.com,completed,,2023-02-24 13:53:00
+10888,2023-01-01,USD 37.59,USD, united states,us_shop,user92575@outlook.com,completed,,2023-01-01 00:43:00
+11506,2023-11-07,$15.01,USD,usa ,us_shop,user97405@outlook.com,Completed,,2023-11-07 16:56:00
+10079,10/28/2023,60.25,usd,  Usa,us_shop,user18437@web.de,Completed,,2023-10-28 04:17:00
+11545,2023-02-12,42.41,USD,UNITED STATES OF AMERICA ,us_shop,user72890@yahoo.com,Completed,,2023-02-12 03:42:00
+11334,2023-05-27,USD 97.33,USD,Canada,us_shop,user13403@gmail.com,completed,,2023-05-27 09:54:00
+10449,09/13/2023,30.80,USD,United States ,us_shop,user41137@gmail.com, COMPLETED,,2023-09-13 10:13:00
+11277,01/17/2023,USD 33.75,USD,US,us_shop,user36041@yahoo.com, COMPLETED,,2023-01-17 01:41:00
+10915,23.03.2023,"45,01",EUR,FR ,eu_shop,user93859@web.de,Completed,,2023-03-23 01:04:00
+10653,03/20/2023,USD 13.96,USD, United States,us_shop,user19553@yahoo.com,Completed,,2023-03-20 16:54:00
+11255,2023-10-03,$53.14,USD, CANADA,us_shop,user81680@web.de,completed,,2023-10-03 10:28:00
+11022,01.01.2023,"21,96 EUR",EUR,Es ,eu_shop,user66171@gmail.com,completed,,2023-01-01 22:14:00
+10855,2023-11-07,"€21,72",EUR,Fr ,eu_shop,user42567@gmail.com,completed,,2023-11-07 17:45:00
+10550,02/26/2023,USD 50.62,USD, canada,us_shop,USER14858@YAHOO.COM,completed,,2023-02-26 23:43:00
+11054,09/11/2023,$40.97,USD, U.S.,us_shop,user31717@outlook.com,completed,,2023-09-11 04:22:00
+11240,2023-05-13,45.38,USD,  US ,us_shop,user29809@mail.de,completed,,2023-05-13 16:09:00
+10565,02.02.2023,"33,00 EUR",EUR,  ES,eu_shop,user39793@web.de,Completed,,2023-02-02 22:02:00
+10466,17.05.2023,"1.691,50",EUR, Deutschland ,eu_shop,user56453@gmail.com,Completed,,2023-05-17 04:05:00
+11254,02/14/2023,USD 60.24,USD,  CANADA ,us_shop,user7243@mail.de, COMPLETED,,2023-02-14 15:07:00
+10365,25.09.2023,"43,70 EUR",EUR, it ,eu_shop,user33509@yahoo.com,completed,,2023-09-25 13:23:00
+11191,2023-03-17,"€40,29",EUR, SPAIN,eu_shop,user14610@gmail.com,Completed,,2023-03-17 07:23:00
+11361,09.10.2023,"27,01 €",EUR,  FR ,eu_shop,user11790@gmail.com, COMPLETED,,2023-10-09 08:29:00
+10005,02/12/2023,75.34,USD,  US,us_shop,user94423@web.de,completed,,2023-02-12 02:03:00
+10326,2023-11-11,N/A,EUR,  Spain,eu_shop,user3155@yahoo.com,completed,,2023-11-11 16:51:00
+10070,2023-03-21,"38,32",EUR,Spain ,eu_shop,user84476@mail.de,Completed,,2023-03-21 06:57:00
+11196,01/08/2023,28.07, usd ,  usa ,us_shop, qa806@example.com,  completed,,2023-01-08 20:19:00
+11120,2023-06-18,"50,60 EUR",EUR,,eu_shop,user73988@outlook.com,completed,,2023-06-18 23:42:00
+11271,2023-12-31,"32,55",  EUR,  germany,eu_shop, user33080@outlook.com,  completed,,2023-12-31 20:34:00
+10549,2023-11-27,28.47,usd, united states of america ,us_shop,user56368@web.de,completed,,2023-11-27 14:28:00
+50153,2023-07-18,-19.80,USD,Ca ,us_shop,user52973@yahoo.com,completed,11446,2023-07-18 17:00:00
+10014,2023-01-28,"€18,09",EUR,,eu_shop,user46812@web.de,Completed,,2023-01-28 07:26:00
+10067,2023-08-04,51.56,USD,  USA,us_shop,user18179@outlook.com,Completed,,2023-08-04 17:45:00
+10321,11/03/2023,$26.66,USD, United States Of America ,us_shop,user29978@gmail.com,completed,,2023-11-03 12:36:00
+11191,2023-03-17,"€40,29",  EUR ,Spain,eu_shop, user14610@gmail.com,completed ,,2023-03-17 07:23:00
+10757,04/13/2023,33.01,USD,u.s.,us_shop,user22970@outlook.com,completed,,2023-04-13 12:23:00
+10116,2023-10-23,29.99 GBP,GBP,  UK,eu_shop,user71606@outlook.com, COMPLETED,,2023-10-23 14:39:00
+10664,06.06.2023,"€79,58",EUR,  germany,eu_shop,user41128@yahoo.com,completed,,2023-06-06 16:06:00
+11293,2023-04-07,USD 203.13,USD, Canada,us_shop,user75170@web.de,Completed,,2023-04-07 14:23:00
+10300,2023-03-10,15.81,USD,  UNITED STATES,us_shop,qa628@example.com,completed,,2023-03-10 16:00:00
+10891,03.01.2023,"63,48 €",EUR,  IT,eu_shop,user56805@web.de, COMPLETED,,2023-01-03 18:02:00
+11211,03/29/2023,$44.57,USD,U.S. ,us_shop,user27796@web.de,completed,,2023-03-29 17:26:00
+11431,08/17/2023,USD 35.53,USD, USA ,us_shop,user32936@outlook.com,completed,,2023-08-17 19:07:00
+50056,09/05/2023,USD 12.95,usd,  u.s.,us_shop,user42040@mail.de,refunded,10496,2023-09-05 02:00:00
+10600,15.10.2023,"20,80 EUR",EUR,italia,eu_shop,user32013@outlook.com,completed,,2023-10-15 19:44:00
+11300,2023-03-09,36.13,USD,  Us,us_shop,user58779@mail.de, COMPLETED,,2023-03-09 08:29:00
+11374,2023-08-06,USD 54.62,usd,  united states of america ,us_shop,user8649@outlook.com,completed,,2023-08-06 10:27:00
+11258,16.05.2023,"39,88 EUR",EUR,Deutschland,eu_shop,user55936@mail.de, COMPLETED,,2023-05-16 18:21:00
+11398,2023-02-01,"62,89",EUR, Spain,eu_shop,user36782@mail.de,completed,,2023-02-01 15:00:00
+10506,03/10/2023,55.77,  Usd,great britain,us_shop, user29370@gmail.com,completed ,,2023-03-10 06:28:00
+50086,06/18/2023,5039.00,USD,CANADA,us_shop,user62465@yahoo.com,refunded,10818,2023-06-18 20:00:00
+11410,01/18/2023,$34.85,USD,Usa ,us_shop,user2388@web.de,Completed,,2023-01-18 10:29:00
+11302,08/08/2023,$131.77,USD,UNITED STATES OF AMERICA,us_shop,user62316@mail.de,Completed,,2023-08-08 13:17:00
+11515,2023-10-24,41.03,USD, U.K.,us_shop,user84687@web.de, COMPLETED,,2023-10-24 18:34:00
+11305,2023-10-10,USD 23.48,USD, Usa,us_shop,user40203@yahoo.com, COMPLETED,,2023-10-10 21:55:00
+10495,01/02/2023,$14.27, USD ,  ca ,us_shop,user87135@web.de, COMPLETED,,2023-01-02 14:23:00
+11363,2023-04-24,,GBP, Gb,eu_shop,user51565@web.de, COMPLETED,,2023-04-24 23:43:00
+10922,2023-08-08,$22.40,USD,Us ,us_shop,user36997@gmail.com,Completed,,2023-08-08 12:35:00
+10974,01/16/2023,$51.40,USD,  UNITED STATES OF AMERICA ,us_shop,user97625@mail.de, COMPLETED,,2023-01-16 05:50:00
+10655,2023-08-19,"€15,42",EUR,es,eu_shop,user43428@gmail.com,Completed,,2023-08-19 22:57:00
+11438,12/17/2023,$21.78,USD, Gb,us_shop,user99101@yahoo.com, COMPLETED,,2023-12-17 21:44:00
+50144,2023-02-22,-$42.24,USD,  united states of america ,us_shop,user26009@gmail.com,completed,11380,2023-02-22 08:00:00
+10035,2023-11-19,$24.05,USD, usa ,us_shop,user69670@web.de,Completed,,2023-11-19 22:48:00
+10090,2023-01-31,USD 110.38,USD, u.k. ,us_shop,user84762@mail.de,completed,,2023-01-31 01:06:00
+10472,01/22/2023,2457,cents,  united states of america ,us_shop,user98164@web.de,completed,,2023-01-22 18:28:00
+11449,03/12/2023,$30.60, USD ,  United States,us_shop,user83154@mail.de, COMPLETED,,2023-03-12 02:38:00
+10796,15.05.2023,£23.55,GBP,TEST ,eu_shop,qa869@example.com, COMPLETED,,2023-05-15 20:52:00
+10787,2023-06-06,USD 57.71,USD,  Us ,us_shop,user14494@gmail.com,Completed,,2023-06-06 21:33:00
+10134,2023-06-05,35.58,USD,USA,us_shop,user2023@gmail.com, COMPLETED,,2023-06-05 06:11:00
+10234,2023-07-29,,EUR, fr ,eu_shop,user46746@web.de,completed,,2023-07-29 16:19:00
+11081,2023-07-17,$25.89,USD,  CA,us_shop,user86711@gmail.com,Completed,,2023-07-17 11:46:00
+10050,2023-03-16,"26,32 EUR",EUR,Deutschland ,eu_shop,user54170@mail.de,completed,,2023-03-16 09:48:00
+11139,2023-10-09,63.37,USD,Canada ,us_shop,user65887@outlook.com,completed,,2023-10-09 14:08:00
+10145,28.08.2023,"€23,26",EUR, france ,eu_shop,user49400@web.de,completed,,2023-08-28 06:19:00
+11228,2023-11-14,"35,61 €",EUR,  es,eu_shop,user29954@web.de,completed,,2023-11-14 20:39:00
+10524,06/01/2023,USD 25.75,USD,  U.S.,us_shop,user21283@gmail.com,completed,,2023-06-01 02:46:00
+10172,01/21/2023,8002,Cents, Great Britain ,us_shop,user28609@outlook.com,completed,,2023-01-21 00:02:00
+11186,2023-07-15,USD 53.25,USD, u.s. ,us_shop,user510@outlook.com,Completed,,2023-07-15 11:56:00
+10190,09/22/2023,USD 20.86,USD, UNITED STATES ,us_shop,user28352@outlook.com, COMPLETED,,2023-09-22 04:37:00
+10265,09/03/2023,30.41,USD, CANADA ,us_shop,user13963@yahoo.com,completed,,2023-09-03 03:09:00
+11474,2023-08-28,USD 61.69,USD,  united states ,us_shop,user4598@outlook.com,Completed,,2023-08-28 19:12:00
+10551,2023-04-18,"19,09 EUR",EUR, España,eu_shop,user43687@mail.de,Completed,,2023-04-18 15:50:00
+11106,2023-06-14,£21.26,GBP,  Great Britain,eu_shop,user96121@outlook.com,Completed,,2023-06-14 02:03:00
+50139,2023-05-28,"-17,66",EUR,ES,eu_shop,user42462@web.de,completed,11343,2023-05-28 06:00:00
+10456,2023-02-26,£41.05,GBP,United Kingdom,eu_shop,user2893@gmail.com,completed,,2023-02-26 01:27:00
+10582,2023-08-07,"30,06 €",EUR,  FR ,eu_shop,user95856@mail.de,completed,,2023-08-07 01:31:00
+10683,2023-11-22,8985,Cents, canada,us_shop,user18552@web.de,completed,,2023-11-22 01:10:00
+10624,07/07/2023,$15.06,USD,CA,us_shop,user92448@mail.de, COMPLETED,,2023-07-07 04:03:00
+10315,2023-03-07,85.85,USD,Usa,us_shop,user32930@web.de,Completed,,2023-03-07 12:13:00
+10437,01/03/2023,$22.73,usd,Usa ,us_shop,user14901@web.de,completed,,2023-01-03 13:28:00
+10059,06/01/2023,USD 72.11,USD, Us ,us_shop,user54895@gmail.com,completed,,2023-05-26 12:40:00
+11350,14.01.2023,"€34,36",EUR, Fr ,eu_shop,user39084@outlook.com, COMPLETED,,2023-01-14 19:09:00
+10482,05/06/2023,$12.42,USD,U.S.,us_shop,user7064@mail.de,completed,,2023-05-06 13:12:00
+10061,2023-12-04,3077,Cents, united states,us_shop,user68883@web.de, COMPLETED,,2023-12-04 06:18:00
+11018,2023-04-25,78.32,USD,  UNITED STATES,us_shop,qa506@example.com,completed,,2023-04-25 07:38:00
+10724,2023-10-12,$61.39,USD,  united states,us_shop,user99899@mail.de,completed,,2023-10-12 07:38:00
+10433,2023-09-21,$24.69,USD,canada,us_shop,user24779@web.de,completed,,2023-09-21 12:46:00
+10208,2023-07-05,$60.06,USD,,us_shop,user17283@outlook.com,completed,,2023-07-05 00:35:00
+10262,02/26/2023,USD 61.00, USD ,USA,us_shop,user9099@web.de,Completed,,2023-02-26 14:06:00
+10621,2023-11-08,58.31,USD,  us,us_shop,user58838@yahoo.com, COMPLETED,,2023-11-08 18:07:00
+10142,2023-05-29,USD 33.81,USD,us,us_shop,user43911@web.de,completed,,2023-05-29 12:21:00
+11512,2023-02-11,"43,07",EUR, FR,eu_shop,user62579@web.de,Completed,,2023-02-11 10:51:00
+10136,2023-09-23,"53,94 €",EUR,  Germany,eu_shop,user22352@web.de,Completed,,2023-09-23 15:52:00
+11479,2023-04-22,$17.27,USD, us ,us_shop,user34178@yahoo.com,completed,,2023-04-22 13:19:00
+11193,12/18/2023,56.34,USD,UNITED STATES,us_shop,user53865@yahoo.com, COMPLETED,,2023-12-18 22:15:00
+50080,2023-12-15,-$47.16,USD,  canada ,us_shop,user24696@outlook.com,completed,10754,2023-12-15 02:00:00
+11270,08.01.2023,"€36,26",EUR,es,eu_shop,user39517@mail.de, COMPLETED,,2023-01-08 12:52:00
+10591,01/16/2023,5392,cents,,us_shop,user82624@outlook.com,completed,,2023-01-16 15:13:00
+50070,27.08.2023,41.33 GBP,GBP,  gb ,eu_shop,user84411@outlook.com,refunded,10633,2023-08-27 09:00:00
+10509,2023-02-18,"27,54 €",EUR,  FR ,eu_shop,user36949@mail.de,completed,,2023-02-18 18:37:00
+11478,2023-07-20,USD 49.14,USD,united states of america,us_shop,user85093@yahoo.com,Completed,,2023-07-15 17:12:00
+11421,28.06.2023,"15,23",EUR, FR ,eu_shop,user94372@web.de,Completed,,2023-06-28 19:19:00
+10312,2023-01-12,£50.90,GBP,  U.K. ,eu_shop,user1705@web.de, COMPLETED,,2023-01-12 08:35:00
+50151,2023-03-28,"-€74,20",EUR,  fr ,eu_shop,user54492@mail.de,completed,11428,2023-03-28 14:00:00
+10676,2023-08-30,"34,56 EUR",EUR,  France,eu_shop,user65025@yahoo.com, COMPLETED,,2023-08-30 14:18:00
+11056,18.09.2023,£14.41,GBP,UNITED KINGDOM,eu_shop,user58605@outlook.com,Completed,,2023-09-18 18:11:00
+10693,2023-06-04,2747,Cents,  Usa,us_shop,user39527@web.de,Completed,,2023-06-04 21:40:00
+50027,2023-09-23,-30.41,USD,Canada ,us_shop,user13963@yahoo.com,completed,10265,2023-09-23 15:00:00
+10501,09/24/2023,$29.50,USD,Canada ,us_shop,user90240@mail.de,Completed,,2023-09-24 17:15:00
+10519,04/26/2023,$62.70,USD, U.S. ,us_shop,user69927@mail.de, COMPLETED,,2023-04-26 07:19:00
+11051,2023-06-09,31.31,USD,u.k.,us_shop,user42136@mail.de,Completed,,2023-06-09 11:27:00
+11429,2023-07-31,"84,97 EUR",EUR, Deutschland,eu_shop,user96052@mail.de,Completed,,2023-07-31 09:46:00
+50072,2023-05-19,"-32,10 EUR",EUR, Italia,eu_shop,user90857@gmail.com,completed,10647,2023-05-19 15:00:00
+11366,2023-02-25,"59,75 EUR",EUR, FR ,eu_shop,user5903@gmail.com,Completed,,2023-02-25 01:44:00
+10255,2023-12-23,$25.52,USD,  UNITED STATES OF AMERICA,us_shop,user58499@outlook.com, COMPLETED,,2023-12-23 07:55:00
+10065,2023-09-01,$55.48,USD, United States,us_shop,user65646@web.de,Completed,,2023-09-01 19:24:00
+10556,2023-07-29,$28.86,USD,  GB ,us_shop,user71080@web.de,Completed,,2023-07-24 21:06:00
+10721,04/03/2023,$28.19, USD ,united states of america,us_shop,user52829@gmail.com,completed,,2023-03-28 20:30:00
+10689,2023-12-26,23.06,USD, Great Britain ,us_shop,user30443@outlook.com,completed,,2023-12-26 01:54:00
+50125,16.09.2023,"€72,88",EUR,ES,eu_shop,user41394@outlook.com,refunded,11203,2023-09-16 08:00:00
+11301,14.04.2023,31.73 GBP,GBP,  UK ,eu_shop,user56221@web.de,completed,,2023-04-14 11:46:00
+10647,2023-05-14,"32,10 EUR",EUR,ITALY ,eu_shop,user90857@gmail.com,completed,,2023-05-14 11:22:00
+10662,2023-11-22,$39.42,USD,  u.k. ,us_shop,user35536@outlook.com,completed,,2023-11-22 23:39:00
+50105,2023-01-23,$50.49,USD,U.K. ,us_shop,user58625@web.de,refunded,10992,2023-01-23 06:00:00
+10578,01/09/2023,USD 67.65,USD,GB ,us_shop,user28002@mail.de,completed,,2023-01-09 00:29:00
+10450,07/09/2023,USD 140.04,USD,  GREAT BRITAIN ,us_shop,user89844@outlook.com, COMPLETED,,2023-07-09 15:59:00
+10759,16.04.2023,£19.12,GBP, GREAT BRITAIN ,eu_shop,user56634@gmail.com,Completed,,2023-04-16 01:26:00
+10593,2023-03-12,51.48,USD, UNITED STATES OF AMERICA,us_shop,user96042@web.de, COMPLETED,,2023-03-12 21:54:00
+11155,2023-09-10,£53.66,GBP,UK,eu_shop,user36974@yahoo.com, COMPLETED,,2023-09-10 14:48:00
+11451,24.07.2023,"33,53",EUR,España,eu_shop,user24340@gmail.com,Completed,,2023-07-24 18:24:00
+10270,09/20/2023,USD 50.41,USD, U.S.,us_shop,user32210@gmail.com,Completed,,2023-09-20 19:21:00
+10979,06.10.2023,"26,35 €",EUR,Deutschland,eu_shop,user53585@mail.de,Completed,,2023-10-06 03:29:00
+50158,2023-02-23,"-€43,07",EUR,  fr,eu_shop,user62579@web.de,completed,11512,2023-02-23 11:00:00
+11133,21.11.2023,"61,22 EUR",EUR, DE,eu_shop,user25882@mail.de,completed,,2023-11-21 02:17:00
+11508,08/08/2023,$24.76,USD,united states,us_shop,user40289@yahoo.com,Completed,,2023-08-05 19:31:00
+10132,26.09.2023,"€25,69",EUR,ESPAÑA ,eu_shop,user24655@mail.de,completed,,2023-09-26 05:03:00
+10837,2023-12-01,"€66,72",EUR, Spain ,eu_shop,user72403@web.de,Completed,,2023-12-01 18:48:00
+10144,03/21/2023,2947,Cents, Us,us_shop,user25728@outlook.com, COMPLETED,,2023-03-21 17:53:00
+10531,04/24/2023,USD 86.39,USD, USA ,us_shop,user72451@yahoo.com,completed,,2023-04-24 19:33:00
+10024,2023-12-21,"42,94 €",EUR, ES ,eu_shop,user836@gmail.com,completed,,2023-12-21 13:46:00
+11339,06/13/2023,"USD 1,544.00",USD, U.S. ,us_shop,user59000@web.de, COMPLETED,,2023-06-13 08:37:00
+11009,04/21/2023,USD 21.07,USD, Us,us_shop,user99425@outlook.com, COMPLETED,,2023-04-21 08:15:00
+11151,2023-11-20,"29,20 €",EUR,  de ,eu_shop,user33719@yahoo.com,Completed,,2023-11-20 23:40:00
+10358,29.08.2023,"37,75 €",EUR,  DE,eu_shop,user42176@gmail.com,completed,,2023-08-29 13:11:00
+10196,2023-09-04,USD 41.48,USD,us ,us_shop,user30777@outlook.com,completed,,2023-09-04 04:08:00
+10199,05.06.2023,"€20,83",EUR, Fr ,eu_shop,user8879@mail.de, COMPLETED,,2023-06-05 10:57:00
+10225,2023-05-18,$34.36,usd, united states of america,us_shop,user54938@mail.de,Completed,,2023-05-18 04:24:00
+10522,09.04.2023,"38,60 €",EUR,ESPAÑA,eu_shop,user93415@yahoo.com,completed,,2023-04-09 04:41:00
+11090,24.12.2023,"51,44 €",EUR,  ESPAÑA,eu_shop,user8294@mail.de, COMPLETED,,2023-12-24 03:14:00
+10860,2023-06-22,"USD 4,657.00",USD,US,us_shop,user31186@gmail.com,Completed,,2023-06-22 09:43:00
+10723,2023-06-17,"$2,148.00",USD, UNITED STATES OF AMERICA,us_shop,user11268@gmail.com,completed,,2023-06-17 12:06:00
+10354,13.01.2023,"2.132,01 €",EUR,France ,eu_shop,user65404@web.de,Completed,,2023-01-13 04:41:00
+11550,2023-01-16,5482,Cents,UNITED STATES ,us_shop,user56254@outlook.com,Completed,,2023-01-16 05:49:00
+50052,10/02/2023,$30.80,USD,  U.S.,us_shop,user41137@gmail.com,refunded,10449,2023-10-02 09:00:00
+10677,10/13/2023,22.89,USD,ca ,us_shop,user78129@yahoo.com,completed,,2023-10-13 07:28:00
+10135,11/28/2023,$92.50,USD,UNITED STATES ,us_shop,user18837@web.de,Completed,,2023-11-28 06:26:00
+10363,2023-01-09,$54.88,USD,  US ,us_shop,user18136@mail.de,Completed,,2023-01-09 02:33:00
+10696,01/10/2023,40.31,USD, Us,us_shop,user77931@mail.de,completed,,2023-01-10 21:00:00
+10948,02/20/2023,USD 21.28,USD,  united states of america,us_shop,user14226@web.de,completed,,2023-02-20 00:26:00
+11134,2023-01-14,4558,cents,usa ,us_shop,user99026@gmail.com,completed,,2023-01-14 01:01:00
+10727,01/19/2023,$23.99,USD,UNITED STATES ,us_shop,user85599@gmail.com, COMPLETED,,2023-01-19 02:47:00
+10736,14.06.2023,"33,15",EUR,Fr ,eu_shop,user66744@web.de, COMPLETED,,2023-06-14 15:22:00
+10791,2023-03-24,"€74,83",EUR,  DEUTSCHLAND ,eu_shop,user73431@gmail.com,completed,,2023-03-24 04:12:00
+10500,2023-02-24,,cents,  U.S. ,us_shop,user77586@web.de,completed,,2023-02-24 23:09:00
+50034,08.12.2023,"-€80,30",EUR, IT,eu_shop,user26231@gmail.com,completed,10322,2023-12-08 08:00:00
+11025,2023-05-22,USD 82.64, USD ,  U.S. ,us_shop,user39560@outlook.com,completed,,2023-05-22 00:34:00
+11477,2023-07-03,"€46,48",EUR,germany,eu_shop,user58364@yahoo.com,completed,,2023-07-03 04:07:00
+10468,2023-08-18,"73,98 EUR",EUR,  fr ,eu_shop,user63396@mail.de, COMPLETED,,2023-08-18 04:42:00
+10351,2023-07-12,$41.37,USD, Test,us_shop,qa668@example.com, COMPLETED,,2023-07-12 10:13:00
+11145,07/27/2023,32.91,USD,  usa ,us_shop,user75351@yahoo.com,completed,,2023-07-27 15:11:00
+10159,31.03.2023,,EUR,FR,eu_shop,user71294@outlook.com, COMPLETED,,2023-03-31 07:03:00
+10023,2023-04-14,9.04, USD ,uk ,us_shop,user43064@web.de,completed,,2023-04-14 07:24:00
+50081,2023-10-29,"-€46,39",EUR, germany ,eu_shop,user96832@web.de,completed,10755,2023-10-29 16:00:00
+10575,12.05.2023,39.63 GBP,GBP,GREAT BRITAIN ,eu_shop,user91870@yahoo.com,completed,,2023-05-12 16:27:00
+10361,10/25/2023,USD 18.97,USD,  U.S.,us_shop,user21987@yahoo.com, COMPLETED,,2023-10-25 13:10:00
+10383,2023-01-26,3160,Cents, united states,us_shop,user22974@yahoo.com, COMPLETED,,2023-01-26 14:01:00
+10106,2023-12-24,"€55,79",EUR,  deutschland,eu_shop,user83471@web.de,Completed,,2023-12-24 14:33:00
+50111,2023-03-11,"-22,09",EUR,  DE,eu_shop,user97535@web.de,completed,11075,2023-03-11 22:00:00
+10357,2023-09-05,,Cents,Usa ,us_shop,user67063@mail.de,completed,,2023-09-05 21:13:00
+10843,02/26/2023,2699,cents,  UNITED STATES,us_shop,user5367@gmail.com,completed,,2023-02-26 18:30:00
+10743,08/24/2023,USD 89.67,USD,  u.s.,us_shop,user40256@web.de,completed,,2023-08-24 07:10:00
+10715,2023-09-02,1603,Cents, US,us_shop,user65072@yahoo.com, COMPLETED,,2023-09-02 01:53:00
+10719,2023-06-26,"$1,227.00",USD,  us ,us_shop,user6758@outlook.com,completed,,2023-06-26 14:04:00
+10871,18.08.2023,"€41,25",EUR,FR,eu_shop,user470@mail.de, COMPLETED,,2023-08-18 01:31:00
+11124,24.05.2023,"90,73",EUR,  de ,eu_shop,user60879@gmail.com, COMPLETED,,2023-05-24 13:57:00
+10036,25.10.2023,"32,38 €",EUR,GERMANY ,eu_shop,user86782@web.de,completed,,2023-10-25 23:20:00
+10396,18.10.2023,"56,66 EUR",EUR, italy,eu_shop,user6844@yahoo.com,completed,,2023-10-18 04:52:00
+11211,03/29/2023,$44.57,USD,U.S. ,us_shop,user27796@web.de,completed,,2023-03-29 17:26:00
+10299,24.06.2023,"€32,56",EUR,  Italia,eu_shop,user24344@yahoo.com,completed,,2023-06-24 17:47:00
+10087,2023-03-09,"27,47 EUR",EUR,  Italy,eu_shop,user6684@gmail.com,completed,,2023-03-09 17:23:00
+11131,2023-12-15,"53,17 EUR",EUR,  it ,eu_shop,user36919@web.de,completed,,2023-12-15 19:54:00
+10586,11/17/2023,USD 57.99,usd,UNITED STATES,us_shop,user30530@outlook.com,Completed,,2023-11-17 05:29:00
+10489,11/16/2023,,usd,Us,us_shop,user61539@web.de, COMPLETED,,2023-11-16 12:10:00
+10798,2023-09-07,"26,99",EUR,  Spain ,eu_shop,user47654@gmail.com, COMPLETED,,2023-09-07 23:17:00
+10019,08/01/2023,USD 59.13,USD,U.S.,us_shop,user40551@gmail.com,Completed,,2023-08-01 09:40:00
+10355,06/14/2023,USD 987.00,USD,U.S. ,us_shop,user23819@yahoo.com,completed,,2023-06-14 00:38:00
+10476,2023-07-12,$42.65, USD ,U.K. ,us_shop,user92887@gmail.com,completed,,2023-07-12 08:30:00
+10313,07/01/2023,3245.00,USD, Usa,us_shop,user22960@outlook.com,completed,,2023-07-01 13:57:00
+50127,18.10.2023,"1.144,36",EUR,  de ,eu_shop,user26469@outlook.com,refunded,11225,2023-10-18 00:00:00
+50140,2023-05-28,"17,66 €",EUR,  ES ,eu_shop,user42462@web.de,refunded,11343,2023-05-28 06:00:00
+10250,04.02.2023,"€32,25",EUR,  DE ,eu_shop,user35855@yahoo.com,completed,,2023-02-04 14:18:00
+10789,2023-03-19,18.48,USD, u.s. ,us_shop,user37073@mail.de, COMPLETED,,2023-03-19 16:35:00
+10966,08.08.2023,"42,46 EUR",EUR,  ES ,eu_shop,user48033@web.de, COMPLETED,,2023-08-08 05:36:00
+10413,02/05/2023,$101.27,USD,  U.S. ,us_shop,user54400@yahoo.com,Completed,,2023-02-05 10:29:00
+10266,2023-08-28,$21.83, USD , Usa ,us_shop,user5513@web.de,completed,,2023-08-28 08:23:00
+10322,2023-11-21,"80,30 EUR",EUR, It ,eu_shop,user26231@gmail.com,completed,,2023-11-21 01:29:00
+50023,05.07.2023,"14,15 €",EUR,FR ,eu_shop,user49226@yahoo.com,refunded,10213,2023-07-05 23:00:00
+11233,08/14/2023,2880,cents,United States,us_shop,user78321@outlook.com,completed,,2023-08-14 16:07:00
+10714,2023-08-01,"40,74 €",EUR,Germany ,eu_shop,user9285@gmail.com,Completed,,2023-08-01 03:22:00
+11259,03.12.2023,"43,11",EUR,  deutschland,eu_shop,user20260@yahoo.com,completed,,2023-12-03 07:29:00
+11296,01/23/2023,USD 37.67,USD,  united states of america ,us_shop,user29398@mail.de,completed,,2023-01-23 20:03:00
+10501,09/24/2023,$29.50,USD,Canada ,us_shop,user90240@mail.de,Completed,,2023-09-24 17:15:00
+11453,2023-01-01,USD 26.30,USD,CA ,us_shop,user44146@outlook.com,completed,,2023-01-01 13:20:00
+11097,02/10/2023,41.10,USD,  ca ,us_shop,user23973@outlook.com,completed,,2023-02-10 15:34:00
+10499,2023-04-24,79.61 GBP,  GBP ,  Great Britain ,eu_shop,USER16551@OUTLOOK.COM,  Completed,,2023-04-24 15:28:00
+11468,10/27/2023,$43.66,USD,USA,us_shop,user37155@outlook.com,Completed,,2023-10-19 23:39:00
+11541,05.11.2023,"24,85 €",EUR,España,eu_shop,user51491@yahoo.com,completed,,2023-11-05 05:48:00
+10341,05/21/2023,$87.91,USD,gb ,us_shop,user13118@outlook.com, COMPLETED,,2023-05-21 09:25:00
+11497,2023-05-14,USD 46.94,USD,Us,us_shop,user83610@web.de,Completed,,2023-05-14 08:00:00
+11066,2023-12-20,USD 26.01,USD, U.S. ,us_shop,user79464@mail.de,Completed,,2023-12-20 21:28:00
+11424,08/23/2023,62.76,usd,,us_shop,user29342@outlook.com, COMPLETED,,2023-08-23 11:09:00
+11096,04/16/2023,$49.14,USD,  United States Of America ,us_shop,user75419@yahoo.com,Completed,,2023-04-16 00:23:00
+10283,2023-06-29,"$11,200.00",USD,us,us_shop,user51688@outlook.com,Completed,,2023-06-29 15:20:00
+10325,02.01.2023,"€47,26",EUR,Fr ,eu_shop,user80321@web.de,completed,,2023-01-02 17:04:00
+10598,25.05.2023,"€29,71",EUR,ES ,eu_shop,user48132@outlook.com,completed,,2023-05-25 03:32:00
+10373,2023-12-07,102.30, USD ,ca,us_shop,user25993@gmail.com, COMPLETED,,2023-12-07 19:34:00
+11343,2023-05-03,"€17,66",EUR, Spain ,eu_shop,user42462@web.de, COMPLETED,,2023-05-03 22:55:00
+10970,2023-06-27,"$4,801.00",USD,US ,us_shop,user17480@gmail.com,Completed,,2023-06-27 15:25:00
+11135,02/10/2023,USD 62.12,USD, TEST,us_shop,user43167@gmail.com,completed,,2023-02-10 04:19:00
+50098,2023-06-02,-USD 38.41,USD,  united states of america ,us_shop,user77217@yahoo.com,completed,10951,2023-06-02 11:00:00
+10512,2023-08-12,"28,02 €",EUR, es ,eu_shop,user66789@yahoo.com,completed,,2023-08-12 10:14:00
+10944,04.04.2023,"21,77 EUR",EUR, DE ,eu_shop,user22391@yahoo.com, COMPLETED,,2023-04-04 09:00:00
+11425,2023-06-06,38.77, USD , USA,us_shop,qa877@example.com, COMPLETED,,2023-06-06 07:16:00
+11212,2023-08-27,43.62,USD,U.K. ,us_shop,user14978@web.de,completed,,2023-08-27 06:08:00
+11388,29.03.2023,"73,95 €",EUR, france,eu_shop,user55987@yahoo.com,completed,,2023-03-29 02:38:00
+10248,2023-10-04,29.24, USD , UNITED STATES ,us_shop,user6829@yahoo.com,completed,,2023-10-04 17:41:00
+10422,07/06/2023,40.91,USD, usa ,us_shop,user71957@web.de,completed,,2023-07-06 10:40:00
+10832,2023-03-21,USD 56.69,USD,canada ,us_shop,user20798@web.de, COMPLETED,,2023-03-21 22:59:00
+11530,09/22/2023,USD 24.98,USD,  us ,us_shop,user26466@web.de,completed,,2023-09-14 11:56:00
+10267,2023-10-12,"28,20 €",EUR,  GERMANY,eu_shop,user70096@web.de,Completed,,2023-10-12 07:56:00
+11313,2023-04-12,"84,15 EUR",EUR,  germany ,eu_shop,user55312@mail.de, COMPLETED,,2023-04-12 23:46:00
+11178,2023-05-31,$57.33,USD,,us_shop,user55312@web.de,completed,,2023-05-31 20:50:00
+10746,06/08/2023,USD 31.43, USD , United States,us_shop,user66995@mail.de,completed,,2023-06-08 15:08:00
+11021,01/08/2023,$34.18,USD,USA ,us_shop,user78048@web.de,completed,,2023-01-08 10:46:00
+50010,2023-11-06,$41.18,usd,Great Britain,us_shop,user23019@yahoo.com,refunded,10099,2023-11-06 00:00:00
+11455,02/26/2023,47.65,USD, UNITED STATES OF AMERICA ,us_shop,user84295@yahoo.com,Completed,,2023-02-26 05:15:00
+11213,09/05/2023,$84.13,USD, usa ,us_shop,user67897@outlook.com, COMPLETED,,2023-09-05 03:07:00
+11447,2023-04-20,$49.74,USD,United States ,us_shop,user2088@yahoo.com,completed,,2023-04-20 12:22:00
+10658,16.08.2023,"€44,59",EUR,  españa ,eu_shop,user79004@web.de, COMPLETED,,2023-08-16 11:31:00
+11472,09.12.2023,"15,49 EUR",EUR,  Fr ,eu_shop,user28343@outlook.com, COMPLETED,,2023-12-09 07:52:00
+10720,2023-02-28,18.83,USD, Us ,us_shop,user28387@mail.de,Completed,,2023-02-28 05:06:00
+11534,06/26/2023,"USD 8,761.00",Usd,UK,us_shop,USER42625@GMAIL.COM, completed ,,2023-06-26 05:51:00
+10498,2023-09-05,"€52,37",EUR, de,eu_shop,user39454@yahoo.com,completed,,2023-09-05 17:39:00
+10100,2023-09-11,55.42 GBP,GBP, test ,eu_shop,qa655@example.com,completed,,2023-09-11 18:19:00
+11085,2023-03-05,"36,12",EUR,Deutschland,eu_shop,user37773@web.de,completed,,2023-03-05 13:03:00
+50050,2023-02-09,"22,40 €",EUR,  DEUTSCHLAND,eu_shop,user60734@yahoo.com,refunded,10428,2023-02-09 02:00:00
+10829,27.04.2023,"155,29 €",EUR, Test,eu_shop,qa173@example.com,Completed,,2023-04-27 07:04:00
+11059,2023-12-16,$49.18,USD, Us,us_shop,user97137@yahoo.com, COMPLETED,,2023-12-16 17:38:00
+11556,04/25/2023,N/A,USD,  US ,us_shop,user57895@outlook.com,completed,,2023-04-25 01:49:00
+50001,12/08/2023,-65.01,USD,United States Of America ,us_shop,user34634@gmail.com,completed,10016,2023-12-08 14:00:00
+11102,2023-09-16,$16.86, USD ,U.S.,us_shop,user45772@mail.de,completed,,2023-09-16 16:19:00
+11241,05/10/2023,61.78,USD, U.S. ,us_shop,user22198@outlook.com,completed,,2023-05-10 06:06:00
+11303,2023-04-26,"€28,30",EUR,DE ,eu_shop,user90933@gmail.com,completed,,2023-04-26 08:10:00
+10462,08/17/2023,2930,cents, ca,us_shop,user40022@mail.de,completed,,2023-08-17 10:59:00
+10388,12/05/2023,$65.64,USD,U.S. ,us_shop,user11232@yahoo.com,completed,,2023-12-05 12:44:00
+50082,2023-10-29,"46,39 EUR",EUR,  De ,eu_shop,user96832@web.de,refunded,10755,2023-10-29 16:00:00
+10612,10/27/2023,148.11,USD,u.k.,us_shop,user5539@mail.de,Completed,,2023-10-27 22:08:00
+11158,2023-01-01,8285,Cents, U.S. ,us_shop,user85575@web.de,Completed,,2023-01-01 00:21:00
+10398,2023-06-13,"$6,292.00",USD,  CA,us_shop,user97550@web.de,completed,,2023-06-13 20:58:00
+50094,2023-12-23,"-42,08 EUR",EUR,FR,eu_shop,user65284@gmail.com,completed,10904,2023-12-23 22:00:00
+50091,05.10.2023,£68.98,GBP,uk ,eu_shop,user63628@outlook.com,refunded,10853,2023-10-05 09:00:00
+11261,2023-12-10,20.77 GBP,GBP,Uk ,eu_shop,user91872@outlook.com,completed,,2023-12-10 00:19:00
+11416,04/17/2023,USD 39.32,USD,  us,us_shop,user76996@outlook.com, COMPLETED,,2023-04-17 01:30:00
+10252,03/12/2023,USD 45.14,USD,  CA ,us_shop,user94539@web.de,completed,,2023-03-12 23:51:00
+50062,22.02.2023,"€12,99",EUR,De,eu_shop,user40957@web.de,refunded,10541,2023-02-22 14:00:00
+10864,2023-01-26,"22,50 €",EUR,  Deutschland,eu_shop,user6537@mail.de,completed,,2023-01-26 03:08:00
+11173,10/05/2023,16.22,USD,  UNITED STATES ,us_shop,user45081@yahoo.com,Completed,,2023-10-05 02:24:00
+10478,12/02/2023,55.37,USD,U.S. ,us_shop,user48031@gmail.com,completed,,2023-12-02 08:35:00
+10128,22.09.2023,"€60,28",EUR,Fr ,eu_shop,user5336@web.de, COMPLETED,,2023-09-22 21:22:00
+10927,2023-09-06,"2.417,09 €",EUR,DEUTSCHLAND ,eu_shop,user94807@mail.de,completed,,2023-09-06 18:58:00
+10763,2023-09-09,N/A,USD,  UNITED STATES,us_shop,user38208@yahoo.com,Completed,,2023-09-09 14:37:00
+11265,26.07.2023,"61,44 €",EUR,,eu_shop,user64215@web.de,completed,,2023-07-26 10:20:00
+11327,2023-09-19,USD 17.87,USD, u.s. ,us_shop,user31142@web.de,completed,,2023-09-19 01:01:00
+10041,2023-07-27,$134.88,USD, United States,us_shop,user76995@mail.de, COMPLETED,,2023-07-27 07:42:00
+10887,2023-07-04,USD 97.35,USD,  U.S.,us_shop,user18544@web.de,completed,,2023-07-04 12:11:00
+10969,23.12.2023,"1.671,99",EUR,  Spain,eu_shop,user88778@mail.de, COMPLETED,,2023-12-23 19:32:00
+10805,06/02/2023,66.62,USD,  united states of america ,us_shop,qa424@example.com,completed,,2023-06-02 16:28:00
+11074,2023-06-14,"30,37",EUR, fr ,eu_shop,user14191@web.de, COMPLETED,,2023-06-14 05:25:00
+50008,10/30/2023,-43.93, USD ,  CA,us_shop,user36677@mail.de,completed,10086,2023-10-30 06:00:00
+10261,2023-11-03,"27,60",EUR, DE ,eu_shop,user22541@outlook.com,Completed,,2023-11-03 11:28:00
+11386,27.04.2023,£19.78,GBP,  GB,eu_shop,user80212@web.de, COMPLETED,,2023-04-27 09:05:00
+50088,2023-07-20,"34,88",EUR,  France ,eu_shop,user65895@outlook.com,refunded,10825,2023-07-20 00:00:00
+11023,2023-02-05,"12,72 EUR",EUR,  FR ,eu_shop,user94598@web.de, COMPLETED,,2023-02-05 11:22:00
+10982,2023-05-17,"81,95 EUR",EUR,  DE ,eu_shop,user85886@web.de,completed,,2023-05-17 07:18:00
+10924,15.07.2023,"60,96 €",EUR,DE ,eu_shop,user55908@web.de,completed,,2023-07-15 17:55:00
+10567,05/13/2023,8619, Cents , u.k. ,us_shop,USER42962@YAHOO.COM,  Completed,,2023-05-13 05:20:00
+11266,2023-03-27,"23,80 EUR",EUR,  spain,eu_shop,user70851@gmail.com,Completed,,2023-03-27 02:06:00
+11369,2023-12-28,"35,81",EUR, DE,eu_shop,user53353@yahoo.com,Completed,,2023-12-28 00:34:00
+10271,13.11.2023,"77,61 €",EUR,  De ,eu_shop,user11010@mail.de,Completed,,2023-11-07 21:58:00
+11324,07.09.2023,"49,72 EUR",EUR,France ,eu_shop,user4011@outlook.com,completed,,2023-09-07 22:45:00
+10085,2023-03-21,"32,90",EUR,  IT,eu_shop,user79578@gmail.com,Completed,,2023-03-21 03:02:00
+50055,03.06.2023,"1.691,50 €",EUR,Germany ,eu_shop,user56453@gmail.com,refunded,10466,2023-06-03 16:00:00
+10626,2023-05-08,"40,50 EUR",EUR, France,eu_shop,user77009@yahoo.com,completed,,2023-05-08 14:21:00
+11476,2023-08-31,USD 122.72,USD,  UK,us_shop,user41601@yahoo.com,completed,,2023-08-31 18:59:00
+50126,2023-12-19,-$45.67,USD,  UNITED STATES OF AMERICA ,us_shop,user85000@gmail.com,completed,11204,2023-12-19 07:00:00
+11101,2023-05-10,"€33,05", eur ,  Es,eu_shop,USER36050@WEB.DE, Completed ,,2023-05-10 15:04:00
+10822,2023-09-22,USD 30.02,USD,United States,us_shop,user53781@outlook.com,completed,,2023-09-22 09:22:00
+10389,05/28/2023,4434,Cents,GB,us_shop,user41419@yahoo.com,Completed,,2023-05-28 17:38:00
+10700,21.10.2023,"20,32 EUR",EUR, Germany ,eu_shop,user53861@gmail.com,Completed,,2023-10-21 13:50:00
+10561,2023-10-01,"20,69 €",EUR,Germany,eu_shop,user19373@outlook.com,completed,,2023-10-01 22:56:00
+11160,17.04.2023,"€112,48",EUR,  France ,eu_shop,user31398@yahoo.com,completed,,2023-04-17 13:02:00
+11128,12.03.2023,"27,20 €",EUR,  Germany ,eu_shop,user18368@yahoo.com,completed,,2023-03-12 06:36:00
+10319,2023-07-15,34.63,USD,  usa ,us_shop,user83411@mail.de,completed,,2023-07-15 02:36:00
+11095,2023-04-30,$22.91,USD, u.s.,us_shop,user63320@yahoo.com,Completed,,2023-04-30 23:49:00
+10332,2023-06-03,$34.61,USD,UNITED STATES OF AMERICA ,us_shop,user21356@mail.de,Completed,,2023-06-03 19:53:00
+10957,09/26/2023,89.01,USD, United States,us_shop,user56037@mail.de,completed,,2023-09-26 21:04:00
+11200,2023-11-21,"24,17",EUR, de,eu_shop,user66431@outlook.com, COMPLETED,,2023-11-21 08:31:00
+10371,04.09.2023,"73,94 €",EUR, DE ,eu_shop,user51646@outlook.com,completed,,2023-09-04 03:40:00
+11078,10/06/2023,$104.74,USD, united states ,us_shop,user7925@gmail.com, COMPLETED,,2023-10-06 11:21:00
+10616,12/03/2023,USD 84.89,USD,united states of america,us_shop,user99425@mail.de,completed,,2023-12-03 09:48:00
+11480,2023-09-27,"26,09 €",EUR,  FR ,eu_shop,user89836@outlook.com,completed,,2023-09-27 05:28:00
+10279,11.12.2023,"67,56",EUR, DE ,eu_shop,user55914@outlook.com,Completed,,2023-12-11 00:19:00
+10988,2023-06-27,3171.00,USD,  UK,us_shop,user70614@mail.de,completed,,2023-06-27 20:07:00
+11420,06/05/2023,USD 28.60,usd,Us ,us_shop,user96025@gmail.com,Completed,,2023-06-05 15:03:00
+10514,2023-02-20,USD 75.89,USD,  united states ,us_shop,user70504@mail.de,completed,,2023-02-20 06:54:00
+10679,06.02.2023,"27,32 €",EUR,De,eu_shop,user82649@mail.de,Completed,,2023-02-06 00:25:00
+50016,2023-12-19,-$53.54,USD,  US,us_shop,user127@gmail.com,completed,10154,2023-12-19 15:00:00
+10021,2023-11-26,"19,58 €",EUR, deutschland ,eu_shop,user91109@outlook.com,completed,,2023-11-26 22:03:00
+10411,2023-01-03,"€42,12",EUR,Deutschland ,eu_shop,user30429@web.de,completed,,2023-01-03 05:57:00
+10603,06/28/2023,2519,Cents, Usa,us_shop,user69238@yahoo.com, COMPLETED,,2023-06-28 20:06:00
+10576,06/25/2023,3458.00,USD,usa ,us_shop,user83434@gmail.com, COMPLETED,,2023-06-25 12:42:00
+10885,2023-11-14,£24.01,GBP, UNITED KINGDOM,eu_shop,user51510@outlook.com, COMPLETED,,2023-11-14 07:12:00
+11394,2023-03-16,$43.20,USD, United States Of America ,us_shop,user29895@yahoo.com,completed,,2023-03-16 21:24:00
+11433,2023-01-01,"€33,05",  eur ,,eu_shop, user24283@mail.de,COMPLETED ,,2023-01-01 11:48:00
+11157,01.08.2023,"26,03 EUR",EUR, Test ,eu_shop,user11309@yahoo.com,Completed,,2023-08-01 04:01:00
+10485,11/09/2023,$29.45,USD, US ,us_shop,user92817@yahoo.com,completed,,2023-11-09 07:30:00
+50102,22.11.2023,"-27,30",EUR,FR ,eu_shop,user53824@gmail.com,completed,10971,2023-11-22 10:00:00
+10644,2023-10-10,31.52,USD,USA ,us_shop,user48473@gmail.com,completed,,2023-10-10 16:21:00
+10475,2023-09-30,"31,41",EUR,  De,eu_shop,user58441@outlook.com,completed,,2023-09-30 16:30:00
+10184,2023-12-15,USD 23.05,USD,  UNITED STATES OF AMERICA,us_shop,user68774@outlook.com,Completed,,2023-12-15 23:31:00
+11389,2023-09-21,"€65,24",EUR,france ,eu_shop,user19096@outlook.com,Completed,,2023-09-21 09:24:00
+10305,2023-05-21,"46,60",EUR,GERMANY ,eu_shop,user78075@gmail.com,completed,,2023-05-21 01:34:00
+11375,05/13/2023,$93.70,USD, US ,us_shop,user56782@outlook.com,Completed,,2023-05-13 09:08:00
+11355,2023-03-13,72.62,USD,u.s. ,us_shop,user48481@outlook.com,completed,,2023-03-13 10:08:00
+10937,2023-09-17,USD 25.17,USD,us,us_shop,user94474@web.de, COMPLETED,,2023-09-17 01:37:00
+10592,2023-04-18,39.55,USD,  UNITED STATES OF AMERICA,us_shop,user28588@outlook.com,completed,,2023-04-18 15:49:00
+11117,23.02.2023,"112,90 €",EUR,deutschland ,eu_shop,user72423@yahoo.com, COMPLETED,,2023-02-18 18:21:00
+10627,11/10/2023,5933,Cents,ca,us_shop,user94387@web.de,Completed,,2023-11-10 10:46:00
+10427,07/17/2023,USD 32.23,usd,usa,us_shop,user92914@yahoo.com,Completed,,2023-07-17 19:08:00
+50149,01/28/2023,$57.49,USD,  Us,us_shop,user29680@outlook.com,refunded,11395,2023-01-28 07:00:00
+10420,01/03/2023,USD 15.78,usd,  United States Of America ,us_shop,user42810@web.de,completed,,2023-01-03 18:43:00
+50108,2023-06-02,"-€35,61",EUR,FRANCE ,eu_shop,user69678@yahoo.com,completed,11047,2023-06-02 17:00:00
+10906,2023-11-23,37.29,USD,  Canada ,us_shop,user66178@mail.de,completed,,2023-11-23 12:59:00
+10701,2023-03-18,USD 59.54,USD, US ,us_shop,user68770@yahoo.com, COMPLETED,,2023-03-18 15:34:00
+10051,2023-07-01,"$5,845.00",USD, U.S.,us_shop,user92300@mail.de, COMPLETED,,2023-07-01 21:16:00
+10039,2023-05-13,USD 20.55,USD,  US ,us_shop, user19440@outlook.com,  Completed ,,2023-05-13 23:19:00
+10806,2023-06-27,"£1,402.73",GBP, GB ,eu_shop,user13856@gmail.com,Completed,,2023-06-27 07:35:00
+10352,08/24/2023,USD 56.08,USD,U.S.,us_shop,user59377@outlook.com,completed,,2023-08-24 03:13:00
+10182,01/25/2023,35.00,USD, united states,us_shop,user77897@yahoo.com,completed,,2023-01-25 14:19:00
+10480,04/06/2023,$39.20,USD, u.s. ,us_shop,user35370@mail.de, COMPLETED,,2023-04-06 01:45:00
+10006,01.12.2023,145.49 GBP,GBP, Gb ,eu_shop,user64470@outlook.com, COMPLETED,,2023-12-01 05:43:00
+10253,05/31/2023,USD 77.98,USD,U.S. ,us_shop,user20834@yahoo.com,Completed,,2023-05-31 22:13:00
+50043,2023-01-23,15.78,USD,  USA ,us_shop,user42810@web.de,refunded,10420,2023-01-23 13:00:00
+10117,2023-07-17,"13,83 €",EUR,de,eu_shop,user71831@outlook.com, COMPLETED,,2023-07-17 19:30:00
+11283,2023-11-02,"26,84", eur,,eu_shop,USER72786@OUTLOOK.COM,  COMPLETED,,2023-11-02 18:03:00
+11273,2023-11-11,"22,81 EUR",EUR,de,eu_shop,user2534@yahoo.com,completed,,2023-11-11 22:07:00
+10378,06.02.2023,"56,38 €",EUR, deutschland,eu_shop,user25073@mail.de,completed,,2023-02-06 14:50:00
+11309,03/14/2023,27.55, USD ,U.S.,us_shop,user46299@mail.de,completed,,2023-03-14 19:09:00
+10477,07/03/2023,$59.39,USD,  UNITED STATES OF AMERICA ,us_shop,user11298@outlook.com,Completed,,2023-07-03 23:41:00
+11006,2023-11-02,"11,78 €",EUR,,eu_shop,user73761@gmail.com,completed,,2023-11-02 11:54:00
+10122,2023-09-23,"20,99",EUR, IT,eu_shop,user92209@yahoo.com,completed,,2023-09-23 13:55:00
+10938,01/28/2023,63.84,usd,U.S. ,us_shop,user36151@mail.de, COMPLETED,,2023-01-28 05:35:00
+10704,24.06.2023,"24,74",EUR,  Fr,eu_shop,user73449@web.de,Completed,,2023-06-24 22:10:00
+50012,06.07.2023,"48,62",EUR, ES,eu_shop,user90667@mail.de,refunded,10133,2023-07-06 17:00:00
+10123,03/02/2023,$37.73,USD,USA ,us_shop,user74967@yahoo.com,Completed,,2023-03-02 13:54:00
+10167,2023-11-18,USD 61.69,USD,  UNITED KINGDOM,us_shop,user91666@outlook.com,completed,,2023-11-18 20:15:00
+11020,2023-10-24,"63,18 €",EUR,fr ,eu_shop,user64316@outlook.com,Completed,,2023-10-24 15:19:00
+11267,2023-06-30,"$5,496.00",USD, Usa ,us_shop,user19866@mail.de,completed,,2023-06-30 07:11:00
+11112,2023-04-09,62.82,USD,CA,us_shop,user54179@web.de,completed,,2023-03-30 12:35:00
+11195,27.07.2023,£26.80,GBP, u.k. ,eu_shop,user17847@mail.de,Completed,,2023-07-27 15:36:00
+50135,02/06/2023,USD 17.46,USD,  United States,us_shop,user32509@gmail.com,refunded,11285,2023-02-06 12:00:00
+11357,2023-06-05,$50.65,USD, u.s.,us_shop,user19082@outlook.com, COMPLETED,,2023-06-05 21:50:00
+11091,2023-11-24,27.47,USD,united states of america,us_shop,user75137@mail.de,completed,,2023-11-24 11:03:00
+10171,06/03/2023,$53.07,USD, US,us_shop,user18597@yahoo.com,completed,,2023-06-03 05:08:00
+10916,04/23/2023,,USD,  U.S. ,us_shop,user22859@web.de, COMPLETED,,2023-04-23 10:29:00
+10062,05/29/2023,USD 11.60,USD,  us ,us_shop,user52917@outlook.com,Completed,,2023-05-29 16:17:00
+10001,05/07/2023,USD 117.27,USD,  United States,us_shop,user87542@outlook.com,completed,,2023-05-07 03:24:00
+10886,15.08.2023,"34,17 €",EUR,France,eu_shop,user61500@yahoo.com, COMPLETED,,2023-08-15 03:25:00
+10198,10/20/2023,USD 92.97,USD,  Usa,us_shop,user44625@gmail.com,Completed,,2023-10-20 06:37:00
+10911,12/23/2023,$31.42,usd,United States ,us_shop,user6820@yahoo.com, COMPLETED,,2023-12-15 01:40:00
+11397,24.08.2023,"42,30 EUR",EUR,Italia,eu_shop,user75164@outlook.com,completed,,2023-08-24 04:31:00
+11538,2023-08-25,7006,cents,UNITED STATES OF AMERICA ,us_shop,user45243@outlook.com,completed,,2023-08-25 20:08:00
+11149,09.08.2023,26.96 GBP,GBP,United Kingdom ,eu_shop,user53242@mail.de,completed,,2023-08-09 00:07:00
+10258,06/20/2023,"USD 4,925.00",USD, UNITED STATES ,us_shop,user46113@gmail.com,completed,,2023-06-20 21:59:00
+10152,04/23/2023,50.25,USD,  u.s. ,us_shop,user5242@web.de,completed,,2023-04-23 05:27:00
+11014,10/31/2023,USD 72.53,USD, U.S.,us_shop,user42279@web.de,Completed,,2023-10-31 13:07:00
+10415,03/24/2023,51.39,USD,USA,us_shop,user18684@yahoo.com, COMPLETED,,2023-03-24 18:20:00
+11356,01.08.2023,27.06 GBP,GBP,U.K.,eu_shop,user76357@yahoo.com,completed,,2023-08-01 01:14:00
+10883,2023-02-06,USD 31.80,usd, Usa ,us_shop,user17331@mail.de,Completed,,2023-02-06 19:09:00
+10562,2023-05-06,"€60,02",EUR, italy,eu_shop,user29676@web.de,completed,,2023-05-06 19:49:00
+10976,2023-11-02,14.96,USD,  Usa ,us_shop,user61285@gmail.com,Completed,,2023-11-02 00:11:00
+10785,2023-08-29,"26,25",EUR,Fr,eu_shop,user1555@yahoo.com,completed,,2023-08-29 11:18:00
+11415,13.07.2023,"41,39",EUR,  FRANCE ,eu_shop,user78956@gmail.com,completed,,2023-07-13 09:25:00
+10896,05/06/2023,31.36,USD,US,us_shop,user48038@outlook.com,completed,,2023-05-06 04:26:00
+10673,11/24/2023,USD 50.06,usd, united states,us_shop,user29223@gmail.com,completed,,2023-11-24 14:37:00
+10548,05/29/2023,USD 44.29,USD,  Usa ,us_shop,user65659@outlook.com,completed,,2023-05-29 16:06:00
+10254,02/16/2023,$88.39,usd, Us ,us_shop,user86360@outlook.com,completed,,2023-02-16 22:57:00
+10487,08/02/2023,USD 26.32,USD,  United States,us_shop,user52355@yahoo.com,Completed,,2023-08-02 20:54:00
+10747,06/29/2023,3400,cents,  U.S.,us_shop,user66695@gmail.com,Completed,,2023-06-29 20:23:00
+11107,11/14/2023,USD 35.07, USD ,  GB ,us_shop,user24716@gmail.com, COMPLETED,,2023-11-14 23:31:00
+10442,13.05.2023,£39.02,GBP,  U.K. ,eu_shop,user4510@yahoo.com,completed,,2023-05-13 14:38:00
+10009,11/22/2023,USD 65.27,USD,usa,us_shop,user34647@gmail.com,completed,,2023-11-22 16:03:00
+10695,04/16/2023,$36.54,USD,u.s. ,us_shop,user89868@yahoo.com,completed,,2023-04-16 10:08:00
+10808,2023-06-16,"$6,996.00",USD, Canada,us_shop,user23233@yahoo.com, COMPLETED,,2023-06-16 02:15:00
+11216,01/30/2023,38.18,USD,united states of america,us_shop,user92224@gmail.com,completed,,2023-01-30 13:28:00
+11326,2023-09-30,180.29 GBP,GBP,  Great Britain,eu_shop,user85180@yahoo.com,Completed,,2023-09-30 01:20:00
+10042,2023-11-25,£161.51,GBP,  Uk ,eu_shop,user84087@gmail.com,completed,,2023-11-25 14:27:00
+10550,02/26/2023,USD 50.62,USD,  canada ,us_shop,user14858@yahoo.com, COMPLETED,,2023-02-26 23:43:00
+11409,2023-03-22,20.70,USD, US ,us_shop,user85200@yahoo.com, COMPLETED,,2023-03-22 10:14:00
+10940,06/28/2023,"$5,600.00",USD, UK,us_shop,user76926@mail.de,completed,,2023-06-28 03:33:00
+10348,07.07.2023,"20,63",EUR,ITALY ,eu_shop,user36941@gmail.com,completed,,2023-07-07 15:28:00
+10557,2023-08-10,86.34,USD, us ,us_shop,user15177@web.de,Completed,,2023-08-10 15:55:00
+11384,2023-12-26,"€12,90",EUR,  Italy,eu_shop,user18252@mail.de, COMPLETED,,2023-12-26 14:45:00
+50134,30.06.2023,"-€21,33",EUR,ES ,eu_shop,user33338@web.de,completed,11279,2023-06-30 07:00:00
+11169,2023-06-30,7316.00,USD,u.s.,us_shop,user24346@mail.de, COMPLETED,,2023-06-30 17:23:00
+10692,05/18/2023,25.65,USD,UNITED STATES OF AMERICA,us_shop,user44496@mail.de,Completed,,2023-05-18 05:28:00
+10809,2023-10-13,"22,77 €",EUR,  Deutschland,eu_shop,user98271@yahoo.com,Completed,,2023-10-10 09:47:00
+10194,07.08.2023,58.20 GBP,GBP,U.K.,eu_shop,user36907@yahoo.com,completed,,2023-08-07 04:43:00
+10209,2023-07-05,15.18,USD,United States ,us_shop,user52539@gmail.com,completed,,2023-07-05 00:39:00
+10567,05/13/2023,8619,cents,  u.k.,us_shop,user42962@yahoo.com,completed,,2023-05-13 05:20:00
+11033,2023-08-02,70.17,USD,  USA,us_shop,user71978@web.de,completed,,2023-08-02 12:00:00
+10766,2023-12-03,$47.59,USD,  U.S. ,us_shop,user47779@mail.de, COMPLETED,,2023-12-03 11:07:00
+10912,2023-05-15,USD 39.77, USD ,  Canada ,us_shop,user96504@gmail.com,completed,,2023-05-15 23:15:00
+11123,30.09.2023,"101,15 EUR",EUR,de ,eu_shop,user11276@yahoo.com,completed,,2023-09-30 08:47:00
+10992,2023-01-11,USD 50.49,USD,  u.k.,us_shop,user58625@web.de,completed,,2023-01-11 13:20:00
+11161,2023-05-17,$36.51,USD, Usa ,us_shop,user45620@gmail.com,Completed,,2023-05-17 10:05:00
+10508,07/27/2023,36.39,USD,Usa ,us_shop,user66428@yahoo.com, COMPLETED,,2023-07-27 06:41:00
+11189,2023-06-13,"USD 8,083.00",USD,us ,us_shop,user3365@web.de,Completed,,2023-06-13 13:12:00
+11358,2023-11-28,50.43,USD, United States Of America ,us_shop,user42006@mail.de,Completed,,2023-11-28 01:46:00
+11521,2023-03-26,13.19,USD,  Canada ,us_shop,user71600@web.de, COMPLETED,,2023-03-26 08:53:00
+10385,2023-08-12,,USD,  US,us_shop,user87625@web.de, COMPLETED,,2023-08-12 07:28:00
+10157,06/24/2023,8507.00,USD, U.K. ,us_shop,user82326@mail.de, COMPLETED,,2023-06-24 16:03:00
+50099,08/20/2023,-$39.20,USD,Us,us_shop,user4026@yahoo.com,completed,10958,2023-08-20 02:00:00
+10454,21.09.2023,"€16,43",EUR,  SPAIN ,eu_shop,user23689@gmail.com,completed,,2023-09-21 18:12:00
+10602,2023-01-30,17.13,USD,Ca,us_shop,user55735@web.de,Completed,,2023-01-30 15:12:00
+10071,2023-12-17,6413,Cents, Usa ,us_shop,user15905@yahoo.com,Completed,,2023-12-17 15:01:00
+11342,2023-04-03,USD 84.98,  USD, United States Of America,us_shop, user82460@web.de,  completed,,2023-04-03 21:43:00
+10580,2023-08-21,$49.65,USD, U.S. ,us_shop,user14081@yahoo.com,Completed,,2023-08-21 02:19:00
+10581,2023-07-31,58.85,USD,USA,us_shop,user82935@yahoo.com,completed,,2023-07-31 07:40:00
+10908,2023-04-07,$48.72,USD,united states ,us_shop,user14366@web.de,Completed,,2023-04-07 19:49:00
+11533,2023-01-01,"125,19 EUR",EUR,ES ,eu_shop,user89385@web.de,completed,,2023-01-01 16:00:00
+50093,2023-02-05,"-€114,95",EUR, DE,eu_shop,user75973@web.de,completed,10865,2023-02-05 17:00:00
+10797,2023-09-02,$41.37,USD, U.S. ,us_shop,user9561@web.de,completed,,2023-09-02 04:16:00
+11015,07/21/2023,USD 84.63,USD, U.S.,us_shop,user56954@yahoo.com, COMPLETED,,2023-07-21 19:30:00
+10960,2023-02-23,44.80,USD,Test,us_shop,user50040@mail.de,Completed,,2023-02-23 09:28:00
+11454,07/16/2023,USD 56.76,USD, CANADA,us_shop,user99815@gmail.com,Completed,,2023-07-16 11:36:00
+10622,01/27/2023,7531,Cents,  us ,us_shop,user60977@outlook.com,completed,,2023-01-27 01:58:00
+10188,2023-08-16,"18,69",EUR,  DE ,eu_shop,user65768@mail.de,Completed,,2023-08-16 01:51:00
+10505,15.07.2023,58.65 GBP,GBP, UK ,eu_shop,user59760@yahoo.com,completed,,2023-07-15 07:17:00
+10245,2023-06-21,"€39,26",EUR,germany ,eu_shop,user54778@web.de,completed,,2023-06-21 04:26:00
+10193,10/21/2023,78.42,USD, U.K. ,us_shop,user91568@gmail.com,completed,,2023-10-21 17:57:00
+10845,2023-05-10,$68.52,USD, united states ,us_shop,user33629@mail.de,completed,,2023-05-10 09:33:00
+10364,12/28/2023,USD 40.60,USD,U.S. ,us_shop,user31948@mail.de,completed,,2023-12-28 21:33:00
+10469,2023-10-24,"165,73", EUR, ES,eu_shop,USER42210@YAHOO.COM,  COMPLETED ,,2023-10-24 01:14:00
+11083,20.05.2023,"€50,12",EUR,  FR,eu_shop,user43577@yahoo.com,Completed,,2023-05-20 18:27:00
+11389,2023-09-21,"€65,24",EUR,france ,eu_shop,user19096@outlook.com,Completed,,2023-09-21 09:24:00
+11319,22.07.2023,£34.43,GBP, UK ,eu_shop,user72634@gmail.com,Completed,,2023-07-22 19:13:00
+10118,04/24/2023,$19.76,USD, usa,us_shop,user76766@mail.de,completed,,2023-04-24 00:59:00
+10686,19.07.2023,"€80,58",EUR,  germany,eu_shop,user29047@gmail.com, COMPLETED,,2023-07-19 21:20:00
+10016,2023-12-07,USD 65.01, USD ,UNITED STATES,us_shop,user34634@gmail.com,Completed,,2023-12-07 01:41:00
+10555,2023-12-24,$43.58,USD,united states of america ,us_shop,user12934@web.de, COMPLETED,,2023-12-16 04:37:00
+11460,11/03/2023,USD 53.74,USD,,us_shop,user67318@web.de,completed,,2023-11-03 10:44:00
+10956,12/02/2023,$34.03,USD, U.S. ,us_shop,user14354@outlook.com,Completed,,2023-12-02 15:44:00
+10372,25.11.2023,"26,67",EUR, Italy,eu_shop,user25729@outlook.com,completed,,2023-11-25 09:41:00
+10345,2023-11-30,"14,48 EUR",EUR,France ,eu_shop,user38782@gmail.com,completed,,2023-11-30 08:54:00
+11496,03/02/2023,21.17,USD,  Usa,us_shop,user2066@yahoo.com, COMPLETED,,2023-03-02 13:52:00
+10608,2023-10-07,"60,82 €",EUR,  Deutschland,eu_shop,user26771@outlook.com,completed,,2023-10-07 21:37:00
+11445,04/12/2023,$11.30,USD, CA,us_shop,user38067@gmail.com,completed,,2023-04-12 08:27:00
+10968,01/24/2023,$10.67,USD, United States Of America ,us_shop,user69096@outlook.com,completed,,2023-01-18 14:32:00
+11082,22.01.2023,"40,06",EUR,DE,eu_shop,user22213@gmail.com,Completed,,2023-01-22 07:05:00
+11427,2023-05-21,$69.77,USD, canada,us_shop,user56882@mail.de, COMPLETED,,2023-05-21 13:19:00
+11248,10/29/2023,USD 29.98,USD, USA ,us_shop,user32815@gmail.com,completed,,2023-10-29 02:12:00
+10438,2023-02-11,"78,56 €",EUR,  Italia ,eu_shop,user64730@outlook.com,completed,,2023-02-11 06:04:00
+50109,2023-09-28,-£38.39,GBP,  u.k.,eu_shop,user11688@outlook.com,completed,11064,2023-09-28 14:00:00
+10165,02/06/2023,16.59,USD,TEST ,us_shop,user98362@mail.de, COMPLETED,,2023-02-06 02:47:00
+10308,2023-02-15,"46,27 EUR",EUR,  De,eu_shop,user77169@mail.de,completed,,2023-02-15 07:42:00
+11285,2023-01-18,17.46,USD, united states,us_shop,user32509@gmail.com, COMPLETED,,2023-01-18 07:42:00
+10579,2023-12-24,"126,07 €",EUR,Spain,eu_shop,user29004@outlook.com,completed,,2023-12-24 12:12:00
+10278,2023-12-17,$52.83, USD ,  united states of america,us_shop,user82150@outlook.com, COMPLETED,,2023-12-17 12:25:00
+10218,05.01.2023,"€23,28",EUR,  germany,eu_shop,user46094@gmail.com, COMPLETED,,2023-01-05 05:29:00
+10657,2023-01-24,"89,54 €",EUR,  Spain ,eu_shop,user52458@outlook.com,completed,,2023-01-24 07:16:00
+11038,09/05/2023,USD 32.62,USD,  USA ,us_shop,user28234@outlook.com,completed,,2023-09-05 00:33:00
+10824,2023-07-12,"€41,05",EUR, GERMANY ,eu_shop,user91020@yahoo.com, COMPLETED,,2023-07-12 15:51:00
+11019,2023-04-02,"1.920,98 EUR",EUR,FRANCE,eu_shop,user46069@mail.de,completed,,2023-04-02 18:25:00
+11501,2023-01-04,"€32,97",EUR,  DEUTSCHLAND,eu_shop,user52257@gmail.com,Completed,,2023-01-04 06:16:00
+11274,2023-11-27,$46.50,USD,  Us ,us_shop,user70136@outlook.com,completed,,2023-11-27 15:22:00
+50018,05/17/2023,-42.98,USD, USA,us_shop,user75065@gmail.com,completed,10179,2023-05-17 21:00:00
+10901,2023-08-05,USD 48.95,USD,  canada,us_shop,user31049@mail.de, COMPLETED,,2023-08-05 19:11:00
+10819,15.11.2023,"24,07",EUR,ES,eu_shop,user67498@yahoo.com,completed,,2023-11-15 18:38:00
+10076,17.07.2023,"67,49",EUR,FRANCE ,eu_shop,user98929@web.de,Completed,,2023-07-17 10:18:00
+10068,06/13/2023,10190.00,USD,UNITED STATES OF AMERICA ,us_shop,user65243@web.de,Completed,,2023-06-13 16:02:00
+10176,09/04/2023,48.21,USD,U.S.,us_shop,user45011@web.de,completed,,2023-09-04 20:01:00
+11229,04/22/2023,2409,Cents,  US ,us_shop,user93640@gmail.com,Completed,,2023-04-22 00:48:00
+10156,14.02.2023,"24,57 €",EUR, germany,eu_shop,user80652@yahoo.com,Completed,,2023-02-09 10:33:00
+10622,01/27/2023,7531,Cents ,us,us_shop,USER60977@OUTLOOK.COM, completed ,,2023-01-27 01:58:00
+10434,03.09.2023,"47,58",EUR, GERMANY,eu_shop,user35251@yahoo.com,Completed,,2023-09-03 21:50:00
+10376,20.06.2023,£60.93,GBP,test ,eu_shop,qa459@example.com,completed,,2023-06-20 10:32:00
+10821,2023-03-18,"€26,76",EUR,  ITALIA,eu_shop,user75941@gmail.com, COMPLETED,,2023-03-14 15:57:00
+10290,2023-11-29,USD 53.09,USD,  U.S.,us_shop,user93021@outlook.com,Completed,,2023-11-29 22:57:00
+10604,2023-06-05,USD 11.61,usd, United States,us_shop,user61634@gmail.com, COMPLETED,,2023-06-05 15:21:00
+10174,03/26/2023,USD 104.90,USD,united states ,us_shop,user74385@yahoo.com,completed,,2023-03-26 15:05:00
+10062,05/29/2023,USD 11.60,USD,  us ,us_shop,user52917@outlook.com,Completed,,2023-05-29 16:17:00
+10113,01/21/2023,$18.90,USD, GB,us_shop,user35839@web.de, COMPLETED,,2023-01-21 01:39:00
+10459,01/30/2023,2916,cents,  U.S. ,us_shop,user99199@gmail.com,completed,,2023-01-30 07:57:00
+10226,2023-03-15,122.91 GBP,GBP,  Gb,eu_shop,user65673@outlook.com,completed,,2023-03-15 22:39:00
+10526,07/16/2023,USD 34.28,USD, UNITED STATES,us_shop,user62944@mail.de, COMPLETED,,2023-07-16 12:33:00
+11390,2023-01-20,"76,50 €",EUR,  De,eu_shop,user14461@yahoo.com,completed,,2023-01-20 12:54:00
+50095,2023-12-23,"€42,08",EUR,France,eu_shop,user65284@gmail.com,refunded,10904,2023-12-23 22:00:00
+11385,26.04.2023,45.07 GBP,GBP,  United Kingdom ,eu_shop,user85531@gmail.com,Completed,,2023-04-26 21:56:00
+10115,09/21/2023,$156.57,USD,  united states of america,us_shop,user57668@gmail.com,completed,,2023-09-21 16:08:00
+11249,10/27/2023,5621,cents,  US,us_shop,user25201@yahoo.com, COMPLETED,,2023-10-27 10:53:00
+11352,2023-10-17,"€16,48",EUR,  Es ,eu_shop,user43759@yahoo.com,Completed,,2023-10-17 10:27:00
+10857,2023-06-14,3934.00,USD, Canada,us_shop,user15411@mail.de,Completed,,2023-06-14 07:52:00
+11182,2023-08-17,$106.36,USD,  USA ,us_shop,user77825@outlook.com,completed,,2023-08-17 05:21:00
+10276,12/15/2023,USD 47.16, USD ,  Usa,us_shop,user83854@web.de, COMPLETED,,2023-12-15 09:47:00
+10710,03.01.2023,"68,54 EUR",EUR,france ,eu_shop,user17131@web.de, COMPLETED,,2023-01-03 14:37:00
+10918,2023-03-01,"€32,90",EUR,  italy ,eu_shop,user11024@yahoo.com,Completed,,2023-03-01 20:53:00
+11181,04/01/2023,1695,cents, United States Of America ,us_shop,user8586@web.de, COMPLETED,,2023-04-01 00:19:00
+10656,2023-10-10,"€61,07",EUR,  es ,eu_shop,user93573@mail.de,Completed,,2023-10-10 11:36:00
+10910,2023-05-24,$32.71,USD,,us_shop,user26374@mail.de,Completed,,2023-05-24 20:31:00
+10814,12/27/2023,$8.91,USD,  UNITED STATES ,us_shop,user70221@outlook.com, COMPLETED,,2023-12-27 09:19:00
+11382,2023-01-27,$32.65,USD, united states of america,us_shop,user59645@gmail.com,completed,,2023-01-27 04:09:00
+10741,26.08.2023,63.32 GBP,GBP,united kingdom ,eu_shop,user13812@gmail.com,completed,,2023-08-26 18:34:00
+50029,09/03/2023,-21.83,USD,UNITED STATES ,us_shop,user5513@web.de,completed,10266,2023-09-03 00:00:00
+11412,2023-11-28,$26.95,USD,GB ,us_shop,user27096@web.de,completed,,2023-11-28 03:33:00
+50051,10/02/2023,-30.80,USD,Us,us_shop,user41137@gmail.com,completed,10449,2023-10-02 09:00:00
+10143,06/29/2023,4379.00,USD,Us,us_shop,user61212@outlook.com,completed,,2023-06-29 11:15:00
+11246,2023-03-09,$64.68,USD,  u.s.,us_shop,user49109@mail.de,completed,,2023-03-09 16:48:00
+10405,02.07.2023,"€44,80",EUR,,eu_shop,user96673@mail.de,completed,,2023-07-02 05:24:00
+11368,2023-08-10,"47,15 €",EUR, germany ,eu_shop,user9441@gmail.com, COMPLETED,,2023-08-10 02:35:00
+11057,2023-08-03,6572,cents, UNITED STATES,us_shop,user16520@mail.de,completed,,2023-08-03 22:20:00
+11125,09/09/2023,$51.37,usd,USA,us_shop,user78268@gmail.com,completed,,2023-09-09 00:45:00
+10328,05/03/2023,2091,Cents,  UNITED STATES ,us_shop,user39678@outlook.com,completed,,2023-05-03 09:09:00
+10249,10/26/2023,29.64,USD,  US ,us_shop,user92657@web.de, COMPLETED,,2023-10-26 21:03:00
+10202,2023-10-22,USD 33.10,USD, US ,us_shop,user24664@outlook.com, COMPLETED,,2023-10-22 17:41:00
+11395,01/07/2023,$57.49,USD,USA,us_shop,user29680@outlook.com, COMPLETED,,2023-01-07 09:25:00
+10852,2023-01-22,15.83,USD,  CANADA,us_shop,user19360@web.de,Completed,,2023-01-22 11:26:00
+11310,2023-01-01,2060,cents,  USA ,us_shop,user15230@mail.de,completed,,2023-01-01 16:54:00
+10092,07/14/2023,$25.56,USD, USA,us_shop,qa497@example.com,completed,,2023-07-14 14:45:00
+10446,2023-12-16,"€19,20",EUR, IT,eu_shop,user63028@web.de, COMPLETED,,2023-12-16 06:59:00
+10058,2023-08-28,2927,  CENTS ,UNITED STATES OF AMERICA ,us_shop, user78590@gmail.com, completed ,,2023-08-28 05:53:00
+11071,08/29/2023,31.24,USD,  united states of america ,us_shop,user10332@web.de,completed,,2023-08-29 21:44:00
+10028,2023-11-27,2561,Cents,u.s.,us_shop,user55543@outlook.com,Completed,,2023-11-27 00:22:00
+10545,2023-05-10,"20,73 EUR",EUR,Deutschland,eu_shop,user54986@web.de,Completed,,2023-05-10 21:32:00
+50083,2023-08-05,"108,88 EUR",EUR,  GERMANY ,eu_shop,user57189@yahoo.com,refunded,10769,2023-08-05 02:00:00
+11084,04/18/2023,3407,cents,  Usa,us_shop,user67803@mail.de, COMPLETED,,2023-04-18 00:16:00
+11099,2023-08-26,"35,69 EUR",EUR,germany ,eu_shop,user70907@yahoo.com, COMPLETED,,2023-08-26 15:41:00
+10384,2023-09-24,$134.37,USD,United States ,us_shop,user62450@web.de, COMPLETED,,2023-09-24 09:49:00
+10823,2023-05-06,$58.68,USD,UNITED KINGDOM,us_shop,user91747@web.de,Completed,,2023-05-06 10:10:00
+11013,06/06/2023,49.13,USD,US,us_shop,user93950@gmail.com, COMPLETED,,2023-06-06 03:24:00
+10370,2023-10-26,3727,cents,United States Of America ,us_shop,user71162@outlook.com,Completed,,2023-10-26 11:45:00
+10125,2023-01-04,"39,97",EUR, Spain,eu_shop,user39850@yahoo.com,Completed,,2023-01-04 13:36:00
+10866,2023-05-21,"61,76",EUR, Deutschland ,eu_shop,user29151@yahoo.com,completed,,2023-05-21 02:36:00
+11065,08/26/2023,$119.49,USD, united states of america ,us_shop,user54745@web.de,Completed,,2023-08-26 12:41:00
+11077,15.10.2023,"42,32 €",EUR, FR,eu_shop,user80324@yahoo.com,completed,,2023-10-15 20:46:00
+50145,2023-02-22,$42.24,USD,  U.S. ,us_shop,user26009@gmail.com,refunded,11380,2023-02-22 08:00:00
+10573,17.07.2023,"€18,58",EUR,De ,eu_shop,user15369@yahoo.com,Completed,,2023-07-17 13:20:00
+10038,11/13/2023,26.25,USD,TEST,us_shop,qa784@example.com,Completed,,2023-11-13 19:33:00
+10833,22.01.2023,"38,38",EUR,de,eu_shop,user21464@web.de,Completed,,2023-01-22 11:56:00
+11504,06.03.2023,"€1.187,58",EUR,DEUTSCHLAND,eu_shop,user59280@yahoo.com, COMPLETED,,2023-03-06 10:15:00
+10082,07/01/2023,5763.00,USD, united states of america,us_shop,user75968@web.de,Completed,,2023-07-01 08:56:00
+11039,02/20/2023,$26.97,USD,  usa ,us_shop,user76956@mail.de,Completed,,2023-02-20 12:35:00
+10619,2023-10-15,"€1.410,98",EUR,  FR ,eu_shop,user944@mail.de,completed,,2023-10-15 18:48:00
+50119,2023-09-16,USD 51.37,USD, united states,us_shop,user78268@gmail.com,refunded,11125,2023-09-16 19:00:00
+10188,16.08.2023,"11,55 €",EUR, De,eu_shop,user65768@mail.de,Completed,,2023-08-12 09:51:00

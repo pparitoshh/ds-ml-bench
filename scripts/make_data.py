@@ -16,87 +16,6 @@ def _task_path(category: str, task_id: str, *parts: str) -> Path:
     return TASKS_DIR / category / task_id / Path(*parts)
 
 
-def make_clean_orders() -> None:
-    rng = np.random.default_rng(42)
-    n_base = 180
-    n_dups = 20
-
-    order_ids = np.arange(1000, 1000 + n_base)
-    base_dates = (
-        pd.date_range("2023-01-01", periods=365, freq="D")
-        .to_series()
-        .reset_index(drop=True)
-    )
-    date_offsets = rng.integers(0, 365, size=n_base)
-    order_dates = base_dates.iloc[date_offsets].dt.strftime("%Y-%m-%d").values
-
-    # Mix ISO and US date formats.
-    date_strings = []
-    for d in order_dates:
-        if rng.random() < 0.5:
-            date_strings.append(d)
-        else:
-            parts = d.split("-")
-            date_strings.append(f"{parts[1]}/{parts[2]}/{parts[0]}")
-
-    currency_choices = rng.choice(["USD", "cents", "  USD  ", "cents "], size=n_base)
-    amounts = []
-    for c in currency_choices:
-        c_clean = c.strip().lower()
-        if c_clean == "usd":
-            amounts.append(
-                round(float(rng.integers(10, 500)) + round(rng.random(), 2), 2)
-            )
-        else:
-            amounts.append(int(rng.integers(1000, 50000)))
-
-    country_choices = [
-        "usa",
-        "USA",
-        "  USA  ",
-        "Germany",
-        "germany",
-        "GERMANY",
-        " FRANCE",
-        "france ",
-    ]
-    countries = rng.choice(country_choices, size=n_base)
-
-    base_df = pd.DataFrame({
-        "order_id": order_ids,
-        "order_date": date_strings,
-        "amount": amounts,
-        "currency": currency_choices,
-        "country": countries,
-    })
-
-    dup_indices = rng.integers(0, n_base, size=n_dups)
-    dup_df = base_df.iloc[dup_indices].copy()
-    raw_df = pd.concat([base_df, dup_df], ignore_index=True)
-
-    data_dir = _task_path("data_cleaning", "clean_orders", "data")
-    data_dir.mkdir(parents=True, exist_ok=True)
-    raw_df.to_csv(data_dir / "orders.csv", index=False)
-
-    # Expected cleaned version.
-    clean = base_df.copy()
-    clean["order_date"] = (
-        pd.to_datetime(clean["order_date"], format="mixed", dayfirst=False)
-        .dt.strftime("%Y-%m-%d")
-    )
-    clean["currency"] = clean["currency"].str.strip().str.lower()
-    cents_mask = clean["currency"] == "cents"
-    clean.loc[cents_mask, "amount"] = clean.loc[cents_mask, "amount"] / 100
-    clean["amount"] = clean["amount"].round(2)
-    clean["country"] = clean["country"].str.strip().str.upper()
-    clean = clean.drop_duplicates().reset_index(drop=True)
-    clean = clean[["order_id", "order_date", "amount", "country"]]
-
-    hidden_dir = _task_path("data_cleaning", "clean_orders", "hidden")
-    hidden_dir.mkdir(parents=True, exist_ok=True)
-    clean.to_csv(hidden_dir / "expected_clean_orders.csv", index=False)
-
-
 def make_rolling_features() -> None:
     rng = np.random.default_rng(42)
     n_customers = 50
@@ -273,7 +192,6 @@ def make_ab_test() -> None:
 
 
 def main() -> None:
-    make_clean_orders()
     make_rolling_features()
     make_churn()
     make_ab_test()
