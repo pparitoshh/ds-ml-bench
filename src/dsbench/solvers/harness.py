@@ -270,7 +270,7 @@ class ClaudeCodeSolver(HarnessSolver):
 
     def _agent_argv(self, prompt: str) -> list[str]:
         return [
-            "claude",
+            f"{HOME_AGENT}/.local/bin/claude",
             "-p",
             prompt,
             "--output-format",
