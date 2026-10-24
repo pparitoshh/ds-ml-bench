@@ -16,7 +16,7 @@ MVP_TASK_IDS = [
     "clean_orders",
     "rolling_features_no_leak",
     "churn_classifier",
-    "ab_test_simpson",
+    "ab_test_checkout",
     "movielens_recall_at_10",
 ]
 

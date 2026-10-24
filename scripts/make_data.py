@@ -155,46 +155,9 @@ def make_churn() -> None:
     print(f"churn_classifier sound AUC: {sound_auc:.4f}")
 
 
-def make_ab_test() -> None:
-    rows = [
-        {"segment": "A", "variant": "control", "users": 1000, "conversions": 100},
-        {"segment": "A", "variant": "treatment", "users": 500, "conversions": 40},
-        {"segment": "B", "variant": "control", "users": 500, "conversions": 25},
-        {"segment": "B", "variant": "treatment", "users": 1000, "conversions": 80},
-    ]
-    df = pd.DataFrame(rows)
-
-    data_dir = _task_path("statistics", "ab_test_simpson", "data")
-    data_dir.mkdir(parents=True, exist_ok=True)
-    df.to_csv(data_dir / "ab_data.csv", index=False)
-
-    def _lift(segment_df: pd.DataFrame) -> float:
-        ctrl = segment_df[segment_df["variant"] == "control"]
-        treat = segment_df[segment_df["variant"] == "treatment"]
-        ctrl_rate = ctrl["conversions"].sum() / ctrl["users"].sum()
-        treat_rate = treat["conversions"].sum() / treat["users"].sum()
-        return float((treat_rate - ctrl_rate) / ctrl_rate)
-
-    overall = _lift(df)
-    seg_a = _lift(df[df["segment"] == "A"])
-    seg_b = _lift(df[df["segment"] == "B"])
-
-    hidden_dir = _task_path("statistics", "ab_test_simpson", "hidden")
-    hidden_dir.mkdir(parents=True, exist_ok=True)
-    answer_yaml = (
-        f"answers:\n"
-        f"  overall_lift: {overall}\n"
-        f"  segment_a_lift: {seg_a}\n"
-        f"  segment_b_lift: {seg_b}\n"
-        f"rel_tol: 0.01\n"
-    )
-    (hidden_dir / "answer.yaml").write_text(answer_yaml)
-
-
 def main() -> None:
     make_rolling_features()
     make_churn()
-    make_ab_test()
     print("Generated task data.")
 
 

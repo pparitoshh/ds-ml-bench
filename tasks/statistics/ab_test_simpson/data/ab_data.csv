@@ -1,5 +1,0 @@
-segment,variant,users,conversions
-A,control,1000,100
-A,treatment,500,40
-B,control,500,25
-B,treatment,1000,80

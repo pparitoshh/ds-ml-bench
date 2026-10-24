@@ -1,0 +1,7 @@
+id: ab_test_checkout
+category: statistics
+difficulty: hard
+scorer: pytest
+weight: 1.0
+timeout_s: 600
+answer_type: code
