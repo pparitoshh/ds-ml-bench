@@ -1,7 +1,7 @@
-id: rolling_features_no_leak
+id: fraud_features
 category: feature_engineering
-difficulty: medium
+difficulty: hard
 scorer: pytest
 weight: 1.0
-timeout_s: 60
+timeout_s: 600
 answer_type: code
