@@ -26,3 +26,7 @@ packages = ["src/dsbench"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 norecursedirs = [".venv", ".cache", "tasks", "scripts"]
+markers = [
+    "integration: runs bwrap directly; skipped by default",
+]
+addopts = "-m 'not integration'"
