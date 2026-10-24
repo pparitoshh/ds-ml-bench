@@ -7,7 +7,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 | Model | Harness | Mean score | Total cost | Total time | Complete |
 |---|---|---|---|---|---|
 | claude-sonnet-5-5 | claude-code (`claude-sonnet-5-5`) | **92.0** | $0.87† | 5m 56s | 5/5 |
-| deepseek-v4.1-flash | opencode (`opencode-go/deepseek-v4.1-flash`) | pending | $0.00 | 7m 01s | 3/5 |
+| deepseek-v4.1-flash | opencode (`opencode-go/deepseek-v4.1-flash`) | pending | $0.00 | 12m 09s | 4/5 |
 | glm-5.3-flash | opencode (`opencode-go/glm-5.3-flash`) | pending | $0.00 | 2m 42s | 1/5 |
 
 ## Score per task
@@ -15,7 +15,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 | Model | clean_orders | ab_test_checkout | fraud_features | churn_classifier | movielens_recall_at_10 |
 |---|---|---|---|---|---|
 | claude-sonnet-5-5 | 75 | 90 | 95 | 100 | 100 |
-| deepseek-v4.1-flash | pending | pending | 95 | 100 | 0 |
+| deepseek-v4.1-flash | 55 | pending | 95 | 100 | 0 |
 | glm-5.3-flash | pending | pending | pending | 100 | pending |
 
 ## Time per task
@@ -23,7 +23,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 | Model | clean_orders | ab_test_checkout | fraud_features | churn_classifier | movielens_recall_at_10 |
 |---|---|---|---|---|---|
 | claude-sonnet-5-5 | 1m 29s | 1m 11s | 1m 43s | 0m 25s | 1m 08s |
-| deepseek-v4.1-flash | pending | pending | 3m 24s | 3m 02s | 0m 35s |
+| deepseek-v4.1-flash | 5m 08s | pending | 3m 24s | 3m 02s | 0m 35s |
 | glm-5.3-flash | pending | pending | pending | 2m 42s | pending |
 
 ## Cost per task
@@ -31,7 +31,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 | Model | clean_orders | ab_test_checkout | fraud_features | churn_classifier | movielens_recall_at_10 |
 |---|---|---|---|---|---|
 | claude-sonnet-5-5 | $0.294 | $0.180 | $0.196 | $0.091 | $0.105 |
-| deepseek-v4.1-flash | pending | pending | $0.002 | $0.000 | $0.000 |
+| deepseek-v4.1-flash | $0.001 | pending | $0.002 | $0.000 | $0.000 |
 | glm-5.3-flash | pending | pending | pending | $0.001 | pending |
 
 Task difficulty: clean_orders, ab_test_checkout, fraud_features = hard; churn_classifier, movielens_recall_at_10 = medium.
