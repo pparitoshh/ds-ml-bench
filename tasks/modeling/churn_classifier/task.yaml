@@ -1,0 +1,7 @@
+id: churn_classifier
+category: modeling
+difficulty: medium
+scorer: metric
+weight: 1.0
+timeout_s: 120
+answer_type: code

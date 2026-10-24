@@ -1,0 +1,7 @@
+id: ab_test_simpson
+category: statistics
+difficulty: medium
+scorer: numeric
+weight: 1.0
+timeout_s: 60
+answer_type: code

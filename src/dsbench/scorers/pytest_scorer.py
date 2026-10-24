@@ -47,8 +47,11 @@ class PytestScorer(Scorer):
 
         with tempfile.TemporaryDirectory() as tmpdir:
             tmp_path = Path(tmpdir)
-            for test_file in test_files:
-                shutil.copy2(test_file, tmp_path / test_file.name)
+            # Copy all hidden files so tests can use auxiliary data such as
+            # expected outputs or reference fixtures.
+            for hidden_file in hidden_dir.iterdir():
+                if hidden_file.is_file():
+                    shutil.copy2(hidden_file, tmp_path / hidden_file.name)
 
             junit_path = tmp_path / "junit.xml"
             env = os.environ.copy()

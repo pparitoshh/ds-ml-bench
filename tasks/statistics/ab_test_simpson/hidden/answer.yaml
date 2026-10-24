@@ -1,0 +1,5 @@
+answers:
+  overall_lift: -0.039999999999999925
+  segment_a_lift: -0.20000000000000004
+  segment_b_lift: 0.6
+rel_tol: 0.01

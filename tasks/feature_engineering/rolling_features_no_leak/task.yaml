@@ -1,0 +1,7 @@
+id: rolling_features_no_leak
+category: feature_engineering
+difficulty: medium
+scorer: pytest
+weight: 1.0
+timeout_s: 60
+answer_type: code

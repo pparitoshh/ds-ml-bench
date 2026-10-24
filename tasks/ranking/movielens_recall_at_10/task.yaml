@@ -1,0 +1,7 @@
+id: movielens_recall_at_10
+category: ranking
+difficulty: medium
+scorer: metric
+weight: 1.0
+timeout_s: 300
+answer_type: code

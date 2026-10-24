@@ -12,8 +12,14 @@ from sklearn.metrics import (
 
 
 def compute_auc(preds: pd.DataFrame, labels: pd.DataFrame) -> float:
-    """Area under the ROC curve; preds must contain a 'score' column."""
-    return float(roc_auc_score(labels["target"], preds["score"]))
+    """Area under the ROC curve.
+
+    preds may contain a 'score' or 'proba' column.
+    labels may contain a 'target' or 'churn' column.
+    """
+    score_col = "score" if "score" in preds.columns else "proba"
+    target_col = "target" if "target" in labels.columns else "churn"
+    return float(roc_auc_score(labels[target_col], preds[score_col]))
 
 
 def compute_accuracy(preds: pd.DataFrame, labels: pd.DataFrame) -> float:
@@ -45,7 +51,14 @@ def compute_recall_at_k(
     if k <= 0:
         raise ValueError("k must be positive")
 
-    top_k = preds[preds["rank"] <= k]
+    # Per user, sort by rank (stable), drop duplicate item_ids, and keep the
+    # first k rows. This prevents a model from inflating recall by assigning
+    # rank 1 to many items.
+    sorted_preds = preds.sort_values(["user_id", "rank"], kind="mergesort")
+    unique_preds = sorted_preds.drop_duplicates(
+        subset=["user_id", "item_id"], keep="first"
+    )
+    top_k = unique_preds[unique_preds["rank"] <= k]
 
     relevant_by_user = labels.groupby("user_id")["item_id"].apply(set).to_dict()
     predicted_by_user = top_k.groupby("user_id")["item_id"].apply(set).to_dict()
@@ -57,7 +70,7 @@ def compute_recall_at_k(
             continue
         predicted_items = predicted_by_user.get(user_id, set())
         hits = len(predicted_items & relevant_items)
-        scores.append(hits / denominator)
+        scores.append(min(hits, denominator) / denominator)
 
     if not scores:
         return 0.0

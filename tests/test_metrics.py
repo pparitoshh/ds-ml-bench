@@ -115,3 +115,19 @@ def test_compute_recall_at_k_invalid_k():
     labels = pd.DataFrame({"user_id": [], "item_id": []})
     with pytest.raises(ValueError, match="k must be positive"):
         compute_recall_at_k(preds, labels, k=0)
+
+
+def test_compute_recall_at_k_duplicate_rank_one_items_are_capped_at_k():
+    preds = pd.DataFrame({
+        "user_id": [1] * 50,
+        "item_id": list(range(50)),
+        "rank": [1] * 50,
+    })
+    labels = pd.DataFrame({
+        "user_id": [1] * 15,
+        "item_id": list(range(15)),
+    })
+    # A model cannot claim more than k unique items at rank <= k.
+    # With 15 relevant items and k=10, only the first 10 unique predictions
+    # count, so recall is capped at 1.0.
+    assert compute_recall_at_k(preds, labels, k=10) == pytest.approx(1.0)

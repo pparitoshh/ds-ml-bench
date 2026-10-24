@@ -4,3 +4,10 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 .venv/
+
+# MovieLens generated files (license forbids redistribution)
+tasks/ranking/movielens_recall_at_10/data/*.csv
+tasks/ranking/movielens_recall_at_10/hidden/*.csv
+tasks/ranking/movielens_recall_at_10/hidden/*.yaml
+tasks/ranking/movielens_recall_at_10/.cache/
+
