@@ -374,3 +374,32 @@ class OpenCodeSolver(HarnessSolver):
             transcript=stdout + (f"\n--- stderr ---\n{stderr}" if stderr else ""),
             meta={"events": len(events)},
         )
+
+HARNESS_SOLVERS: dict[str, type[HarnessSolver]] = {
+    "opencode": OpenCodeSolver,
+    "claude-code": ClaudeCodeSolver,
+}
+
+
+def get_harness_solver(model_entry: dict) -> Solver:
+    """Map an agent-mode config model entry to a harness solver.
+
+    Entry keys: label, harness ('opencode' or 'claude-code'), model
+    (provider/model id), and optional timeout_factor.
+    """
+    harness = model_entry.get("harness", "opencode")
+    solver_cls = HARNESS_SOLVERS.get(harness)
+    if solver_cls is None:
+        raise ValueError(
+            f"model entry {model_entry.get('label')!r}: harness must be "
+            f"{sorted(HARNESS_SOLVERS)}, got {harness!r}"
+        )
+    model = model_entry.get("model")
+    if not model:
+        raise ValueError(
+            f"model entry {model_entry.get('label')!r}: agent mode requires 'model'"
+        )
+    config = HarnessConfig(
+        timeout_factor=float(model_entry.get("timeout_factor", DEFAULT_TIMEOUT_FACTOR))
+    )
+    return solver_cls(model=model, config=config)

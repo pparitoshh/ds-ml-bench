@@ -6,7 +6,7 @@ from typing import Optional
 import typer
 
 from dsbench.factory import default_solver_factory, load_config
-from dsbench.leaderboard import build_leaderboard, render_html, render_markdown
+from dsbench.leaderboard import build_leaderboard, render_html, render_markdown, write_report_markdown
 from dsbench.runner import run_benchmark
 from dsbench.tasks import load_tasks
 
@@ -145,7 +145,10 @@ def leaderboard(
     html_path = results_dir / "leaderboard.html"
     md_path.write_text(render_markdown(entries))
     html_path.write_text(render_html(entries))
-    print(f"Leaderboard written to {md_path} and {html_path}")  # noqa: T201
+    report_path = write_report_markdown(entries, results_dir)
+    print(
+        f"Leaderboard written to {md_path} and {html_path}; report written to {report_path}"
+    )  # noqa: T201
 
 
 if __name__ == "__main__":

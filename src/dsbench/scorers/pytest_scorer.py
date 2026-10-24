@@ -14,6 +14,11 @@ from dsbench.scorers.base import ScoreResult, Scorer
 class PytestScorer(Scorer):
     """Score a run by running hidden pytest tests against the model workdir."""
 
+    @staticmethod
+    def _stderr(run_result) -> str:
+        meta = getattr(run_result, "meta", None) or {}
+        return meta.get("stderr") or getattr(run_result, "stderr", "") or ""
+
     def score(self, task, run_result, workdir, answer_text, judge=None) -> ScoreResult:
         workdir = Path(workdir)
 
@@ -23,7 +28,7 @@ class PytestScorer(Scorer):
                 passed=False,
                 details={
                     "reason": "model_code_timed_out",
-                    "stderr": run_result.stderr if run_result else "",
+                    "stderr": self._stderr(run_result),
                 },
             )
 
@@ -34,7 +39,7 @@ class PytestScorer(Scorer):
                 details={
                     "reason": "model_code_failed",
                     "returncode": run_result.returncode,
-                    "stderr": run_result.stderr,
+                    "stderr": self._stderr(run_result),
                 },
             )
 

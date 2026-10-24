@@ -100,3 +100,154 @@ def render_html(entries: list[dict]) -> str:
         f"<table>\n{head_row}\n" + "\n".join(body_rows) + "\n</table>\n"
         "</body>\n</html>\n"
     )
+def _percent_row_value(mean: float, std: float) -> str:
+    return f"{float(mean) * 100:.1f} ± {float(std) * 100:.1f}"
+
+
+def load_public_reference(path: Path) -> list[dict]:
+    """Load public reference rows from a YAML file, if present."""
+    import yaml
+
+    path = Path(path)
+    if not path.is_file():
+        return []
+    data = yaml.safe_load(path.read_text()) or []
+    if isinstance(data, dict):
+        data = data.get("references") or []
+    if not isinstance(data, list):
+        raise ValueError(f"public_reference.yaml must hold a list: {path}")
+    return [item for item in data if isinstance(item, dict)]
+
+
+def benchmark_commit() -> str:
+    """Return the short git commit of the benchmark repository."""
+    import subprocess
+
+    try:
+        out = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=10,
+        )
+    except OSError:
+        return "-"
+    if out.returncode == 0:
+        return out.stdout.strip()
+    return "-"
+
+
+def build_report_markdown(
+    entries: list[dict],
+    references: list[dict] | None = None,
+    commit: str | None = None,
+) -> str:
+    """Render a model-release-style Markdown report table with footnotes."""
+    labels = [entry.get("model_label") or "unknown" for entry in entries]
+
+    tasks_by_category: dict[str, list[str]] = {}
+    for entry in entries:
+        for task_id, meta in (entry.get("per_task") or {}).items():
+            category = (meta or {}).get("category", "other")
+            seen = tasks_by_category.setdefault(category, [])
+            if task_id not in seen:
+                seen.append(task_id)
+
+    ncols = 1 + len(labels)
+    lines = ["# ds-ml-bench report", ""]
+    lines.append("| benchmark/task | " + " | ".join(labels) + " |")
+    lines.append("|" + "|".join(["---"] * ncols) + "|")
+
+    for category in sorted(tasks_by_category):
+        label = category.replace("_", " ").title()
+        lines.append("| **" + label + "** |" + " |" * (ncols - 1))
+        for task_id in sorted(tasks_by_category[category]):
+            cells: list[str] = []
+            for entry in entries:
+                meta = (entry.get("per_task") or {}).get(task_id)
+                if meta is None:
+                    cells.append("-")
+                else:
+                    cells.append(
+                        _percent_row_value(meta.get("mean", 0.0), meta.get("std", 0.0))
+                    )
+            lines.append("| " + task_id + " | " + " | ".join(cells) + " |")
+
+    overall = [
+        "**" + f"{float(entry.get('rating', 0.0)):.1f}" + "**" for entry in entries
+    ]
+    lines.append("| **Overall** | " + " | ".join(overall) + " |")
+
+    cost_cells = [
+        f"{float(entry.get('total_cost_usd')):.2f}"
+        if isinstance(entry.get("total_cost_usd"), (int, float))
+        else "-"
+        for entry in entries
+    ]
+    lines.append("| Cost (USD, measured) | " + " | ".join(cost_cells) + " |")
+
+    time_cells = [
+        f"{float(entry.get('total_duration_s')) / 60:.1f}"
+        if isinstance(entry.get("total_duration_s"), (int, float))
+        else "-"
+        for entry in entries
+    ]
+    lines.append("| Time (min, measured) | " + " | ".join(time_cells) + " |")
+
+    grouped: dict[str, dict[str, dict]] = {}
+    for item in references or []:
+        benchmark = str(item.get("benchmark", "-"))
+        model = str(item.get("model") or item.get("model_label") or "")
+        grouped.setdefault(benchmark, {})[model] = item
+    for benchmark in sorted(grouped):
+        cells = [
+            f"{grouped[benchmark][label]['value']} *" if label in grouped[benchmark] else "-"
+            for label in labels
+        ]
+        lines.append(
+            "| " + benchmark + " (reported) | " + " | ".join(cells) + " |"
+        )
+
+    repo_commit = commit or benchmark_commit()
+    lines += ["", "## Footnotes", ""]
+    for entry in entries:
+        label = entry.get("model_label") or "unknown"
+        harness = entry.get("harness") or "-"
+        model_id = entry.get("model") or "-"
+        runs = entry.get("runs_per_task", 1)
+        judge_model = entry.get("judge_model") or "-"
+        date = entry.get("date") or "-"
+        mode = entry.get("mode", "api")
+        lines.append(
+            f"- **{label}**: mode {mode}; harness {harness}; provider/model id {model_id}; "
+            f"{runs} run(s) per task; judge model {judge_model}; date {date}; "
+            f"benchmark commit {repo_commit}"
+        )
+    if grouped:
+        lines.append(
+            "- `*` marks public reference values: reported by the external source. "
+            "All other values are measured by ds-ml-bench."
+        )
+        for benchmark, by_model in sorted(grouped.items()):
+            for model in sorted(by_model):
+                item = by_model[model]
+                source = item.get("source") or "-"
+                lines.append(
+                    f"  - {benchmark} / {model}: value {item.get('value')}, source: {source}"
+                )
+    return "\n".join(lines) + "\n"
+
+
+def write_report_markdown(
+    entries: list[dict],
+    results_dir: Path,
+    commit: str | None = None,
+) -> Path:
+    """Write results/report.md from leaderboard entries."""
+    results_dir = Path(results_dir)
+    references = load_public_reference(results_dir / "public_reference.yaml")
+    text = build_report_markdown(entries, references=references, commit=commit)
+    results_dir.mkdir(parents=True, exist_ok=True)
+    report_path = results_dir / "report.md"
+    report_path.write_text(text)
+    return report_path

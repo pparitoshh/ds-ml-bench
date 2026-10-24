@@ -1,0 +1,24 @@
+# Agent-mode benchmark: three models through the opencode harness.
+# Costs real money when run: uv run bench run --config config.opencode3.yaml --model <label>
+
+models:
+  - label: kimi-k3.1-pro
+    mode: agent
+    harness: opencode
+    model: moonshotai/kimi-k3.1-pro
+
+  - label: claude-opus-5-5
+    mode: agent
+    harness: opencode
+    model: opencode/claude-opus-5-5
+
+  - label: glm-5.3
+    mode: agent
+    harness: opencode
+    model: opencode-go/glm-5.3
+
+judge:
+  adapter: claude
+  model: claude-opus-5-5
+
+runs_per_task: 3

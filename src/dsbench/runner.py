@@ -40,17 +40,6 @@ def _copy_task_inputs(task, workdir: Path) -> None:
         prompt_dest.write_text(task.prompt)
 
 
-class _ScorerRunView:
-    """View of a SolveResult for scorers that expect a CodeResult."""
-
-    def __init__(self, solve_result: SolveResult):
-        self.returncode = solve_result.returncode
-        self.timed_out = solve_result.timed_out
-        meta = solve_result.meta or {}
-        self.stdout = meta.get("stdout", "")
-        self.stderr = meta.get("stderr", "")
-
-
 def _mean(scores: list[float]) -> float:
     return statistics.fmean(scores) if scores else 0.0
 
@@ -83,6 +72,7 @@ def run_benchmark(
         raise ValueError("config must define at least one model under 'models'")
 
     judge = _make_judge(config)
+    judge_model = (config.get("judge") or {}).get("model")
     out_dir = Path(out_dir)
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H-%M-%S")
 
@@ -101,6 +91,7 @@ def run_benchmark(
             out_dir=out_dir,
             timestamp=timestamp,
             judge=judge,
+            judge_model=judge_model,
         )
         results_paths.append(results_path)
 
@@ -116,6 +107,7 @@ def _run_one_model(
     out_dir: Path,
     timestamp: str,
     judge,
+    judge_model: str | None = None,
 ) -> Path:
     """Run one model over all tasks and write its results.json."""
     model_root = Path(out_dir) / label / timestamp
@@ -150,7 +142,7 @@ def _run_one_model(
                 scorer = get_scorer(task.scorer)
                 score_result = scorer.score(
                     task=task,
-                    run_result=_ScorerRunView(solve_result),
+                    run_result=solve_result,
                     workdir=run_dir,
                     answer_text=solve_result.answer_text,
                     judge=judge,
@@ -210,6 +202,7 @@ def _run_one_model(
         total_cost=total_cost,
         total_duration=total_duration,
         runs_per_task=runs_per_task,
+        judge_model=judge_model,
     )
 
     model_root.mkdir(parents=True, exist_ok=True)
@@ -225,6 +218,7 @@ def _build_summary(
     total_cost: float,
     total_duration: float,
     runs_per_task: int,
+    judge_model: str | None = None,
 ) -> dict:
     """Build the summary results dict for one model."""
     category_scores: dict[str, list[float]] = {}
@@ -250,6 +244,7 @@ def _build_summary(
         "model": model_entry.get("model"),
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H-%M-%S"),
         "runs_per_task": runs_per_task,
+        "judge_model": judge_model,
         "per_task": {
             task_id: {
                 "category": meta["category"],
