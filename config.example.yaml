@@ -1,0 +1,10 @@
+models:
+  - name: kimi-8k
+    adapter: kimi
+    model: moonshot-v1-8k
+
+judge:
+  adapter: claude
+  model: claude-3-5-sonnet-latest
+
+runs_per_task: 3
