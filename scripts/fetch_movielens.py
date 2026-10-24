@@ -101,8 +101,9 @@ def main() -> None:
 
     baseline_preds = popularity_baseline_predictions(train, users_to_score)
     baseline_recall = compute_recall_at_k(baseline_preds, labels, k=10)
-    threshold = baseline_recall * 1.1 if baseline_recall > 0 else 0.01
+    threshold = baseline_recall * 1.25 if baseline_recall > 0 else 0.01
     threshold = round(float(threshold), 6)
+    baseline_recall = round(float(baseline_recall), 6)
 
     metric_yaml = (
         f"predictions_file: predictions.csv\n"
@@ -110,6 +111,7 @@ def main() -> None:
         f"metric: recall_at_k\n"
         f"k: 10\n"
         f"threshold: {threshold}\n"
+        f"baseline: {baseline_recall}\n"
         f"higher_is_better: true\n"
     )
     (HIDDEN_DIR / "metric.yaml").write_text(metric_yaml)
@@ -119,7 +121,7 @@ def main() -> None:
     print(f"Relevant labels: {len(labels)}")
     print(f"Users to score: {len(users_to_score)}")
     print(f"Popularity baseline Recall@10: {baseline_recall:.6f}")
-    print(f"Threshold (1.1x): {threshold:.6f}")
+    print(f"Threshold (1.25x): {threshold:.6f}")
 
 
 if __name__ == "__main__":

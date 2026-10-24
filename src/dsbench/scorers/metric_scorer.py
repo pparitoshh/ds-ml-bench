@@ -34,7 +34,14 @@ class MetricScorer(Scorer):
             raise FileNotFoundError(f"Metric scorer missing {metric_file}")
 
         meta = yaml.safe_load(metric_file.read_text()) or {}
-        required = ["predictions_file", "labels_file", "metric", "threshold", "higher_is_better"]
+        required = [
+            "predictions_file",
+            "labels_file",
+            "metric",
+            "threshold",
+            "higher_is_better",
+            "baseline",
+        ]
         for key in required:
             if key not in meta:
                 raise ValueError(f"metric.yaml missing required key: {key}")
@@ -67,16 +74,26 @@ class MetricScorer(Scorer):
 
         value = _METRIC_FUNCTIONS[metric_name](preds, labels, **kwargs)
         threshold = float(meta["threshold"])
+        baseline = float(meta["baseline"])
         higher_is_better = bool(meta["higher_is_better"])
 
         if higher_is_better:
-            partial = max(0.0, min(value / threshold, 1.0))
+            scale = threshold - baseline
+            if scale <= 0:
+                raise ValueError(
+                    f"higher_is_better metric requires baseline < threshold, "
+                    f"got baseline={baseline}, threshold={threshold}"
+                )
+            partial = max(0.0, min((value - baseline) / scale, 1.0))
             passed = value >= threshold
         else:
-            if value <= 0:
-                partial = 0.0
-            else:
-                partial = max(0.0, min(threshold / value, 1.0))
+            scale = baseline - threshold
+            if scale <= 0:
+                raise ValueError(
+                    f"lower_is_better metric requires baseline > threshold, "
+                    f"got baseline={baseline}, threshold={threshold}"
+                )
+            partial = max(0.0, min((baseline - value) / scale, 1.0))
             passed = value <= threshold
 
         return ScoreResult(
@@ -86,6 +103,7 @@ class MetricScorer(Scorer):
                 "metric": metric_name,
                 "value": value,
                 "threshold": threshold,
+                "baseline": baseline,
                 "higher_is_better": higher_is_better,
                 "k": kwargs.get("k"),
             },

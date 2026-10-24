@@ -173,17 +173,17 @@ def make_churn() -> None:
 
     # True churn driven by x1, x2, x3.
     logits = (
-        0.5 * train_x["x1"].values
-        - 0.4 * train_x["x2"].values
-        + 0.3 * train_x["x3"].values
+        1.2 * train_x["x1"].values
+        - 1.0 * train_x["x2"].values
+        + 0.8 * train_x["x3"].values
         + 0.1
     )
     train_y = (rng.random(n_train) < (1 / (1 + np.exp(-logits)))).astype(int)
 
     test_logits = (
-        0.5 * test_x["x1"].values
-        - 0.4 * test_x["x2"].values
-        + 0.3 * test_x["x3"].values
+        1.2 * test_x["x1"].values
+        - 1.0 * test_x["x2"].values
+        + 0.8 * test_x["x3"].values
         + 0.1
     )
     test_y = (rng.random(n_test) < (1 / (1 + np.exp(-test_logits)))).astype(int)
@@ -215,22 +215,25 @@ def make_churn() -> None:
     hidden_dir.mkdir(parents=True, exist_ok=True)
     test[["id", "churn"]].to_csv(hidden_dir / "labels.csv", index=False)
 
-    # Sound model AUC used to set threshold.
+    # Sound model AUC used for verification; threshold is fixed.
     features = ["x1", "x2", "x3"]
     model = LogisticRegression(max_iter=1000)
     model.fit(train[features], train["churn"])
     proba = model.predict_proba(test[features])[:, 1]
     sound_auc = roc_auc_score(test["churn"], proba)
 
-    threshold = round(max(0.55, sound_auc - 0.05), 4)
+    threshold = 0.75
+    baseline = 0.5
     metric_yaml = (
         f"predictions_file: predictions.csv\n"
         f"labels_file: labels.csv\n"
         f"metric: auc\n"
         f"threshold: {threshold}\n"
+        f"baseline: {baseline}\n"
         f"higher_is_better: true\n"
     )
     (hidden_dir / "metric.yaml").write_text(metric_yaml)
+    print(f"churn_classifier sound AUC: {sound_auc:.4f}")
 
 
 def make_ab_test() -> None:

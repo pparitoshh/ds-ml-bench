@@ -64,7 +64,26 @@ def test_reference_solution_passes(task_id, task_by_id, tmp_path):
     )
 
 
-def test_churn_leaky_baseline_fails(task_by_id, tmp_path):
+def test_churn_random_baseline_scores_zero(task_by_id, tmp_path):
+    task = task_by_id["churn_classifier"]
+
+    random_code = """
+import pandas as pd
+import numpy as np
+
+test = pd.read_csv("test.csv")
+np.random.seed(0)
+proba = np.full(len(test), 0.5)
+pd.DataFrame({"id": test["id"], "proba": proba}).to_csv("predictions.csv", index=False)
+"""
+    run_result = _run_solution(task, random_code, tmp_path)
+    score_result = _score(task, run_result, tmp_path)
+
+    assert score_result.score == pytest.approx(0.0)
+    assert score_result.passed is False
+
+
+def test_churn_leaky_baseline_scores_zero(task_by_id, tmp_path):
     task = task_by_id["churn_classifier"]
 
     leaky_code = """
@@ -86,6 +105,5 @@ pd.DataFrame({"id": test["id"], "proba": proba}).to_csv("predictions.csv", index
     run_result = _run_solution(task, leaky_code, tmp_path)
     score_result = _score(task, run_result, tmp_path)
 
-    assert score_result.passed is False, (
-        f"Leaky baseline unexpectedly passed: {score_result.details}"
-    )
+    assert score_result.score == pytest.approx(0.0)
+    assert score_result.passed is False

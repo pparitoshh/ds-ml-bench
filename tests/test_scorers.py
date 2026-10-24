@@ -125,6 +125,7 @@ def test_metric_scorer_accuracy(tmp_path):
         "labels_file: labels.csv\n"
         "metric: accuracy\n"
         "threshold: 0.9\n"
+        "baseline: 0.0\n"
         "higher_is_better: true\n"
     )
     labels = pd.DataFrame({"target": [1, 0, 1, 0]})
@@ -159,6 +160,7 @@ def test_metric_scorer_recall_at_k(tmp_path):
         "metric: recall_at_k\n"
         "k: 3\n"
         "threshold: 1.0\n"
+        "baseline: 0.0\n"
         "higher_is_better: true\n"
     )
     task = _make_task(tmp_path, "metric", {"metric.yaml": metric_yaml, "labels.csv": labels.to_csv(index=False)})
@@ -181,6 +183,7 @@ def test_metric_scorer_rmse_lower_is_better(tmp_path):
         "labels_file: labels.csv\n"
         "metric: rmse\n"
         "threshold: 2.0\n"
+        "baseline: 3.0\n"
         "higher_is_better: false\n"
     )
     labels = pd.DataFrame({"target": [1.0, 2.0, 3.0]})
@@ -202,6 +205,7 @@ def test_metric_scorer_missing_predictions(tmp_path):
         "labels_file: labels.csv\n"
         "metric: accuracy\n"
         "threshold: 1.0\n"
+        "baseline: 0.0\n"
         "higher_is_better: true\n"
     )
     labels = pd.DataFrame({"target": [1, 0]})
@@ -212,6 +216,75 @@ def test_metric_scorer_missing_predictions(tmp_path):
     assert result.score == 0.0
     assert result.passed is False
     assert "error" in result.details
+
+
+def test_metric_scorer_baseline_level_scores_zero(tmp_path):
+    workdir = tmp_path / "work"
+    workdir.mkdir()
+
+    pd.DataFrame({"prediction": [0, 0, 0, 0]}).to_csv(
+        workdir / "preds.csv", index=False
+    )
+    metric_yaml = (
+        "predictions_file: preds.csv\n"
+        "labels_file: labels.csv\n"
+        "metric: accuracy\n"
+        "threshold: 0.9\n"
+        "baseline: 0.5\n"
+        "higher_is_better: true\n"
+    )
+    labels = pd.DataFrame({"target": [1, 0, 1, 0]})
+    task = _make_task(tmp_path, "metric", {"metric.yaml": metric_yaml, "labels.csv": labels.to_csv(index=False)})
+
+    result = MetricScorer().score(task, None, workdir, answer_text="")
+
+    assert result.score == pytest.approx(0.0)
+    assert result.passed is False
+
+
+def test_metric_scorer_threshold_level_scores_one(tmp_path):
+    workdir = tmp_path / "work"
+    workdir.mkdir()
+
+    pd.DataFrame({"prediction": [1, 1, 1, 1]}).to_csv(
+        workdir / "preds.csv", index=False
+    )
+    metric_yaml = (
+        "predictions_file: preds.csv\n"
+        "labels_file: labels.csv\n"
+        "metric: accuracy\n"
+        "threshold: 1.0\n"
+        "baseline: 0.5\n"
+        "higher_is_better: true\n"
+    )
+    labels = pd.DataFrame({"target": [1, 1, 1, 1]})
+    task = _make_task(tmp_path, "metric", {"metric.yaml": metric_yaml, "labels.csv": labels.to_csv(index=False)})
+
+    result = MetricScorer().score(task, None, workdir, answer_text="")
+
+    assert result.score == pytest.approx(1.0)
+    assert result.passed is True
+
+
+def test_metric_scorer_missing_baseline_raises(tmp_path):
+    workdir = tmp_path / "work"
+    workdir.mkdir()
+
+    pd.DataFrame({"prediction": [1, 0, 1, 1]}).to_csv(
+        workdir / "preds.csv", index=False
+    )
+    metric_yaml = (
+        "predictions_file: preds.csv\n"
+        "labels_file: labels.csv\n"
+        "metric: accuracy\n"
+        "threshold: 0.9\n"
+        "higher_is_better: true\n"
+    )
+    labels = pd.DataFrame({"target": [1, 0, 1, 0]})
+    task = _make_task(tmp_path, "metric", {"metric.yaml": metric_yaml, "labels.csv": labels.to_csv(index=False)})
+
+    with pytest.raises(ValueError, match=r"metric\.yaml missing required key: ['\"]?baseline['\"]?"):
+        MetricScorer().score(task, None, workdir, answer_text="")
 
 
 def test_numeric_scorer_all_correct(tmp_path):

@@ -1,5 +1,6 @@
 predictions_file: predictions.csv
 labels_file: labels.csv
 metric: auc
-threshold: 0.5876
+threshold: 0.75
+baseline: 0.5
 higher_is_better: true
