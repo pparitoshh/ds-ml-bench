@@ -13,6 +13,9 @@ dependencies = [
     "typer",
 ]
 
+[project.scripts]
+bench = "dsbench.cli:app"
+
 [dependency-groups]
 dev = ["pytest"]
 

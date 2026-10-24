@@ -1,5 +1,6 @@
-"""Solver implementations."""
+"""Solver implementations for ds-ml-bench."""
 
-from dsbench.solvers.base import Solver, SolveResult
+from dsbench.solvers.api import ApiSolver
+from dsbench.solvers.base import SolveResult, Solver
 
-__all__ = ["Solver", "SolveResult"]
+__all__ = ["SolveResult", "Solver", "ApiSolver"]

@@ -1,4 +1,4 @@
-"""Shared interface for task solvers."""
+"""Base solver interface."""
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
@@ -7,7 +7,7 @@ from pathlib import Path
 
 @dataclass
 class SolveResult:
-    """Result of a solver invocation."""
+    """Result of a single solver run."""
 
     answer_text: str
     returncode: int = 0
@@ -21,10 +21,14 @@ class SolveResult:
 
 
 class Solver(ABC):
-    """Abstract interface for a solver that completes a task."""
+    """Abstract solver that produces an answer for a task."""
 
     name: str
 
     @abstractmethod
     def solve(self, task, workdir: Path) -> SolveResult:
-        """Solve the task, leaving output files in *workdir*."""
+        """Solve the task in the provided workdir.
+
+        The workdir already contains a copy of the task data files and
+        prompt.md. The solver must leave output files in workdir.
+        """

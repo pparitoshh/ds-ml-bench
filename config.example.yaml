@@ -1,7 +1,13 @@
 models:
-  - name: kimi-k3
+  - label: kimi-k3
+    mode: api
     adapter: kimi
     model: kimi-k3
+
+  - label: claude-code-agent
+    mode: agent
+    harness: claude-code
+    model: claude-sonnet-4-5
 
 judge:
   adapter: claude
