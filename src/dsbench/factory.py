@@ -21,8 +21,10 @@ def load_config(path: Path | str) -> dict:
     if not config.get("models"):
         raise ValueError(f"{path}: config must define a non-empty 'models' list")
     judge = config.get("judge")
-    if judge is not None and judge.get("adapter", "claude") != "claude":
-        raise ValueError(f"{path}: only the 'claude' judge adapter is supported")
+    if judge is not None and judge.get("adapter", "claude") not in ("claude", "claude-code"):
+        raise ValueError(
+            f"{path}: judge adapter must be 'claude' or 'claude-code'"
+        )
     return config
 
 

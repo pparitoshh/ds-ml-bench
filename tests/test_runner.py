@@ -185,3 +185,78 @@ def test_run_benchmark_requires_models(tmp_path):
             runs_per_task=1,
             out_dir=tmp_path,
         )
+
+
+class ProviderErrorSolver(Solver):
+    """Fails with a provider error on the first run, then succeeds."""
+
+    name = "flaky"
+
+    def __init__(self):
+        self.calls = 0
+        self.inner = PerfectSolver()
+
+    def solve(self, task, workdir: Path) -> SolveResult:
+        self.calls += 1
+        if self.calls == 1:
+            return SolveResult(answer_text="", returncode=1, provider_error="HTTP 429 rate limit")
+        return self.inner.solve(task, workdir)
+
+
+def test_provider_error_not_scored_and_excluded(tmp_path, capsys):
+    build_numeric_task(tmp_path / "t", task_id="only", category="stats")
+    tasks = load_tasks(tmp_path / "t")
+    solver = ProviderErrorSolver()
+    paths = run_benchmark(_config("flaky", runs=3), lambda e: solver, tasks, 3, tmp_path / "out")
+    data = json.loads(paths[0].read_text())
+    meta = data["per_task"]["only"]
+    assert (meta["n_ok"], meta["n_runs"]) == (2, 3)
+    assert meta["mean"] == 1.0  # the error run is not counted as 0
+    assert data["rating"] == 100.0
+    assert "provider error" in capsys.readouterr().err
+    run0 = json.loads((paths[0].parent / "only" / "run_0" / "result.json").read_text())
+    assert run0["status"] == "error" and run0["score"] is None
+
+
+def test_all_runs_error_task_excluded_from_rating(tmp_path):
+    build_numeric_task(tmp_path / "t", task_id="only", category="stats")
+    tasks = load_tasks(tmp_path / "t")
+
+    class Always(Solver):
+        name = "always"
+
+        def solve(self, task, workdir):
+            return SolveResult(answer_text="", returncode=1, provider_error="401")
+
+    paths = run_benchmark(_config("e", runs=2), lambda e: Always(), tasks, 2, tmp_path / "out")
+    data = json.loads(paths[0].read_text())
+    assert data["per_task"]["only"]["mean"] is None
+    assert data["rating"] == 0.0
+
+
+def test_exception_with_429_is_provider_error(tmp_path):
+    build_numeric_task(tmp_path / "t", task_id="only", category="stats")
+    tasks = load_tasks(tmp_path / "t")
+
+    class Raises(Solver):
+        name = "raises"
+
+        def solve(self, task, workdir):
+            raise RuntimeError("Error code: 429 rate limit exceeded")
+
+    paths = run_benchmark(_config("r", runs=1), lambda e: Raises(), tasks, 1, tmp_path / "out")
+    meta = json.loads(paths[0].read_text())["per_task"]["only"]
+    assert meta["n_ok"] == 0 and meta["mean"] is None
+
+
+def test_judge_built_lazily(monkeypatch):
+    from dsbench import runner
+
+    built = []
+    monkeypatch.setattr(runner, "_build_judge", lambda cfg: built.append(cfg) or type(
+        "J", (), {"score": lambda self, p, a, r: {"score": 1.0, "reasoning": "x"}})())
+    judge = runner._make_judge({"judge": {"adapter": "claude-code", "model": "m"}})
+    assert built == []
+    judge.score("p", "a", "r")
+    judge.score("p", "a", "r")
+    assert len(built) == 1

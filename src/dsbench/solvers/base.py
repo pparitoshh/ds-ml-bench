@@ -18,6 +18,7 @@ class SolveResult:
     tokens_out: int | None = None
     transcript: str = ""
     meta: dict = field(default_factory=dict)
+    provider_error: str | None = None
 
 
 class Solver(ABC):

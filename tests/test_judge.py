@@ -84,3 +84,26 @@ def test_judge_missing_keys_raise():
         judge = ClaudeJudge(model="claude-test", api_key="test-key")
         with pytest.raises(KeyError):
             judge.score("prompt", "answer", "rubric")
+
+
+def test_claude_code_judge_command_and_parse(monkeypatch):
+    import json
+    import subprocess
+
+    from dsbench.judge.claude_code_judge import ClaudeCodeJudge
+
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "should-not-pass")
+    seen = {}
+
+    def fake_run(cmd, **kwargs):
+        seen["cmd"], seen["env"] = cmd, kwargs["env"]
+        out = json.dumps({"result": '```json\n{"score": 0.7, "reasoning": "ok"}\n```'})
+        return subprocess.CompletedProcess(cmd, 0, out, "")
+
+    monkeypatch.setattr(subprocess, "run", fake_run)
+    verdict = ClaudeCodeJudge(model="claude-opus-5-5").score("p", "a", "r")
+    assert verdict == {"score": 0.7, "reasoning": "ok"}
+    cmd = seen["cmd"]
+    assert cmd[cmd.index("--tools") + 1] == ""
+    assert cmd[cmd.index("--model") + 1] == "claude-opus-5-5"
+    assert "ANTHROPIC_API_KEY" not in seen["env"]

@@ -1,5 +1,6 @@
 """Command line interface for ds-ml-bench."""
 
+import json
 from pathlib import Path
 from typing import Optional
 
@@ -111,6 +112,18 @@ def run(
 
     for results_path in results_paths:
         print(f"Results written to {results_path}")  # noqa: T201
+        per_task = json.loads(Path(results_path).read_text()).get("per_task", {})
+        failed = {
+            task_id: (meta["n_runs"] - meta["n_ok"], meta["n_runs"])
+            for task_id, meta in per_task.items()
+            if meta.get("n_ok") is not None and meta["n_ok"] < meta["n_runs"]
+        }
+        if failed:
+            detail = ", ".join(f"{t}: {bad}/{n} runs" for t, (bad, n) in failed.items())
+            print(  # noqa: T201
+                f"WARNING: provider errors ({detail}). Those runs have status 'error', "
+                "are not scored, and are excluded from mean and std."
+            )
 
 
 @app.command()

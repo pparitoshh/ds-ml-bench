@@ -2,12 +2,16 @@
 
 from __future__ import annotations
 
+import json
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
 import pytest
 from dsbench.solvers.harness import (
+    DEFAULT_STATE_BASE,
+    ClaudeCodeSolver,
+    HarnessConfig,
     DEFAULT_PATH,
     HOME_AGENT,
     MountSpec,
@@ -155,3 +159,79 @@ def test_bwrap_isolation(tmp_path: Path) -> None:
     assert "ISOLATED" in proc.stdout
     assert "LEAKED" not in proc.stdout
     assert "paritosh" not in proc.stdout
+
+
+def _fake_home(tmp_path: Path, monkeypatch) -> Path:
+    home = tmp_path / "home"
+    (home / ".claude").mkdir(parents=True)
+    (home / ".claude" / ".credentials.json").write_text('{"tok": "x"}')
+    (home / ".claude" / "history.jsonl").write_text("secret history")
+    (home / ".claude" / "projects").mkdir()
+    (home / ".claude.json").write_text("{}")
+    (home / ".local" / "share" / "opencode").mkdir(parents=True)
+    (home / ".local" / "share" / "opencode" / "auth.json").write_text("{}")
+    monkeypatch.setattr(Path, "home", classmethod(lambda cls: home))
+    return home
+
+
+@pytest.mark.parametrize("solver_cls", [OpenCodeSolver, ClaudeCodeSolver])
+def test_state_dir_removed_and_not_under_results(tmp_path, monkeypatch, solver_cls) -> None:
+    _fake_home(tmp_path, monkeypatch)
+    state_base = tmp_path / "cache" / "harness_state"
+    seen: dict = {}
+
+    class SpyPopen(FakePopen):
+        def __init__(self, command, **kwargs):
+            super().__init__(command, **kwargs)
+            seen["dirs"] = [p for p in state_base.iterdir()]
+            seen["files"] = sorted(
+                str(p.relative_to(seen["dirs"][0])) for p in seen["dirs"][0].rglob("*") if p.is_file()
+            )
+
+    monkeypatch.setattr(subprocess, "Popen", SpyPopen)
+    venv = tmp_path / "venv"
+    venv.mkdir()
+    results = tmp_path / "results" / "m" / "d" / "t" / "run_0"
+    solver = solver_cls(model="m", config=HarnessConfig(state_root=state_base, venv_path=venv))
+    solver.solve(FakeTask(), results)
+
+    assert len(seen["dirs"]) == 1  # state existed during the run
+    assert not list(state_base.iterdir())  # and is gone afterwards
+    assert not list((tmp_path / "results").rglob(".harness_state"))
+    if solver_cls is ClaudeCodeSolver:
+        assert "home/agent/.claude/.credentials.json" in seen["files"]
+        assert "home/agent/.claude.json" in seen["files"]
+        assert not any("history" in f or "projects" in f for f in seen["files"])
+
+
+def test_state_dir_removed_when_run_raises(tmp_path, monkeypatch) -> None:
+    _fake_home(tmp_path, monkeypatch)
+    state_base = tmp_path / "state"
+    venv = tmp_path / "venv"
+    venv.mkdir()
+
+    class Boom(FakePopen):
+        def __init__(self, command, **kwargs):
+            raise OSError("no bwrap")
+
+    monkeypatch.setattr(subprocess, "Popen", Boom)
+    solver = ClaudeCodeSolver(model="m", config=HarnessConfig(state_root=state_base, venv_path=venv))
+    with pytest.raises(OSError):
+        solver.solve(FakeTask(), tmp_path / "work")
+    assert not list(state_base.iterdir())
+
+
+def test_default_state_base_is_under_cache() -> None:
+    assert DEFAULT_STATE_BASE == Path.home() / ".cache" / "dsbench" / "harness_state"
+
+
+def test_claude_provider_error_detected() -> None:
+    solver = ClaudeCodeSolver(model="m")
+    auth = json.dumps({"is_error": True, "api_error_status": 401, "result": "Invalid API key"})
+    assert solver._parse(auth, "", 1, False, 1.0).provider_error
+    assert solver._parse("", "", 1, False, 1.0).provider_error  # non-zero, no output
+    assert solver._parse("", "HTTP 429 rate limit", 1, False, 1.0).provider_error
+    ok = json.dumps({"result": "done", "total_cost_usd": 0.5})
+    result = solver._parse(ok, "", 0, False, 1.0)
+    assert result.provider_error is None and result.cost_usd == 0.5
+    assert solver._parse("", "", 1, True, 1.0).provider_error is None  # timeout is not a provider error

@@ -133,3 +133,23 @@ def test_report_via_leaderboard_pipeline(tmp_path: Path) -> None:
     assert "| benchmark/task | model-b | model-a |" in text
     assert "| task_one | 90.0 ± 0.0 | 80.0 ± 0.0 |" in text
     assert "| **Overall** | **90.0** | **80.0** |" in text
+
+
+def test_report_shows_ok_counts_and_notional_cost():
+    from dsbench.leaderboard import build_report_markdown
+
+    entry = {
+        "model_label": "m",
+        "rating": 50.0,
+        "total_cost_usd": 1.5,
+        "cost_kind": "notional",
+        "per_task": {
+            "a": {"category": "c", "mean": 0.5, "std": 0.1, "n_ok": 2, "n_runs": 3},
+            "b": {"category": "c", "mean": None, "std": None, "n_ok": 0, "n_runs": 3},
+        },
+    }
+    text = build_report_markdown([entry], commit="abc")
+    assert "(2/3 ok)" in text
+    assert "error (0/3 ok)" in text
+    assert "1.50 †" in text
+    assert "notional (subscription)" in text

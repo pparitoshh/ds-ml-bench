@@ -167,10 +167,14 @@ def build_report_markdown(
                 meta = (entry.get("per_task") or {}).get(task_id)
                 if meta is None:
                     cells.append("-")
+                elif meta.get("mean") is None:
+                    cells.append(f"error ({meta.get('n_ok', 0)}/{meta.get('n_runs', '?')} ok)")
                 else:
-                    cells.append(
-                        _percent_row_value(meta.get("mean", 0.0), meta.get("std", 0.0))
-                    )
+                    value = _percent_row_value(meta.get("mean", 0.0), meta.get("std", 0.0))
+                    n_ok, n_runs = meta.get("n_ok"), meta.get("n_runs")
+                    if n_ok is not None and n_runs is not None and n_ok < n_runs:
+                        value += f" ({n_ok}/{n_runs} ok)"
+                    cells.append(value)
             lines.append("| " + task_id + " | " + " | ".join(cells) + " |")
 
     overall = [
@@ -179,7 +183,10 @@ def build_report_markdown(
     lines.append("| **Overall** | " + " | ".join(overall) + " |")
 
     cost_cells = [
-        f"{float(entry.get('total_cost_usd')):.2f}"
+        (
+            f"{float(entry.get('total_cost_usd')):.2f}"
+            + (" †" if entry.get("cost_kind") == "notional" else "")
+        )
         if isinstance(entry.get("total_cost_usd"), (int, float))
         else "-"
         for entry in entries
@@ -222,6 +229,21 @@ def build_report_markdown(
             f"- **{label}**: mode {mode}; harness {harness}; provider/model id {model_id}; "
             f"{runs} run(s) per task; judge model {judge_model}; date {date}; "
             f"benchmark commit {repo_commit}"
+        )
+    if any(entry.get("cost_kind") == "notional" for entry in entries):
+        lines.append(
+            "- `†` cost is notional (subscription): the total_cost_usd value that "
+            "Claude Code reports, not money charged."
+        )
+    if any(
+        meta and meta.get("n_ok") is not None and meta["n_ok"] < meta.get("n_runs", 0)
+        for entry in entries
+        for meta in (entry.get("per_task") or {}).values()
+    ):
+        lines.append(
+            "- `(k/n ok)` means n runs started and k finished. The other runs failed with a "
+            "provider, auth or rate-limit error. Those runs are not scored and are excluded "
+            "from the mean and std."
         )
     if grouped:
         lines.append(
