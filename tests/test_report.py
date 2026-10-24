@@ -80,7 +80,7 @@ def test_report_table_layout() -> None:
 
     assert "| **Overall** | **72.5** | **50.4** |" in body
     assert "| Cost (USD, measured) | 1.50 | 0.25 |" in body
-    assert "| Time (min, measured) | 10.0 | 5.0 |" in body
+    assert "| Time (measured) | 10m 00s | 5m 00s |" in body
 
     assert "| **Cleaning** | | |" in body
     assert "| clean_orders | 55.0 ± 11.0 | - |" in body

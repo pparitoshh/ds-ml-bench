@@ -32,6 +32,14 @@ def build_leaderboard(results_dir: Path) -> list[dict]:
     return sorted(by_label.values(), key=lambda d: d.get("rating", 0.0), reverse=True)
 
 
+def format_duration(seconds: object) -> str:
+    """Format seconds as "Xm Ys", or "-" when the value is missing."""
+    if isinstance(seconds, bool) or not isinstance(seconds, (int, float)):
+        return "-"
+    minutes, secs = divmod(int(round(seconds)), 60)
+    return f"{minutes}m {secs:02d}s"
+
+
 def _categories(entries: list[dict]) -> list[str]:
     categories: set[str] = set()
     for entry in entries:
@@ -42,7 +50,7 @@ def _categories(entries: list[dict]) -> list[str]:
 def render_markdown(entries: list[dict]) -> str:
     """Render the leaderboard as a GitHub-flavored Markdown table."""
     categories = _categories(entries)
-    header = ["model", "mode", "rating", *categories, "cost_usd", "date"]
+    header = ["model", "mode", "rating", *categories, "cost_usd", "time", "date"]
     rows = []
     for entry in entries:
         row = [
@@ -56,6 +64,7 @@ def render_markdown(entries: list[dict]) -> str:
         )
         cost = entry.get("total_cost_usd")
         row.append(f"{cost:.2f}" if isinstance(cost, (int, float)) else "-")
+        row.append(format_duration(entry.get("total_duration_s")))
         row.append(entry.get("date", "-"))
         rows.append(row)
 
@@ -70,7 +79,7 @@ def render_html(entries: list[dict]) -> str:
     """Render the leaderboard as a simple static HTML page."""
     categories = _categories(entries)
     header_cells = ["Model", "Mode", "Rating", *[c.title() for c in categories],
-                    "Cost (USD)", "Date"]
+                    "Cost (USD)", "Time", "Date"]
 
     body_rows = []
     for entry in entries:
@@ -85,6 +94,7 @@ def render_html(entries: list[dict]) -> str:
         )
         cost = entry.get("total_cost_usd")
         cells.append(f"{cost:.2f}" if isinstance(cost, (int, float)) else "-")
+        cells.append(format_duration(entry.get("total_duration_s")))
         cells.append(html.escape(str(entry.get("date", "-"))))
         body_rows.append("<tr>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>")
 
@@ -193,13 +203,8 @@ def build_report_markdown(
     ]
     lines.append("| Cost (USD, measured) | " + " | ".join(cost_cells) + " |")
 
-    time_cells = [
-        f"{float(entry.get('total_duration_s')) / 60:.1f}"
-        if isinstance(entry.get("total_duration_s"), (int, float))
-        else "-"
-        for entry in entries
-    ]
-    lines.append("| Time (min, measured) | " + " | ".join(time_cells) + " |")
+    time_cells = [format_duration(entry.get("total_duration_s")) for entry in entries]
+    lines.append("| Time (measured) | " + " | ".join(time_cells) + " |")
 
     grouped: dict[str, dict[str, dict]] = {}
     for item in references or []:

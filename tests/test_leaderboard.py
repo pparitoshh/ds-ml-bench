@@ -75,3 +75,30 @@ def test_render_html(tmp_path):
 
 def test_build_leaderboard_empty(tmp_path):
     assert build_leaderboard(tmp_path / "nothing") == []
+
+
+def test_format_duration():
+    from dsbench.leaderboard import format_duration
+
+    assert format_duration(191.0) == "3m 11s"
+    assert format_duration(5) == "0m 05s"
+    assert format_duration(None) == "-"
+
+
+def test_time_column_in_markdown_and_html(tmp_path):
+    results_dir = tmp_path / "results"
+    _write_results(results_dir, "model-a", "2026-02-01T00-00-00", 80.0, "2026-02-01T00-00-00")
+    entries = build_leaderboard(results_dir)
+
+    assert "| cost_usd | time | date |" in render_markdown(entries)
+    assert "0m 10s" in render_markdown(entries)
+    html = render_html(entries)
+    assert "<th>Time</th>" in html
+    assert "<td>0m 10s</td>" in html
+
+
+def test_time_column_dash_when_missing():
+    entries = [{"model_label": "m", "rating": 1.0, "date": "d"}]
+
+    assert "| - | d |" in render_markdown(entries)
+    assert "<td>-</td><td>d</td>" in render_html(entries)
