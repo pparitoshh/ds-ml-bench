@@ -8,7 +8,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 |---|---|---|---|---|---|
 | claude-opus-5-5 | claude-code (`claude-opus-5-5`) | **96.0** | $2.55† | 15m 11s | 5/5 |
 | glm-5.3 | opencode (`opencode-go/glm-5.3`) | **70.0** | $0.07 | 53m 39s | 5/5 |
-| kimi-k3.1-pro | opencode (`moonshotai/kimi-k3.1-pro`) | pending | $0.09 | 54m 13s | 4/5 |
+| kimi-k3.1-pro | opencode (`moonshotai/kimi-k3.1-pro`) | **19.0** | $0.13 | 84m 13s | 5/5 |
 
 ## Score per task
 
@@ -16,7 +16,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 |---|---|---|---|---|---|
 | claude-opus-5-5 | 85 | 100 | 95 | 100 | 100 |
 | glm-5.3 | 70 | 85 | 95 | 100 | 0 (timeout) |
-| kimi-k3.1-pro | 60 | 35 | pending | 0 (timeout) | 0 (timeout) |
+| kimi-k3.1-pro | 60 | 35 | 0 (timeout) | 0 (timeout) | 0 (timeout) |
 
 ## Time per task
 
@@ -24,7 +24,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 |---|---|---|---|---|---|
 | claude-opus-5-5 | 2m 53s | 3m 11s | 3m 09s | 2m 39s | 3m 19s |
 | glm-5.3 | 13m 15s | 13m 47s | 9m 25s | 2m 12s | 15m 00s |
-| kimi-k3.1-pro | 20m 19s | 12m 54s | pending | 6m 00s | 15m 00s |
+| kimi-k3.1-pro | 20m 19s | 12m 54s | 30m 00s | 6m 00s | 15m 00s |
 
 ## Cost per task
 
@@ -32,7 +32,7 @@ One run per model and task. Scores are 0-100 (partial credit = tests passed / to
 |---|---|---|---|---|---|
 | claude-opus-5-5 | $0.998 | $0.533 | $0.505 | $0.248 | $0.265 |
 | glm-5.3 | $0.024 | $0.019 | $0.013 | $0.003 | $0.013 |
-| kimi-k3.1-pro | $0.040 | $0.016 | pending | $0.015 | $0.021 |
+| kimi-k3.1-pro | $0.040 | $0.016 | $0.042 | $0.015 | $0.021 |
 
 Task difficulty: clean_orders, ab_test_checkout, fraud_features = hard; churn_classifier, movielens_recall_at_10 = medium.
 
@@ -47,3 +47,11 @@ Task difficulty: clean_orders, ab_test_checkout, fraud_features = hard; churn_cl
 - Runner bug: the "Unexpected server error" run was scored 0 with status ok, not status error. Fix later.
 - Opus scored 100 on 3 of 5 tasks: the tasks are not yet hard enough to separate strong models.
 - Benchmark commit: f8a0f82. Config: config.opencode3.yaml (runs_per_task overridden to 1).
+
+## Possible bias
+
+- No LLM judge was used: all scores come from pytest tests or metrics (AUC, Recall@10).
+- Harness: Opus runs in Claude Code (its native harness); Kimi and GLM run in OpenCode.
+- Claude models wrote the tasks and reference solutions, and the hard-task target was checked with an Opus smoke run.
+- Kimi used an overloaded Moonshot API with the same time limits as the other models.
+- One run per task (n = 1): results have high random variation.

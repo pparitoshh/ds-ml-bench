@@ -108,10 +108,10 @@
       "harness": "opencode",
       "model": "moonshotai/kimi-k3.1-pro",
       "cost_kind": "measured",
-      "complete": "4/5",
-      "mean": null,
-      "total_cost_usd": 0.0909,
-      "total_time_s": 3253,
+      "complete": "5/5",
+      "mean": 19.0,
+      "total_cost_usd": 0.1326,
+      "total_time_s": 5053,
       "tasks": {
         "clean_orders": {
           "score": 60.0,
@@ -129,7 +129,14 @@
           "category": "statistics",
           "timed_out": false
         },
-        "fraud_features": "pending",
+        "fraud_features": {
+          "score": 0.0,
+          "cost": 0.0417096,
+          "time": 1800.1126436359991,
+          "difficulty": "hard",
+          "category": "feature_engineering",
+          "timed_out": true
+        },
         "churn_classifier": {
           "score": 0.0,
           "cost": 0.0147348,

@@ -13,4 +13,4 @@ Do not overwrite an old report. Add a new folder for each run.
 
 | Date | Report | Models | Tasks | Runs per task | Notes |
 |---|---|---|---|---|---|
-| 2026-10-24 | [first run](2026-10-24-first-run/report.md) | claude-opus-5-5, glm-5.3, kimi-k3.1-pro | 5 (3 hard, 2 medium) | 1 | Kimi fraud_features pending |
+| 2026-10-24 | [first run](2026-10-24-first-run/report.md) | claude-opus-5-5, glm-5.3, kimi-k3.1-pro | 5 (3 hard, 2 medium) | 1 | Opus 96.0, GLM 70.0, Kimi 19.0 |
