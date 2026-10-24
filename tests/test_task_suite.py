@@ -14,7 +14,7 @@ TASKS_ROOT = REPO_ROOT / "tasks"
 
 MVP_TASK_IDS = [
     "clean_orders",
-    "rolling_features_no_leak",
+    "fraud_features",
     "churn_classifier",
     "ab_test_simpson",
     "movielens_recall_at_10",

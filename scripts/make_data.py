@@ -16,65 +16,6 @@ def _task_path(category: str, task_id: str, *parts: str) -> Path:
     return TASKS_DIR / category / task_id / Path(*parts)
 
 
-def make_rolling_features() -> None:
-    rng = np.random.default_rng(42)
-    n_customers = 50
-    min_txn = 5
-    max_txn = 20
-    start_date = pd.Timestamp("2023-01-01")
-
-    rows = []
-    for cust in range(1001, 1001 + n_customers):
-        n_txn = rng.integers(min_txn, max_txn + 1)
-        offsets = np.sort(rng.integers(0, 60, size=n_txn))
-        amounts = np.round(rng.normal(50.0, 20.0, size=n_txn), 2)
-        for off, amt in zip(offsets, amounts):
-            rows.append({
-                "customer_id": cust,
-                "date": (start_date + pd.Timedelta(days=int(off))).strftime("%Y-%m-%d"),
-                "amount": amt,
-            })
-
-    df = pd.DataFrame(rows)
-    data_dir = _task_path("feature_engineering", "rolling_features_no_leak", "data")
-    data_dir.mkdir(parents=True, exist_ok=True)
-    df.to_csv(data_dir / "transactions.csv", index=False)
-
-    # Compute expected features without leakage.
-    df["date"] = pd.to_datetime(df["date"])
-    df = df.sort_values(["customer_id", "date", "amount"]).reset_index(drop=True)
-
-    expected_rows = []
-    for customer_id, group in df.groupby("customer_id", sort=True):
-        group = group.sort_values("date").reset_index(drop=True)
-        amounts = group["amount"].to_numpy()
-        dates = group["date"].to_numpy()
-        spend = np.empty(len(group), dtype=float)
-        count = np.empty(len(group), dtype=int)
-        for i in range(len(group)):
-            mask = (dates[i] - dates < np.timedelta64(7, "D")) & (dates < dates[i])
-            spend[i] = amounts[mask].sum()
-            count[i] = int(mask.sum())
-        group["customer_id"] = customer_id
-        group["rolling_spend_7d"] = spend
-        group["rolling_count_7d"] = count
-        expected_rows.append(group)
-
-    expected = pd.concat(expected_rows, ignore_index=True)
-    expected["date"] = expected["date"].dt.strftime("%Y-%m-%d")
-    expected = expected[[
-        "customer_id",
-        "date",
-        "amount",
-        "rolling_spend_7d",
-        "rolling_count_7d",
-    ]]
-
-    hidden_dir = _task_path("feature_engineering", "rolling_features_no_leak", "hidden")
-    hidden_dir.mkdir(parents=True, exist_ok=True)
-    expected.to_csv(hidden_dir / "expected_features.csv", index=False)
-
-
 def make_churn() -> None:
     rng = np.random.default_rng(42)
     n_train = 800
@@ -192,7 +133,6 @@ def make_ab_test() -> None:
 
 
 def main() -> None:
-    make_rolling_features()
     make_churn()
     make_ab_test()
     print("Generated task data.")
