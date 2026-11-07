@@ -10,3 +10,4 @@ Do not overwrite an old report. Add a new file for each run.
 |---|---|---|---|---|
 | 2026-10-24 | [claude-opus-5-5-vs-glm-5.3-vs-kimi-k3.1-pro.md](claude-opus-5-5-vs-glm-5.3-vs-kimi-k3.1-pro.md) | 5 (3 hard, 2 medium) | 1 | Opus 96.0, GLM 70.0, Kimi 19.0 |
 | 2026-10-24 | [claude-sonnet-5-5-vs-deepseek-v4.1-flash-vs-glm-5.3-flash.md](claude-sonnet-5-5-vs-deepseek-v4.1-flash-vs-glm-5.3-flash.md) | 5 (3 hard, 2 medium) | 1 | Sonnet 92.0, GLM Flash 88.0, DeepSeek Flash 56.0 |
+| 2026-11-07 | [claude-haiku-5-5-vs-gpt-6-luna.md](claude-haiku-5-5-vs-gpt-6-luna.md) | 5 (3 hard, 2 medium) | 1 | Haiku 84.0, GPT-6 Luna 74.0 |
